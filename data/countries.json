@@ -277,6 +277,138 @@
       "baseline_cyber_threat": 45,
       "default_mil_gdp_pct": 0.87,
       "default_gdp_usd": 16786000000
+    },
+    {
+      "code": "CD",
+      "iso3": "COD",
+      "name": "Demokratik Kongo Cumhuriyeti",
+      "capital": "Kinşasa",
+      "lat": -4.4419,
+      "lon": 15.2663,
+      "military_bloc": "Bağlantısız / SADC",
+      "baseline_cyber_threat": 68,
+      "default_mil_gdp_pct": 1.8,
+      "default_gdp_usd": 67512000000
+    },
+    {
+      "code": "RW",
+      "iso3": "RWA",
+      "name": "Ruanda",
+      "capital": "Kigali",
+      "lat": -1.9441,
+      "lon": 30.0619,
+      "military_bloc": "Doğu Afrika Topluluğu",
+      "baseline_cyber_threat": 74,
+      "default_mil_gdp_pct": 2.1,
+      "default_gdp_usd": 14098000000
+    },
+    {
+      "code": "SD",
+      "iso3": "SDN",
+      "name": "Sudan",
+      "capital": "Hartum",
+      "lat": 15.5007,
+      "lon": 32.5599,
+      "military_bloc": "Arap Birliği / Direniş",
+      "baseline_cyber_threat": 78,
+      "default_mil_gdp_pct": 3.2,
+      "default_gdp_usd": 26800000000
+    },
+    {
+      "code": "SS",
+      "iso3": "SSD",
+      "name": "Güney Sudan",
+      "capital": "Juba",
+      "lat": 4.8594,
+      "lon": 31.5713,
+      "military_bloc": "Doğu Afrika Topluluğu",
+      "baseline_cyber_threat": 65,
+      "default_mil_gdp_pct": 4.5,
+      "default_gdp_usd": 11998000000
+    },
+    {
+      "code": "ET",
+      "iso3": "ETH",
+      "name": "Etiyopya",
+      "capital": "Addis Ababa",
+      "lat": 9.0320,
+      "lon": 38.7469,
+      "military_bloc": "BRICS / IGAD",
+      "baseline_cyber_threat": 76,
+      "default_mil_gdp_pct": 2.3,
+      "default_gdp_usd": 163698000000
+    },
+    {
+      "code": "SO",
+      "iso3": "SOM",
+      "name": "Somali",
+      "capital": "Mogadişu",
+      "lat": 2.0469,
+      "lon": 45.3182,
+      "military_bloc": "Arap Birliği / IGAD",
+      "baseline_cyber_threat": 72,
+      "default_mil_gdp_pct": 1.9,
+      "default_gdp_usd": 11680000000
+    },
+    {
+      "code": "ER",
+      "iso3": "ERI",
+      "name": "Eritre",
+      "capital": "Asmara",
+      "lat": 15.3229,
+      "lon": 38.9251,
+      "military_bloc": "Bağımsız / Rusya Dostu",
+      "baseline_cyber_threat": 75,
+      "default_mil_gdp_pct": 5.8,
+      "default_gdp_usd": 2500000000
+    },
+    {
+      "code": "MA",
+      "iso3": "MAR",
+      "name": "Fas",
+      "capital": "Rabat",
+      "lat": 34.0209,
+      "lon": -6.8416,
+      "military_bloc": "Başlıca NATO Dışı Müttefik",
+      "baseline_cyber_threat": 70,
+      "default_mil_gdp_pct": 5.2,
+      "default_gdp_usd": 141109000000
+    },
+    {
+      "code": "DZ",
+      "iso3": "DZA",
+      "name": "Cezayir",
+      "capital": "Cezayir",
+      "lat": 36.7538,
+      "lon": 3.0588,
+      "military_bloc": "Bağlantısız / Rusya Stratejik Ortağı",
+      "baseline_cyber_threat": 72,
+      "default_mil_gdp_pct": 6.5,
+      "default_gdp_usd": 239899000000
+    },
+    {
+      "code": "NE",
+      "iso3": "NER",
+      "name": "Nijer",
+      "capital": "Niamey",
+      "lat": 13.5116,
+      "lon": 2.1254,
+      "military_bloc": "Sahel Devletleri İttifakı (AES)",
+      "baseline_cyber_threat": 64,
+      "default_mil_gdp_pct": 2.8,
+      "default_gdp_usd": 16819000000
+    },
+    {
+      "code": "NG",
+      "iso3": "NGA",
+      "name": "Nijerya",
+      "capital": "Abuja",
+      "lat": 9.0765,
+      "lon": 7.3986,
+      "military_bloc": "ECOWAS Lideri",
+      "baseline_cyber_threat": 66,
+      "default_mil_gdp_pct": 0.9,
+      "default_gdp_usd": 362836000000
     }
   ],
   "conflict_pairs": [
@@ -396,6 +528,60 @@
       "historical_dispute": "Ege Hava Sahası, MEB Deniz Sınırları & Kıta Sahanlığı",
       "trade_dependency_baseline": 38,
       "cyber_hostility_baseline": 55
+    },
+    {
+      "id": "CD-RW",
+      "country_a": "CD",
+      "country_b": "RW",
+      "region": "Orta Afrika / Büyük Göller",
+      "historical_dispute": "M23 İsyancıları, Doğu Kongo Maden Bölgeleri & Sınır Çatışmaları",
+      "trade_dependency_baseline": 12,
+      "cyber_hostility_baseline": 78
+    },
+    {
+      "id": "SD-SS",
+      "country_a": "SD",
+      "country_b": "SS",
+      "region": "Doğu Afrika",
+      "historical_dispute": "Petrol Boru Hatları, Abyei Sınır İhtilafı & Mülteci Krizi",
+      "trade_dependency_baseline": 8,
+      "cyber_hostility_baseline": 74
+    },
+    {
+      "id": "ET-SO",
+      "country_a": "ET",
+      "country_b": "SO",
+      "region": "Afrika Boynuzu",
+      "historical_dispute": "Somaliland Liman Anlaşması, Kızıldeniz Egemenliği & Ayrılıkçı Gerilim",
+      "trade_dependency_baseline": 10,
+      "cyber_hostility_baseline": 82
+    },
+    {
+      "id": "ET-ER",
+      "country_a": "ET",
+      "country_b": "ER",
+      "region": "Afrika Boynuzu",
+      "historical_dispute": "Tigray Sonrası Sınır Gerilimi & Asseb Limanı Askeri Hareketliliği",
+      "trade_dependency_baseline": 4,
+      "cyber_hostility_baseline": 84
+    },
+    {
+      "id": "MA-DZ",
+      "country_a": "MA",
+      "country_b": "DZ",
+      "region": "Kuzey Afrika / Mağrip",
+      "historical_dispute": "Batı Sahra (Polisario), Kapalı Sınırlar & Silahlanma Yarışı",
+      "trade_dependency_baseline": 2,
+      "cyber_hostility_baseline": 86
+    },
+    {
+      "id": "NE-NG",
+      "country_a": "NE",
+      "country_b": "NG",
+      "region": "Batı Afrika / Sahel",
+      "historical_dispute": "Sahel İttifakı (AES) Darbe Sonrası ECOWAS Askeri Müdahale Tehdidi",
+      "trade_dependency_baseline": 15,
+      "cyber_hostility_baseline": 68
     }
   ]
 }

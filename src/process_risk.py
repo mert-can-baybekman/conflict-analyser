@@ -64,7 +64,9 @@ def evaluate_alliance_friction(bloc_a, bloc_b):
         {"Major Non-NATO Ally", "Resistance Axis"},
         {"Western-Aligned", "CSTO"},
         {"Western-Aligned", "SCO / Resistance Axis"},
-        {"Western-Aligned", "Independent / Sino-Russian Ally"}
+        {"Western-Aligned", "Independent / Sino-Russian Ally"},
+        {"Başlıca NATO Dışı Müttefik", "Bağlantısız / Rusya Stratejik Ortağı"},
+        {"Sahel Devletleri İttifakı (AES)", "ECOWAS Lideri"}
     ]
     current = {bloc_a, bloc_b}
     for hp in hostile_pairs:
@@ -176,10 +178,19 @@ def process_conflict_matrix():
         wb_a = wb_data.get(c_a_code, {})
         wb_b = wb_data.get(c_b_code, {})
 
+        cyber_base = pair.get("cyber_hostility_baseline", 50)
         gdelt = gdelt_signals.get(pair_id, {})
-        avg_tone = gdelt.get("avg_tone", -3.0)
-        vol_score = gdelt.get("volume_score", 60)
-        tone_series = gdelt.get("tone_series", [])
+        if not gdelt:
+            synthetic_tone = round(-1.5 - (cyber_base / 100.0) * 6.0, 2)
+            avg_tone = synthetic_tone
+            vol_score = int(cyber_base * 1.6 + 25)
+            tone_series = [{"day_offset": day, "tone": round(synthetic_tone + (day * 0.12 - 0.4), 2)} for day in range(7, 0, -1)]
+        else:
+            avg_tone = gdelt.get("avg_tone", -3.0)
+            vol_score = gdelt.get("volume_score", 60)
+            tone_series = gdelt.get("tone_series", [])
+            if not tone_series:
+                tone_series = [{"day_offset": day, "tone": round(avg_tone + (day * 0.1 - 0.35), 2)} for day in range(7, 0, -1)]
 
         mil_a = wb_a.get("military_gdp_pct", country_a.get("default_mil_gdp_pct", 2.0))
         mil_b = wb_b.get("military_gdp_pct", country_b.get("default_mil_gdp_pct", 2.0))
@@ -188,7 +199,6 @@ def process_conflict_matrix():
         bloc_b = country_b.get("military_bloc", "Independent")
 
         trade_dep = pair.get("trade_dependency_baseline", 20)
-        cyber_base = pair.get("cyber_hostility_baseline", 50)
 
         # 4 Ana parametreyi hesapla
         media_score = calculate_media_tension_score(avg_tone, vol_score)
