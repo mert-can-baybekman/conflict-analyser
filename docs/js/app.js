@@ -63,33 +63,66 @@ function initClock() {
 function initPanelToggles() {
   const btnCollapseLeft = document.getElementById('btnCollapseLeft');
   const floatingToggleLeft = document.getElementById('floatingToggleLeft');
+  const hudToggleLeft = document.getElementById('hudToggleLeft');
+
   const btnCollapseRight = document.getElementById('btnCollapseRight');
   const floatingToggleRight = document.getElementById('floatingToggleRight');
+  const hudToggleRight = document.getElementById('hudToggleRight');
 
+  // Sol Panel Düğmeleri
   if (btnCollapseLeft) {
-    btnCollapseLeft.addEventListener('click', () => toggleLeftPanel());
+    btnCollapseLeft.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleLeftPanel();
+    });
   }
   if (floatingToggleLeft) {
-    floatingToggleLeft.addEventListener('click', () => toggleLeftPanel());
+    floatingToggleLeft.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleLeftPanel();
+    });
+  }
+  if (hudToggleLeft) {
+    hudToggleLeft.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleLeftPanel();
+    });
   }
 
+  // Sağ Panel Düğmeleri
   if (btnCollapseRight) {
-    btnCollapseRight.addEventListener('click', () => toggleRightPanel());
+    btnCollapseRight.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleRightPanel();
+    });
   }
   if (floatingToggleRight) {
-    floatingToggleRight.addEventListener('click', () => toggleRightPanel());
+    floatingToggleRight.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleRightPanel();
+    });
+  }
+  if (hudToggleRight) {
+    hudToggleRight.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleRightPanel();
+    });
   }
 }
 
 function toggleLeftPanel(forceOpen = null) {
   const panel = document.getElementById('hotspotPanel');
   const floatBtn = document.getElementById('floatingToggleLeft');
+  const hudBtn = document.getElementById('hudToggleLeft');
+  const btnCollapse = document.getElementById('btnCollapseLeft');
   if (!panel) return;
 
   const willOpen = forceOpen !== null ? forceOpen : panel.classList.contains('collapsed');
 
   if (willOpen) {
     panel.classList.remove('collapsed');
+    if (btnCollapse) btnCollapse.textContent = '◀';
+    if (hudBtn) hudBtn.classList.add('active');
     if (floatBtn) {
       floatBtn.classList.remove('panel-closed');
       floatBtn.innerHTML = '<i class="fa-solid fa-table-list"></i><span>KRİZ MATRİSİ</span>';
@@ -97,6 +130,8 @@ function toggleLeftPanel(forceOpen = null) {
     }
   } else {
     panel.classList.add('collapsed');
+    if (btnCollapse) btnCollapse.textContent = '▶';
+    if (hudBtn) hudBtn.classList.remove('active');
     if (floatBtn) {
       floatBtn.classList.add('panel-closed');
       floatBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i><span>MATRİSİ AÇ</span>';
@@ -110,12 +145,16 @@ function toggleLeftPanel(forceOpen = null) {
 function toggleRightPanel(forceOpen = null) {
   const panel = document.getElementById('intelligenceSidebar');
   const floatBtn = document.getElementById('floatingToggleRight');
+  const hudBtn = document.getElementById('hudToggleRight');
+  const btnCollapse = document.getElementById('btnCollapseRight');
   if (!panel) return;
 
   const willOpen = forceOpen !== null ? forceOpen : panel.classList.contains('collapsed');
 
   if (willOpen) {
     panel.classList.remove('collapsed');
+    if (btnCollapse) btnCollapse.textContent = '▶';
+    if (hudBtn) hudBtn.classList.add('active');
     if (floatBtn) {
       floatBtn.classList.remove('panel-closed');
       floatBtn.innerHTML = '<i class="fa-solid fa-chart-column"></i><span>İSTİHBARAT DOSYASI</span>';
@@ -123,6 +162,8 @@ function toggleRightPanel(forceOpen = null) {
     }
   } else {
     panel.classList.add('collapsed');
+    if (btnCollapse) btnCollapse.textContent = '◀';
+    if (hudBtn) hudBtn.classList.remove('active');
     if (floatBtn) {
       floatBtn.classList.add('panel-closed');
       floatBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i><span>İSTİHBARATI AÇ</span>';
@@ -273,13 +314,15 @@ function renderMapElements() {
       iconAnchor: [12, 12]
     });
 
+    const capitalInfo = country.capital ? `Başkent: ${country.capital}` : '';
     const marker = L.marker([country.lat, country.lon], { icon: customIcon }).addTo(State.map);
 
     // Marker tooltip
     marker.bindTooltip(`
       <div style="font-family: var(--font-mono); font-size: 0.75rem;">
         <strong style="color: #fff; font-family: var(--font-hud);">${country.name} (${country.code})</strong><br>
-        <span style="color: ${color};">Tehdit: ${country.max_risk_score}/100 [${country.threat_level}]</span><br>
+        <span style="color: var(--neon-cyan);">${capitalInfo}</span><br>
+        <span style="color: ${color}; font-weight: bold;">Tehdit: ${country.max_risk_score}/100 [${country.threat_level}]</span><br>
         <span style="color: var(--text-secondary);">Askeri/GSYİH: %${country.military_gdp_pct}</span>
       </div>
     `, {
@@ -295,7 +338,7 @@ function renderMapElements() {
     State.markers[country.code] = marker;
   });
 
-  // 2. Çatışma Çiftleri Arasındaki Kinetik Gerilim Hatları (Polylines)
+  // 2. Çatışma Çiftleri Arasındaki Kinetik Gerilim Hatları (Başkentleri Bağlayan Vektörler)
   pairs.forEach(pair => {
     const latlngs = [pair.coordinates.a, pair.coordinates.b];
     const color = pair.color || Colors.MODERATE;
@@ -303,7 +346,7 @@ function renderMapElements() {
     const polyline = L.polyline(latlngs, {
       color: color,
       weight: Math.max(2, (pair.cri_score / 100) * 5),
-      opacity: 0.75,
+      opacity: 0.8,
       dashArray: '6, 8',
       lineCap: 'round'
     }).addTo(State.map);
@@ -311,6 +354,7 @@ function renderMapElements() {
     polyline.bindTooltip(`
       <div style="font-family: var(--font-mono); font-size: 0.75rem;">
         <strong style="color: #fff;">${pair.country_a_name} ⚔️ ${pair.country_b_name}</strong><br>
+        <span style="color: var(--neon-cyan); font-size: 0.7rem;">Başkentler Arası Kinetik Gerilim Hattı</span><br>
         <span style="color: ${color}; font-weight: bold;">CRI: ${pair.cri_score} // ${pair.status_tr}</span>
       </div>
     `, { sticky: true });
@@ -390,10 +434,10 @@ function renderPairsList() {
            style="--card-accent: ${color};" 
            onclick="selectPair('${p.id}')">
         <div class="pair-top-row">
-          <div class="pair-flags-names">
-            <span class="country-tag">${p.country_a}</span>
-            <span class="vs-badge">VS</span>
-            <span class="country-tag">${p.country_b}</span>
+          <div class="pair-countries-title">
+            <span class="country-full-name">${p.country_a_name}</span>
+            <span class="vs-swords">⚔️</span>
+            <span class="country-full-name">${p.country_b_name}</span>
           </div>
           <div class="pair-cri-score" style="color: ${color};">
             ${p.cri_score}
@@ -401,9 +445,9 @@ function renderPairsList() {
         </div>
 
         <div class="pair-meta-row">
-          <span>${p.country_a_name} - ${p.country_b_name}</span>
+          <span class="pair-region-label"><i class="fa-solid fa-location-dot" style="margin-right: 4px;"></i>${p.region}</span>
           <span class="tier-badge" style="background: rgba(${hexToRgb(color)}, 0.15); color: ${color}; border: 1px solid ${color};">
-            DEFCON ${p.defcon}
+            DEFCON ${p.defcon} - ${p.status_tr}
           </span>
         </div>
 

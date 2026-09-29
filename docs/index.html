@@ -57,6 +57,16 @@
         <span class="val" id="statGlobalAvg">-- / 100</span>
       </div>
 
+      <!-- Panel Aç/Kapa Hızlı Kontrolleri -->
+      <div class="hud-view-controls">
+        <button class="hud-toggle-btn active" id="hudToggleLeft" title="Kriz Matrisi Panelini Aç/Kapat">
+          <i class="fa-solid fa-table-list"></i> Kriz Matrisi
+        </button>
+        <button class="hud-toggle-btn active" id="hudToggleRight" title="İstihbarat Dosyası Panelini Aç/Kapat">
+          <i class="fa-solid fa-chart-column"></i> İstihbarat Paneli
+        </button>
+      </div>
+
       <!-- Live Clock & Status -->
       <div class="system-clock">
         <span class="live-dot" title="Canlı Veri Yayını Aktif"></span>
@@ -75,9 +85,7 @@
           <h2><i class="fa-solid fa-crosshairs" style="color: var(--neon-cyan); margin-right: 6px;"></i>Kriz Matrisi</h2>
           <div style="display: flex; align-items: center; gap: 8px;">
             <span class="panel-count" id="activePairsCount">0 Aktif</span>
-            <button class="panel-collapse-trigger" id="btnCollapseLeft" title="Kriz Matrisini Gizle">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
+            <button class="panel-collapse-trigger" id="btnCollapseLeft" title="Kriz Matrisini Gizle">◀</button>
           </div>
         </div>
 
@@ -158,9 +166,7 @@
     <aside class="intelligence-sidebar" id="intelligenceSidebar">
       <div class="sidebar-header">
         <div style="display: flex; align-items: center; gap: 8px;">
-          <button class="panel-collapse-trigger" id="btnCollapseRight" title="İstihbarat Dosyasını Gizle">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
+          <button class="panel-collapse-trigger" id="btnCollapseRight" title="İstihbarat Dosyasını Gizle">▶</button>
           <h2><i class="fa-solid fa-shield-halved" style="color: var(--neon-red); margin-right: 6px;"></i>İstihbarat</h2>
         </div>
         <div class="sidebar-tab-pills">

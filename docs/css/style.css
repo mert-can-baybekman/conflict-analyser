@@ -216,6 +216,43 @@ body::before {
   color: var(--neon-red);
 }
 
+/* HUD Panel Toggle Controls */
+.hud-view-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hud-toggle-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-dim);
+  color: var(--text-secondary);
+  font-family: var(--font-hud);
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.hud-toggle-btn:hover {
+  border-color: var(--neon-cyan);
+  color: #fff;
+  background: rgba(0, 229, 255, 0.15);
+}
+
+.hud-toggle-btn.active {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
+}
+
 /* Clock & Status */
 .system-clock {
   font-family: var(--font-mono);
@@ -268,16 +305,23 @@ body::before {
   overflow-x: hidden;
   z-index: 1005;
   backdrop-filter: blur(16px);
-  transition: margin-left 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transition: width 0.32s cubic-bezier(0.16, 1, 0.3, 1), min-width 0.32s ease, opacity 0.2s ease;
   position: relative;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 229, 255, 0.4) rgba(10, 13, 20, 0.85);
 }
 
 .hotspot-panel.collapsed {
-  margin-left: -360px;
-  opacity: 0;
-  pointer-events: none;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  overflow: hidden !important;
 }
 
 .panel-header {
@@ -292,25 +336,26 @@ body::before {
 }
 
 .panel-collapse-trigger {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-dim);
-  color: var(--text-secondary);
-  width: 26px;
-  height: 26px;
+  background: rgba(14, 20, 30, 0.95) !important;
+  border: 1px solid var(--border-bright) !important;
+  color: var(--neon-cyan) !important;
+  width: 28px;
+  height: 28px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: bold;
   transition: all 0.2s ease;
+  user-select: none;
 }
 
 .panel-collapse-trigger:hover {
-  background: rgba(0, 229, 255, 0.2);
-  border-color: var(--neon-cyan);
-  color: #fff;
-  box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+  background: rgba(0, 229, 255, 0.25) !important;
+  color: #fff !important;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5) !important;
 }
 
 .panel-header-title {
@@ -416,14 +461,16 @@ body::before {
 }
 
 .pair-card {
+  flex-shrink: 0 !important;
+  min-height: 86px;
   background: var(--bg-card);
   border: 1px solid var(--border-dim);
   border-radius: 6px;
-  padding: 10px 12px;
+  padding: 11px 13px;
   cursor: pointer;
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
-  overflow: hidden;
+  overflow: visible !important;
 }
 
 .pair-card:hover {
@@ -447,6 +494,8 @@ body::before {
   bottom: 0;
   width: 4px;
   background: var(--card-accent, var(--neon-cyan));
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .pair-top-row {
@@ -456,17 +505,51 @@ body::before {
   margin-bottom: 6px;
 }
 
-.pair-flags-names {
+.pair-countries-title {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.country-tag {
+  gap: 6px;
   font-family: var(--font-hud);
   font-size: 0.85rem;
   font-weight: 700;
   color: #fff;
+  line-height: 1.35;
+}
+
+.country-full-name {
+  color: #fff;
+  white-space: nowrap;
+}
+
+.vs-swords {
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+.pair-cri-score {
+  font-family: var(--font-hud);
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+  margin-left: 8px;
+}
+
+.pair-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  margin-bottom: 8px;
+}
+
+.pair-region-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
 }
 
 .vs-badge {
@@ -740,16 +823,92 @@ body::before {
   overflow-x: hidden;
   z-index: 1005;
   backdrop-filter: blur(16px);
-  transition: margin-right 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transition: width 0.32s cubic-bezier(0.16, 1, 0.3, 1), min-width 0.32s ease, opacity 0.2s ease;
   position: relative;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 229, 255, 0.4) rgba(10, 13, 20, 0.85);
 }
 
 .intelligence-sidebar.collapsed {
-  margin-right: -420px;
-  opacity: 0;
-  pointer-events: none;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  overflow: hidden !important;
+}
+
+.sidebar-content > * {
+  flex-shrink: 0 !important;
+}
+
+.pairs-list-container > * {
+  flex-shrink: 0 !important;
+}
+
+/* Hero Risk Score Box */
+.dossier-hero-card {
+  flex-shrink: 0 !important;
+  background: linear-gradient(135deg, rgba(22, 28, 42, 0.9) 0%, rgba(14, 17, 25, 0.95) 100%);
+  border: 1px solid var(--hero-border, var(--border-dim));
+  border-radius: 8px;
+  padding: 1.25rem;
+  position: relative;
+  overflow: visible !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dossier-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--hero-accent, var(--neon-red));
+  box-shadow: 0 0 10px var(--hero-accent, var(--neon-red));
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.hero-title h3 {
+  font-family: var(--font-hud);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.35;
+}
+
+.hero-title p {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  margin-top: 2px;
+}
+
+.hero-score-badge {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.hero-score-badge .score-val {
+  font-family: var(--font-hud);
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--hero-accent, var(--neon-red));
+  text-shadow: 0 0 15px rgba(255, 43, 62, 0.5);
 }
 
 .sidebar-header {
