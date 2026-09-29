@@ -148,10 +148,16 @@ function initMap() {
     maxZoom: 9
   }).setView([28.0, 42.0], 3);
 
-  // CartoDB Dark Matter karo katmanı
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    subdomains: 'abcd',
-    maxZoom: 19
+  // Esri World Dark Gray Canvas (Tamamen ücretsiz, API Key gerektirmez)
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16,
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
+  }).addTo(State.map);
+
+  // Ülke sınırları ve şehir etiketleri katmanı
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16,
+    opacity: 0.65
   }).addTo(State.map);
 
   // Zoom kontrollerini sağ alt köşeye al
