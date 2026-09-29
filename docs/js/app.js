@@ -797,6 +797,9 @@ function renderToneChart(toneHistory) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      layout: {
+        padding: { top: 6, bottom: 6, left: 4, right: 6 }
+      },
       plugins: {
         legend: { display: false },
         tooltip: {
@@ -810,11 +813,11 @@ function renderToneChart(toneHistory) {
       scales: {
         x: {
           grid: { color: 'rgba(255, 255, 255, 0.05)' },
-          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 10 } }
+          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 9 }, maxRotation: 0 }
         },
         y: {
           grid: { color: 'rgba(255, 255, 255, 0.05)' },
-          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 10 } }
+          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 9 } }
         }
       }
     }
@@ -856,19 +859,22 @@ function renderMilitaryChart(pair) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      layout: {
+        padding: { top: 6, bottom: 6, left: 4, right: 6 }
+      },
       plugins: {
         legend: { display: false }
       },
       scales: {
         x: {
           grid: { display: false },
-          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 10 } }
+          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 9 }, maxRotation: 0 }
         },
         y: {
           grid: { color: 'rgba(255, 255, 255, 0.05)' },
           ticks: {
             color: '#8b949e',
-            font: { family: 'JetBrains Mono', size: 10 },
+            font: { family: 'JetBrains Mono', size: 9 },
             callback: v => `%${v}`
           }
         }
@@ -912,17 +918,20 @@ function renderCountryMilChart(history, countryName) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      layout: {
+        padding: { top: 6, bottom: 6, left: 4, right: 6 }
+      },
       plugins: { legend: { display: false } },
       scales: {
         x: {
           grid: { color: 'rgba(255, 255, 255, 0.05)' },
-          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 10 } }
+          ticks: { color: '#8b949e', font: { family: 'JetBrains Mono', size: 9 }, maxRotation: 0 }
         },
         y: {
           grid: { color: 'rgba(255, 255, 255, 0.05)' },
           ticks: {
             color: '#8b949e',
-            font: { family: 'JetBrains Mono', size: 10 },
+            font: { family: 'JetBrains Mono', size: 9 },
             callback: v => `%${v}`
           }
         }
