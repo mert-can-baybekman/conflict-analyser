@@ -561,7 +561,7 @@ body::before {
 }
 
 .leaflet-tile {
-  filter: brightness(0.78) contrast(1.2) hue-rotate(185deg);
+  filter: contrast(1.08) brightness(0.96);
 }
 
 .leaflet-popup-content-wrapper {

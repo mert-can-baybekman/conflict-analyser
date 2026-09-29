@@ -148,16 +148,15 @@ function initMap() {
     maxZoom: 9
   }).setView([28.0, 42.0], 3);
 
-  // Esri World Dark Gray Canvas (Tamamen ücretsiz, API Key gerektirmez)
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 16,
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
-  }).addTo(State.map);
+  // CARTO Basemaps API Key (Kişiselleştirilmiş lisans anahtarı)
+  const CARTO_API_KEY = 'cb1_43sk_1_5d98ca50e8986be54b191b4f';
+  const cartoDarkUrl = `https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key=${CARTO_API_KEY}`;
 
-  // Ülke sınırları ve şehir etiketleri katmanı
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 16,
-    opacity: 0.65
+  // Orijinal CARTO Dark Matter Harita Katmanı (Filigransız)
+  L.tileLayer(cartoDarkUrl, {
+    subdomains: 'abcd',
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>'
   }).addTo(State.map);
 
   // Zoom kontrollerini sağ alt köşeye al
