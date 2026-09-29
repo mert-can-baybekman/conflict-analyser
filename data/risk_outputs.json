@@ -1,0 +1,2036 @@
+{
+  "metadata": {
+    "title": "Global Cyber-Geopolitical Conflict Risk Matrix",
+    "version": "2.0.0",
+    "generated_at": "2026-09-29T18:41:51.570681+00:00",
+    "pipeline_status": "OPERATIONAL",
+    "global_cri_average": 77.3,
+    "critical_count": 7,
+    "high_count": 4,
+    "monitored_pairs": 13,
+    "monitored_countries": 23
+  },
+  "pairs": [
+    {
+      "id": "UA-RU",
+      "country_a": "UA",
+      "country_b": "RU",
+      "country_a_name": "Ukraine",
+      "country_b_name": "Russia",
+      "region": "Eastern Europe",
+      "historical_dispute": "Active Full-Scale Conflict & Territorial Sovereignty",
+      "cri_score": 94.4,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 90.08,
+          "weight_pct": 40,
+          "avg_tone": -7.71,
+          "volume_index": 202
+        },
+        "economic_vulnerability": {
+          "score": 96.0,
+          "weight_pct": 30,
+          "trade_dependency": 4
+        },
+        "military_readiness": {
+          "score": 100.0,
+          "weight_pct": 20,
+          "country_a_mil_pct": 34.48,
+          "country_b_mil_pct": 5.9,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 95.5,
+          "weight_pct": 10,
+          "bloc_a": "Western-Aligned",
+          "bloc_b": "CSTO",
+          "cyber_baseline": 96
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.07
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.89
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.07
+        },
+        {
+          "day_offset": 4,
+          "tone": -8.1
+        },
+        {
+          "day_offset": 3,
+          "tone": -8.14
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.91
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.56
+        }
+      ],
+      "coordinates": {
+        "a": [
+          48.3794,
+          31.1656
+        ],
+        "b": [
+          61.524,
+          105.3188
+        ]
+      }
+    },
+    {
+      "id": "KP-KR",
+      "country_a": "KP",
+      "country_b": "KR",
+      "country_a_name": "North Korea",
+      "country_b_name": "South Korea",
+      "region": "Korean Peninsula",
+      "historical_dispute": "DMZ Stalemate, Nuclear Testing & Ballistic Posturing",
+      "cri_score": 91.6,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 87.13,
+          "weight_pct": 40,
+          "avg_tone": -7.03,
+          "volume_index": 204
+        },
+        "economic_vulnerability": {
+          "score": 97.0,
+          "weight_pct": 30,
+          "trade_dependency": 3
+        },
+        "military_readiness": {
+          "score": 100.0,
+          "weight_pct": 20,
+          "country_a_mil_pct": 16.0,
+          "country_b_mil_pct": 2.56,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 76.5,
+          "weight_pct": 10,
+          "bloc_a": "Independent / Sino-Russian Ally",
+          "bloc_b": "Major Non-NATO Ally",
+          "cyber_baseline": 88
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.82
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.7
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.25
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.04
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.24
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.04
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.25
+        }
+      ],
+      "coordinates": {
+        "a": [
+          40.3399,
+          127.5101
+        ],
+        "b": [
+          35.9078,
+          127.7669
+        ]
+      }
+    },
+    {
+      "id": "IL-IR",
+      "country_a": "IL",
+      "country_b": "IR",
+      "country_a_name": "Israel",
+      "country_b_name": "Iran",
+      "region": "Middle East",
+      "historical_dispute": "Regional Hegemony, Nuclear Deterrence & Proxy War",
+      "cri_score": 89.2,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 88.13,
+          "weight_pct": 40,
+          "avg_tone": -7.26,
+          "volume_index": 218
+        },
+        "economic_vulnerability": {
+          "score": 99.0,
+          "weight_pct": 30,
+          "trade_dependency": 1
+        },
+        "military_readiness": {
+          "score": 81.26,
+          "weight_pct": 20,
+          "country_a_mil_pct": 8.78,
+          "country_b_mil_pct": 2.01,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 80.0,
+          "weight_pct": 10,
+          "bloc_a": "Major Non-NATO Ally",
+          "bloc_b": "SCO / Resistance Axis",
+          "cyber_baseline": 95
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -8.05
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.83
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.82
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.2
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.26
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.98
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.48
+        }
+      ],
+      "coordinates": {
+        "a": [
+          31.0461,
+          34.8516
+        ],
+        "b": [
+          32.4279,
+          53.688
+        ]
+      }
+    },
+    {
+      "id": "IL-LB",
+      "country_a": "IL",
+      "country_b": "LB",
+      "country_a_name": "Israel",
+      "country_b_name": "Lebanon",
+      "region": "Middle East",
+      "historical_dispute": "Southern Border & Hezbollah Kinetic Escalation",
+      "cri_score": 88.1,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 86.87,
+          "weight_pct": 40,
+          "avg_tone": -6.97,
+          "volume_index": 201
+        },
+        "economic_vulnerability": {
+          "score": 98.0,
+          "weight_pct": 30,
+          "trade_dependency": 2
+        },
+        "military_readiness": {
+          "score": 82.5,
+          "weight_pct": 20,
+          "country_a_mil_pct": 8.78,
+          "country_b_mil_pct": 2.59,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 75.0,
+          "weight_pct": 10,
+          "bloc_a": "Major Non-NATO Ally",
+          "bloc_b": "Non-Aligned / Resistance Axis",
+          "cyber_baseline": 85
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.58
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.58
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.29
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.87
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.49
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.96
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.21
+        }
+      ],
+      "coordinates": {
+        "a": [
+          31.0461,
+          34.8516
+        ],
+        "b": [
+          33.8547,
+          35.8623
+        ]
+      }
+    },
+    {
+      "id": "US-RU",
+      "country_a": "US",
+      "country_b": "RU",
+      "country_a_name": "United States",
+      "country_b_name": "Russia",
+      "region": "Global / Euro-Atlantic",
+      "historical_dispute": "Strategic Nuclear Balance, NATO Expansion & Sanctions Regime",
+      "cri_score": 82.7,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 87.39,
+          "weight_pct": 40,
+          "avg_tone": -7.09,
+          "volume_index": 213
+        },
+        "economic_vulnerability": {
+          "score": 91.0,
+          "weight_pct": 30,
+          "trade_dependency": 9
+        },
+        "military_readiness": {
+          "score": 55.34,
+          "weight_pct": 20,
+          "country_a_mil_pct": 3.42,
+          "country_b_mil_pct": 5.9,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 93.5,
+          "weight_pct": 10,
+          "bloc_a": "NATO",
+          "bloc_b": "CSTO",
+          "cyber_baseline": 92
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -6.61
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.56
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.82
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.73
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.84
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.12
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.92
+        }
+      ],
+      "coordinates": {
+        "a": [
+          37.0902,
+          -95.7129
+        ],
+        "b": [
+          61.524,
+          105.3188
+        ]
+      }
+    },
+    {
+      "id": "YE-SA",
+      "country_a": "YE",
+      "country_b": "SA",
+      "country_a_name": "Yemen",
+      "country_b_name": "Saudi Arabia",
+      "region": "Middle East / Red Sea",
+      "historical_dispute": "Red Sea Shipping Lanes & Cross-Border Drone Strikes",
+      "cri_score": 82.7,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 83.45,
+          "weight_pct": 40,
+          "avg_tone": -6.18,
+          "volume_index": 194
+        },
+        "economic_vulnerability": {
+          "score": 94.0,
+          "weight_pct": 30,
+          "trade_dependency": 6
+        },
+        "military_readiness": {
+          "score": 70.58,
+          "weight_pct": 20,
+          "country_a_mil_pct": 3.97,
+          "country_b_mil_pct": 7.3,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 70.5,
+          "weight_pct": 10,
+          "bloc_a": "Resistance Axis (Houthi control)",
+          "bloc_b": "Major Non-NATO Ally",
+          "cyber_baseline": 76
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -6.3
+        },
+        {
+          "day_offset": 6,
+          "tone": -5.81
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.38
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.8
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.64
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.7
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.0
+        }
+      ],
+      "coordinates": {
+        "a": [
+          15.5527,
+          48.5164
+        ],
+        "b": [
+          23.8859,
+          45.0792
+        ]
+      }
+    },
+    {
+      "id": "AM-AZ",
+      "country_a": "AM",
+      "country_b": "AZ",
+      "country_a_name": "Armenia",
+      "country_b_name": "Azerbaijan",
+      "region": "South Caucasus",
+      "historical_dispute": "Nagorno-Karabakh & Zangezur Corridor Border Clashes",
+      "cri_score": 80.2,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 85.79,
+          "weight_pct": 40,
+          "avg_tone": -6.72,
+          "volume_index": 196
+        },
+        "economic_vulnerability": {
+          "score": 92.0,
+          "weight_pct": 30,
+          "trade_dependency": 8
+        },
+        "military_readiness": {
+          "score": 54.47,
+          "weight_pct": 20,
+          "country_a_mil_pct": 5.48,
+          "country_b_mil_pct": 4.99,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 73.5,
+          "weight_pct": 10,
+          "bloc_a": "CSTO",
+          "bloc_b": "Non-Aligned / Turkish Ally",
+          "cyber_baseline": 82
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -6.07
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.28
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.15
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.35
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.14
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.13
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.88
+        }
+      ],
+      "coordinates": {
+        "a": [
+          40.0691,
+          45.0382
+        ],
+        "b": [
+          40.1431,
+          47.5769
+        ]
+      }
+    },
+    {
+      "id": "IN-PK",
+      "country_a": "IN",
+      "country_b": "PK",
+      "country_a_name": "India",
+      "country_b_name": "Pakistan",
+      "region": "South Asia",
+      "historical_dispute": "Kashmir Border Line of Control & Nuclear Rivalry",
+      "cri_score": 71.3,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 84.27,
+          "weight_pct": 40,
+          "avg_tone": -6.37,
+          "volume_index": 177
+        },
+        "economic_vulnerability": {
+          "score": 88.0,
+          "weight_pct": 30,
+          "trade_dependency": 12
+        },
+        "military_readiness": {
+          "score": 20.45,
+          "weight_pct": 20,
+          "country_a_mil_pct": 2.27,
+          "country_b_mil_pct": 2.67,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 71.5,
+          "weight_pct": 10,
+          "bloc_a": "QUAD / Non-Aligned",
+          "bloc_b": "Major Non-NATO Ally / SCO",
+          "cyber_baseline": 78
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -5.63
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.13
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.15
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.15
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.13
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.93
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.88
+        }
+      ],
+      "coordinates": {
+        "a": [
+          20.5937,
+          78.9629
+        ],
+        "b": [
+          30.3753,
+          69.3451
+        ]
+      }
+    },
+    {
+      "id": "RS-XK",
+      "country_a": "RS",
+      "country_b": "XK",
+      "country_a_name": "Serbia",
+      "country_b_name": "Kosovo",
+      "region": "Balkans",
+      "historical_dispute": "Northern Kosovo Sovereignty & Minority Rights",
+      "cri_score": 67.8,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 85.05,
+          "weight_pct": 40,
+          "avg_tone": -6.55,
+          "volume_index": 171
+        },
+        "economic_vulnerability": {
+          "score": 78.0,
+          "weight_pct": 30,
+          "trade_dependency": 22
+        },
+        "military_readiness": {
+          "score": 18.07,
+          "weight_pct": 20,
+          "country_a_mil_pct": 2.6,
+          "country_b_mil_pct": 1.48,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 67.5,
+          "weight_pct": 10,
+          "bloc_a": "Non-Aligned / Russo-friendly",
+          "bloc_b": "Western-Protected",
+          "cyber_baseline": 70
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.15
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.54
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.03
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.88
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.04
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.17
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.39
+        }
+      ],
+      "coordinates": {
+        "a": [
+          44.0165,
+          21.0059
+        ],
+        "b": [
+          42.6026,
+          20.903
+        ]
+      }
+    },
+    {
+      "id": "CN-TW",
+      "country_a": "CN",
+      "country_b": "TW",
+      "country_a_name": "China",
+      "country_b_name": "Taiwan",
+      "region": "East Asia",
+      "historical_dispute": "Taiwan Strait Sovereignty & Maritime Hegemony",
+      "cri_score": 66.6,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 89.51,
+          "weight_pct": 40,
+          "avg_tone": -7.58,
+          "volume_index": 210
+        },
+        "economic_vulnerability": {
+          "score": 65.0,
+          "weight_pct": 30,
+          "trade_dependency": 35
+        },
+        "military_readiness": {
+          "score": 17.55,
+          "weight_pct": 20,
+          "country_a_mil_pct": 1.71,
+          "country_b_mil_pct": 2.5,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 77.5,
+          "weight_pct": 10,
+          "bloc_a": "SCO",
+          "bloc_b": "Western-Aligned",
+          "cyber_baseline": 90
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.41
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.19
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.99
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.83
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.64
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.66
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.86
+        }
+      ],
+      "coordinates": {
+        "a": [
+          35.8617,
+          104.1954
+        ],
+        "b": [
+          23.6978,
+          120.9605
+        ]
+      }
+    },
+    {
+      "id": "US-CN",
+      "country_a": "US",
+      "country_b": "CN",
+      "country_a_name": "United States",
+      "country_b_name": "China",
+      "region": "Global / Indo-Pacific",
+      "historical_dispute": "Global Geopolitical Hegemony, Microchips & Indo-Pacific Freedom of Navigation",
+      "cri_score": 66.4,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 88.91,
+          "weight_pct": 40,
+          "avg_tone": -7.44,
+          "volume_index": 199
+        },
+        "economic_vulnerability": {
+          "score": 55.0,
+          "weight_pct": 30,
+          "trade_dependency": 45
+        },
+        "military_readiness": {
+          "score": 26.79,
+          "weight_pct": 20,
+          "country_a_mil_pct": 3.42,
+          "country_b_mil_pct": 1.71,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 89.5,
+          "weight_pct": 10,
+          "bloc_a": "NATO",
+          "bloc_b": "SCO",
+          "cyber_baseline": 84
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -6.98
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.66
+        },
+        {
+          "day_offset": 5,
+          "tone": -8.0
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.82
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.03
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.58
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.75
+        }
+      ],
+      "coordinates": {
+        "a": [
+          37.0902,
+          -95.7129
+        ],
+        "b": [
+          35.8617,
+          104.1954
+        ]
+      }
+    },
+    {
+      "id": "VE-GY",
+      "country_a": "VE",
+      "country_b": "GY",
+      "country_a_name": "Venezuela",
+      "country_b_name": "Guyana",
+      "region": "Latin America",
+      "historical_dispute": "Essequibo Oil-Rich Border Territory Claim",
+      "cri_score": 64.5,
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "components": {
+        "media_tension": {
+          "score": 77.56,
+          "weight_pct": 40,
+          "avg_tone": -5.09,
+          "volume_index": 145
+        },
+        "economic_vulnerability": {
+          "score": 90.0,
+          "weight_pct": 30,
+          "trade_dependency": 10
+        },
+        "military_readiness": {
+          "score": 0.0,
+          "weight_pct": 20,
+          "country_a_mil_pct": 0.5,
+          "country_b_mil_pct": 0.87,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 64.5,
+          "weight_pct": 10,
+          "bloc_a": "Non-Aligned / Russo-Cuban Ally",
+          "bloc_b": "Western-Partner",
+          "cyber_baseline": 64
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -5.1
+        },
+        {
+          "day_offset": 6,
+          "tone": -4.86
+        },
+        {
+          "day_offset": 5,
+          "tone": -4.38
+        },
+        {
+          "day_offset": 4,
+          "tone": -4.88
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.11
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.0
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.56
+        }
+      ],
+      "coordinates": {
+        "a": [
+          6.4238,
+          -66.5897
+        ],
+        "b": [
+          4.8604,
+          -58.9302
+        ]
+      }
+    },
+    {
+      "id": "GR-TR",
+      "country_a": "GR",
+      "country_b": "TR",
+      "country_a_name": "Greece",
+      "country_b_name": "Turkey",
+      "region": "Eastern Mediterranean",
+      "historical_dispute": "Aegean Airspace, EEZ Maritime Borders & Continental Shelf",
+      "cri_score": 59.6,
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "components": {
+        "media_tension": {
+          "score": 80.41,
+          "weight_pct": 40,
+          "avg_tone": -5.48,
+          "volume_index": 157
+        },
+        "economic_vulnerability": {
+          "score": 62.0,
+          "weight_pct": 30,
+          "trade_dependency": 38
+        },
+        "military_readiness": {
+          "score": 24.33,
+          "weight_pct": 20,
+          "country_a_mil_pct": 3.13,
+          "country_b_mil_pct": 1.92,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 40.0,
+          "weight_pct": 10,
+          "bloc_a": "NATO",
+          "bloc_b": "NATO",
+          "cyber_baseline": 55
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -5.93
+        },
+        {
+          "day_offset": 6,
+          "tone": -4.91
+        },
+        {
+          "day_offset": 5,
+          "tone": -4.81
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.68
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.02
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.63
+        },
+        {
+          "day_offset": 1,
+          "tone": -4.98
+        }
+      ],
+      "coordinates": {
+        "a": [
+          39.0742,
+          21.8243
+        ],
+        "b": [
+          38.9637,
+          35.2433
+        ]
+      }
+    }
+  ],
+  "country_profiles": {
+    "UA": {
+      "code": "UA",
+      "iso3": "UKR",
+      "name": "Ukraine",
+      "lat": 48.3794,
+      "lon": 31.1656,
+      "military_bloc": "Western-Aligned",
+      "cyber_baseline": 88,
+      "military_gdp_pct": 34.48,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 34.4815297701892
+        },
+        {
+          "year": "2023",
+          "value": 36.5281725077224
+        },
+        {
+          "year": "2022",
+          "value": 25.6424104715416
+        },
+        {
+          "year": "2021",
+          "value": 3.42549199562857
+        },
+        {
+          "year": "2020",
+          "value": 4.40031470276707
+        }
+      ],
+      "gdp_usd": 214233312784.4,
+      "max_risk_score": 94.4,
+      "avg_risk_score": 94.4,
+      "primary_adversary_code": "RU",
+      "primary_adversary_name": "Russia",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "UA-RU"
+      ]
+    },
+    "RU": {
+      "code": "RU",
+      "iso3": "RUS",
+      "name": "Russia",
+      "lat": 61.524,
+      "lon": 105.3188,
+      "military_bloc": "CSTO",
+      "cyber_baseline": 94,
+      "military_gdp_pct": 5.9,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 5.9
+        }
+      ],
+      "gdp_usd": 2021421000000,
+      "max_risk_score": 94.4,
+      "avg_risk_score": 88.6,
+      "primary_adversary_code": "UA",
+      "primary_adversary_name": "Ukraine",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "UA-RU",
+        "US-RU"
+      ]
+    },
+    "IL": {
+      "code": "IL",
+      "iso3": "ISR",
+      "name": "Israel",
+      "lat": 31.0461,
+      "lon": 34.8516,
+      "military_bloc": "Major Non-NATO Ally",
+      "cyber_baseline": 82,
+      "military_gdp_pct": 8.78,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 8.77671668977531
+        },
+        {
+          "year": "2023",
+          "value": 5.38479973351622
+        },
+        {
+          "year": "2022",
+          "value": 4.43301220057923
+        },
+        {
+          "year": "2021",
+          "value": 4.9349458892043
+        },
+        {
+          "year": "2020",
+          "value": 5.27626408809404
+        }
+      ],
+      "gdp_usd": 610777842873.59,
+      "max_risk_score": 89.2,
+      "avg_risk_score": 88.7,
+      "primary_adversary_code": "IR",
+      "primary_adversary_name": "Iran",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "IL-IR",
+        "IL-LB"
+      ]
+    },
+    "IR": {
+      "code": "IR",
+      "iso3": "IRN",
+      "name": "Iran",
+      "lat": 32.4279,
+      "lon": 53.688,
+      "military_bloc": "SCO / Resistance Axis",
+      "cyber_baseline": 86,
+      "military_gdp_pct": 2.01,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.01043175751636
+        },
+        {
+          "year": "2023",
+          "value": 2.35179187276968
+        },
+        {
+          "year": "2022",
+          "value": 2.11062130699384
+        },
+        {
+          "year": "2021",
+          "value": 2.22394282528392
+        },
+        {
+          "year": "2020",
+          "value": 2.17701027609522
+        }
+      ],
+      "gdp_usd": 362682115433.36,
+      "max_risk_score": 89.2,
+      "avg_risk_score": 89.2,
+      "primary_adversary_code": "IL",
+      "primary_adversary_name": "Israel",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "IL-IR"
+      ]
+    },
+    "CN": {
+      "code": "CN",
+      "iso3": "CHN",
+      "name": "China",
+      "lat": 35.8617,
+      "lon": 104.1954,
+      "military_bloc": "SCO",
+      "cyber_baseline": 89,
+      "military_gdp_pct": 1.71,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 1.71129740345228
+        },
+        {
+          "year": "2023",
+          "value": 1.66484889659813
+        },
+        {
+          "year": "2022",
+          "value": 1.63053389156959
+        },
+        {
+          "year": "2021",
+          "value": 1.60525971842503
+        },
+        {
+          "year": "2020",
+          "value": 1.75669947098837
+        }
+      ],
+      "gdp_usd": 19498039388042.6,
+      "max_risk_score": 66.6,
+      "avg_risk_score": 66.5,
+      "primary_adversary_code": "TW",
+      "primary_adversary_name": "Taiwan",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "CN-TW",
+        "US-CN"
+      ]
+    },
+    "TW": {
+      "code": "TW",
+      "iso3": "TWN",
+      "name": "Taiwan",
+      "lat": 23.6978,
+      "lon": 120.9605,
+      "military_bloc": "Western-Aligned",
+      "cyber_baseline": 85,
+      "military_gdp_pct": 2.5,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.5
+        }
+      ],
+      "gdp_usd": 756000000000,
+      "max_risk_score": 66.6,
+      "avg_risk_score": 66.6,
+      "primary_adversary_code": "CN",
+      "primary_adversary_name": "China",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "CN-TW"
+      ]
+    },
+    "US": {
+      "code": "US",
+      "iso3": "USA",
+      "name": "United States",
+      "lat": 37.0902,
+      "lon": -95.7129,
+      "military_bloc": "NATO",
+      "cyber_baseline": 78,
+      "military_gdp_pct": 3.42,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 3.41921653228044
+        },
+        {
+          "year": "2023",
+          "value": 3.304441637598
+        },
+        {
+          "year": "2022",
+          "value": 3.30947715843109
+        },
+        {
+          "year": "2021",
+          "value": 3.40451991574826
+        },
+        {
+          "year": "2020",
+          "value": 3.64518757294704
+        }
+      ],
+      "gdp_usd": 30769700000000.0,
+      "max_risk_score": 82.7,
+      "avg_risk_score": 74.6,
+      "primary_adversary_code": "RU",
+      "primary_adversary_name": "Russia",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "US-RU",
+        "US-CN"
+      ]
+    },
+    "KP": {
+      "code": "KP",
+      "iso3": "PRK",
+      "name": "North Korea",
+      "lat": 40.3399,
+      "lon": 127.5101,
+      "military_bloc": "Independent / Sino-Russian Ally",
+      "cyber_baseline": 92,
+      "military_gdp_pct": 16.0,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 16.0
+        }
+      ],
+      "gdp_usd": 28000000000,
+      "max_risk_score": 91.6,
+      "avg_risk_score": 91.6,
+      "primary_adversary_code": "KR",
+      "primary_adversary_name": "South Korea",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "KP-KR"
+      ]
+    },
+    "KR": {
+      "code": "KR",
+      "iso3": "KOR",
+      "name": "South Korea",
+      "lat": 35.9078,
+      "lon": 127.7669,
+      "military_bloc": "Major Non-NATO Ally",
+      "cyber_baseline": 70,
+      "military_gdp_pct": 2.56,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.56205259386748
+        },
+        {
+          "year": "2023",
+          "value": 2.59925771052554
+        },
+        {
+          "year": "2022",
+          "value": 2.57642560395009
+        },
+        {
+          "year": "2021",
+          "value": 2.61904941244001
+        },
+        {
+          "year": "2020",
+          "value": 2.64297706902012
+        }
+      ],
+      "gdp_usd": 1872374961553.15,
+      "max_risk_score": 91.6,
+      "avg_risk_score": 91.6,
+      "primary_adversary_code": "KP",
+      "primary_adversary_name": "North Korea",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "KP-KR"
+      ]
+    },
+    "IN": {
+      "code": "IN",
+      "iso3": "IND",
+      "name": "India",
+      "lat": 20.5937,
+      "lon": 78.9629,
+      "military_bloc": "QUAD / Non-Aligned",
+      "cyber_baseline": 68,
+      "military_gdp_pct": 2.27,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.2712033218142
+        },
+        {
+          "year": "2023",
+          "value": 2.35679426678262
+        },
+        {
+          "year": "2022",
+          "value": 2.38309809835882
+        },
+        {
+          "year": "2021",
+          "value": 2.46874153034185
+        },
+        {
+          "year": "2020",
+          "value": 2.80361581112679
+        }
+      ],
+      "gdp_usd": 3956067115771.63,
+      "max_risk_score": 71.3,
+      "avg_risk_score": 71.3,
+      "primary_adversary_code": "PK",
+      "primary_adversary_name": "Pakistan",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "IN-PK"
+      ]
+    },
+    "PK": {
+      "code": "PK",
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "lat": 30.3753,
+      "lon": 69.3451,
+      "military_bloc": "Major Non-NATO Ally / SCO",
+      "cyber_baseline": 74,
+      "military_gdp_pct": 2.67,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.66760037007452
+        },
+        {
+          "year": "2023",
+          "value": 2.88079974069692
+        },
+        {
+          "year": "2022",
+          "value": 3.17683202352522
+        },
+        {
+          "year": "2021",
+          "value": 3.38923879613996
+        },
+        {
+          "year": "2020",
+          "value": 3.48667909020303
+        }
+      ],
+      "gdp_usd": 407307214476.22,
+      "max_risk_score": 71.3,
+      "avg_risk_score": 71.3,
+      "primary_adversary_code": "IN",
+      "primary_adversary_name": "India",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "IN-PK"
+      ]
+    },
+    "AM": {
+      "code": "AM",
+      "iso3": "ARM",
+      "name": "Armenia",
+      "lat": 40.0691,
+      "lon": 45.0382,
+      "military_bloc": "CSTO",
+      "cyber_baseline": 65,
+      "military_gdp_pct": 5.48,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 5.48174920349075
+        },
+        {
+          "year": "2023",
+          "value": 5.50629814850566
+        },
+        {
+          "year": "2022",
+          "value": 4.08174595925594
+        },
+        {
+          "year": "2021",
+          "value": 4.46514475903396
+        },
+        {
+          "year": "2020",
+          "value": 4.98254372367497
+        }
+      ],
+      "gdp_usd": 29243452882.35,
+      "max_risk_score": 80.2,
+      "avg_risk_score": 80.2,
+      "primary_adversary_code": "AZ",
+      "primary_adversary_name": "Azerbaijan",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "AM-AZ"
+      ]
+    },
+    "AZ": {
+      "code": "AZ",
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "lat": 40.1431,
+      "lon": 47.5769,
+      "military_bloc": "Non-Aligned / Turkish Ally",
+      "cyber_baseline": 68,
+      "military_gdp_pct": 4.99,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 4.99292395978321
+        },
+        {
+          "year": "2023",
+          "value": 4.92241403839666
+        },
+        {
+          "year": "2022",
+          "value": 3.79537025080483
+        },
+        {
+          "year": "2021",
+          "value": 4.93051740712765
+        },
+        {
+          "year": "2020",
+          "value": 5.24152602506817
+        }
+      ],
+      "gdp_usd": 75937647058.82,
+      "max_risk_score": 80.2,
+      "avg_risk_score": 80.2,
+      "primary_adversary_code": "AM",
+      "primary_adversary_name": "Armenia",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "AM-AZ"
+      ]
+    },
+    "TR": {
+      "code": "TR",
+      "iso3": "TUR",
+      "name": "Turkey",
+      "lat": 38.9637,
+      "lon": 35.2433,
+      "military_bloc": "NATO",
+      "cyber_baseline": 72,
+      "military_gdp_pct": 1.92,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 1.92255231276371
+        },
+        {
+          "year": "2023",
+          "value": 1.71991880187465
+        },
+        {
+          "year": "2022",
+          "value": 1.65879843534611
+        },
+        {
+          "year": "2021",
+          "value": 1.85888321091456
+        },
+        {
+          "year": "2020",
+          "value": 2.19555218691023
+        }
+      ],
+      "gdp_usd": 1597293229287.0,
+      "max_risk_score": 59.6,
+      "avg_risk_score": 59.6,
+      "primary_adversary_code": "GR",
+      "primary_adversary_name": "Greece",
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "involved_pair_ids": [
+        "GR-TR"
+      ]
+    },
+    "GR": {
+      "code": "GR",
+      "iso3": "GRC",
+      "name": "Greece",
+      "lat": 39.0742,
+      "lon": 21.8243,
+      "military_bloc": "NATO",
+      "cyber_baseline": 58,
+      "military_gdp_pct": 3.13,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 3.12797536550149
+        },
+        {
+          "year": "2023",
+          "value": 2.88325472633445
+        },
+        {
+          "year": "2022",
+          "value": 4.00035246143373
+        },
+        {
+          "year": "2021",
+          "value": 3.80247367841764
+        },
+        {
+          "year": "2020",
+          "value": 3.02310765728834
+        }
+      ],
+      "gdp_usd": 280635521324.44,
+      "max_risk_score": 59.6,
+      "avg_risk_score": 59.6,
+      "primary_adversary_code": "TR",
+      "primary_adversary_name": "Turkey",
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "involved_pair_ids": [
+        "GR-TR"
+      ]
+    },
+    "LB": {
+      "code": "LB",
+      "iso3": "LBN",
+      "name": "Lebanon",
+      "lat": 33.8547,
+      "lon": 35.8623,
+      "military_bloc": "Non-Aligned / Resistance Axis",
+      "cyber_baseline": 76,
+      "military_gdp_pct": 2.59,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.58828538225203
+        },
+        {
+          "year": "2023",
+          "value": 1.62409234575544
+        },
+        {
+          "year": "2022",
+          "value": 1.39503764342103
+        },
+        {
+          "year": "2021",
+          "value": 1.60905429967969
+        },
+        {
+          "year": "2020",
+          "value": 3.02665836499332
+        }
+      ],
+      "gdp_usd": 25971643441.34,
+      "max_risk_score": 88.1,
+      "avg_risk_score": 88.1,
+      "primary_adversary_code": "IL",
+      "primary_adversary_name": "Israel",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "IL-LB"
+      ]
+    },
+    "SY": {
+      "code": "SY",
+      "iso3": "SYR",
+      "name": "Syria",
+      "lat": 34.8021,
+      "lon": 38.9968,
+      "military_bloc": "Resistance Axis",
+      "cyber_baseline": 80,
+      "military_gdp_pct": 4.06,
+      "military_history": [
+        {
+          "year": "2010",
+          "value": 4.05614173609585
+        },
+        {
+          "year": "2009",
+          "value": 4.02770775856936
+        },
+        {
+          "year": "2008",
+          "value": 3.5523398057458
+        },
+        {
+          "year": "2007",
+          "value": 4.10054365333056
+        },
+        {
+          "year": "2006",
+          "value": 4.39444682311126
+        }
+      ],
+      "gdp_usd": 23737634644.4,
+      "max_risk_score": 20.0,
+      "avg_risk_score": 20.0,
+      "primary_adversary_code": "None",
+      "primary_adversary_name": "None",
+      "threat_level": "LOW",
+      "defcon": 5,
+      "color": "#00ff88",
+      "status_tr": "Düşük Tehdit / İstikrarlı",
+      "involved_pair_ids": []
+    },
+    "SA": {
+      "code": "SA",
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "lat": 23.8859,
+      "lon": 45.0792,
+      "military_bloc": "Major Non-NATO Ally",
+      "cyber_baseline": 69,
+      "military_gdp_pct": 7.3,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 7.2981029390103
+        },
+        {
+          "year": "2023",
+          "value": 7.28424248969983
+        },
+        {
+          "year": "2022",
+          "value": 6.39742215278993
+        },
+        {
+          "year": "2021",
+          "value": 7.22921983667662
+        },
+        {
+          "year": "2020",
+          "value": 8.7921741101353
+        }
+      ],
+      "gdp_usd": 1276942933333.33,
+      "max_risk_score": 82.7,
+      "avg_risk_score": 82.7,
+      "primary_adversary_code": "YE",
+      "primary_adversary_name": "Yemen",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "YE-SA"
+      ]
+    },
+    "YE": {
+      "code": "YE",
+      "iso3": "YEM",
+      "name": "Yemen",
+      "lat": 15.5527,
+      "lon": 48.5164,
+      "military_bloc": "Resistance Axis (Houthi control)",
+      "cyber_baseline": 75,
+      "military_gdp_pct": 3.97,
+      "military_history": [
+        {
+          "year": "2014",
+          "value": 3.96689083277903
+        },
+        {
+          "year": "2013",
+          "value": 4.07952717554633
+        },
+        {
+          "year": "2012",
+          "value": 4.57388404478979
+        },
+        {
+          "year": "2011",
+          "value": 4.92646180284206
+        },
+        {
+          "year": "2010",
+          "value": 4.68555712379286
+        }
+      ],
+      "gdp_usd": 21606160663.03,
+      "max_risk_score": 82.7,
+      "avg_risk_score": 82.7,
+      "primary_adversary_code": "SA",
+      "primary_adversary_name": "Saudi Arabia",
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "involved_pair_ids": [
+        "YE-SA"
+      ]
+    },
+    "RS": {
+      "code": "RS",
+      "iso3": "SRB",
+      "name": "Serbia",
+      "lat": 44.0165,
+      "lon": 21.0059,
+      "military_bloc": "Non-Aligned / Russo-friendly",
+      "cyber_baseline": 62,
+      "military_gdp_pct": 2.6,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 2.59513983105714
+        },
+        {
+          "year": "2023",
+          "value": 2.20807318692135
+        },
+        {
+          "year": "2022",
+          "value": 2.17267406821898
+        },
+        {
+          "year": "2021",
+          "value": 2.72904089938996
+        },
+        {
+          "year": "2020",
+          "value": 2.29536613396667
+        }
+      ],
+      "gdp_usd": 99953324472.9,
+      "max_risk_score": 67.8,
+      "avg_risk_score": 67.8,
+      "primary_adversary_code": "XK",
+      "primary_adversary_name": "Kosovo",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "RS-XK"
+      ]
+    },
+    "XK": {
+      "code": "XK",
+      "iso3": "XKX",
+      "name": "Kosovo",
+      "lat": 42.6026,
+      "lon": 20.903,
+      "military_bloc": "Western-Protected",
+      "cyber_baseline": 60,
+      "military_gdp_pct": 1.48,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 1.47659639574127
+        },
+        {
+          "year": "2023",
+          "value": 1.27351351798076
+        },
+        {
+          "year": "2022",
+          "value": 1.15004614573509
+        },
+        {
+          "year": "2021",
+          "value": 0.845929878221182
+        },
+        {
+          "year": "2020",
+          "value": 1.02303890223714
+        }
+      ],
+      "gdp_usd": 12456403306.82,
+      "max_risk_score": 67.8,
+      "avg_risk_score": 67.8,
+      "primary_adversary_code": "RS",
+      "primary_adversary_name": "Serbia",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "RS-XK"
+      ]
+    },
+    "VE": {
+      "code": "VE",
+      "iso3": "VEN",
+      "name": "Venezuela",
+      "lat": 6.4238,
+      "lon": -66.5897,
+      "military_bloc": "Non-Aligned / Russo-Cuban Ally",
+      "cyber_baseline": 67,
+      "military_gdp_pct": 0.5,
+      "military_history": [
+        {
+          "year": "2023",
+          "value": 0.500704497643446
+        },
+        {
+          "year": "2022",
+          "value": 0.649886788939365
+        },
+        {
+          "year": "2021",
+          "value": 0.313630729266034
+        },
+        {
+          "year": "2020",
+          "value": 1.57552271230291
+        },
+        {
+          "year": "2019",
+          "value": 1.79230375763991
+        }
+      ],
+      "gdp_usd": 99661244155.63,
+      "max_risk_score": 64.5,
+      "avg_risk_score": 64.5,
+      "primary_adversary_code": "GY",
+      "primary_adversary_name": "Guyana",
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "involved_pair_ids": [
+        "VE-GY"
+      ]
+    },
+    "GY": {
+      "code": "GY",
+      "iso3": "GUY",
+      "name": "Guyana",
+      "lat": 4.8604,
+      "lon": -58.9302,
+      "military_bloc": "Western-Partner",
+      "cyber_baseline": 45,
+      "military_gdp_pct": 0.87,
+      "military_history": [
+        {
+          "year": "2024",
+          "value": 0.868162254451279
+        },
+        {
+          "year": "2023",
+          "value": 0.640353101540134
+        },
+        {
+          "year": "2022",
+          "value": 0.601394233025198
+        },
+        {
+          "year": "2021",
+          "value": 0.954930861063661
+        },
+        {
+          "year": "2020",
+          "value": 1.40257741131547
+        }
+      ],
+      "gdp_usd": 27097477218.23,
+      "max_risk_score": 64.5,
+      "avg_risk_score": 64.5,
+      "primary_adversary_code": "VE",
+      "primary_adversary_name": "Venezuela",
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "involved_pair_ids": [
+        "VE-GY"
+      ]
+    }
+  }
+}

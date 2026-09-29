@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEGIS // Küresel Jeopolitik Savaş ve Çatışma Riski Analiz Paneli</title>
+  <meta name="description" content="İki ülke arasındaki savaş ve sıcak çatışma riskini çoklu parametrelerle (GDELT, World Bank, İttifaklar, Siber Tehditler) tahmin eden interaktif siber-analiz paneli.">
+
+  <!-- Google Fonts: Orbitron, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Leaflet Map CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- Custom Cyber-War Room CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Scanlines & Ambient Effects -->
+  <div class="scanlines"></div>
+
+  <!-- TOP HUD: Global Operations Telemetry -->
+  <header class="top-hud">
+    <div class="brand-section">
+      <div class="radar-logo" title="AEGIS Geopolitical Defense Matrix"></div>
+      <div class="brand-text">
+        <h1>AEGIS // WAR-ROOM <span class="version-tag">v2.4 SEC-OPS</span></h1>
+        <p>Global Geopolitical Conflict & Kinetic Escalation Early Warning System</p>
+      </div>
+    </div>
+
+    <!-- Live Telemetry Counters -->
+    <div class="hud-telemetry">
+      <div class="defcon-banner" id="defconGlobalBanner">
+        <i class="fa-solid fa-triangle-exclamation" style="color: var(--neon-red);"></i>
+        <div class="defcon-indicator" id="defconLevelText">DEFCON 1</div>
+        <div class="defcon-desc" id="defconStatusText">KRİTİK SICAK ÇATIŞMA TEHDİDİ</div>
+      </div>
+
+      <div class="metric-pill">
+        <span class="label">Kritik Sıcak Bölge</span>
+        <span class="val danger" id="statCriticalCount">--</span>
+      </div>
+
+      <div class="metric-pill">
+        <span class="label">İzlenen Kriz Çifti</span>
+        <span class="val" id="statMonitoredPairs">--</span>
+      </div>
+
+      <div class="metric-pill">
+        <span class="label">Küresel Gerilim Ort.</span>
+        <span class="val" id="statGlobalAvg">-- / 100</span>
+      </div>
+
+      <!-- Live Clock & Status -->
+      <div class="system-clock">
+        <span class="live-dot" title="Canlı Veri Yayını Aktif"></span>
+        <span id="liveUtcClock">00:00:00 UTC</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN WAR ROOM GRID -->
+  <main class="war-room-container">
+    
+    <!-- LEFT PANEL: Conflict Hotspots Matrix -->
+    <aside class="hotspot-panel">
+      <div class="panel-header">
+        <div class="panel-header-title">
+          <h2><i class="fa-solid fa-crosshairs" style="color: var(--neon-cyan); margin-right: 6px;"></i>Kriz Matrisi</h2>
+          <span class="panel-count" id="activePairsCount">0 Aktif</span>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="search-filter-box">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="pairSearchInput" placeholder="Ülke, bölge veya kod ara (Örn: UA, Tayvan, Orta Doğu)...">
+          </div>
+          <div class="filter-pills">
+            <button class="filter-btn active" data-filter="ALL">TÜMÜ</button>
+            <button class="filter-btn crit" data-filter="CRITICAL">KRİTİK (DEFCON 1)</button>
+            <button class="filter-btn" data-filter="HIGH">YÜKSEK (DEFCON 2)</button>
+            <button class="filter-btn" data-filter="ELEVATED">GERGİN (DEFCON 3)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrollable Hotspots List -->
+      <div class="pairs-list-container" id="pairsListContainer">
+        <!-- Javascript dinamik olarak kartları dolduracak -->
+        <div style="padding: 2rem; text-align: center; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.8rem;">
+          <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--neon-cyan);"></i>
+          <br>Jeopolitik veriler yükleniyor...
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER PANEL: Interactive World Tactical Map -->
+    <section class="map-panel">
+      <div class="map-floating-overlay">
+        <h3><i class="fa-solid fa-satellite-dish" style="margin-right: 5px;"></i>KİNETİK ÇATIŞMA VE VEKTÖR RADARI</h3>
+        <p>Ülke merkezlerine ve kriz bağlantı vektörlerine tıklayarak istihbarat detaylarını görüntüleyin</p>
+      </div>
+
+      <!-- Map Container -->
+      <div id="map"></div>
+
+      <!-- Legend -->
+      <div class="map-legend">
+        <div class="map-legend-title">Savaş Riski İndeksi (CRI)</div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: var(--neon-red); box-shadow: 0 0 8px var(--neon-red);"></span>
+          <span>80 - 100 // DEFCON 1 - Kritik Sıcak Çatışma</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: var(--neon-orange); box-shadow: 0 0 8px var(--neon-orange);"></span>
+          <span>65 - 79.9 // DEFCON 2 - Yüksek Askeri Yığınak</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: var(--neon-amber); box-shadow: 0 0 8px var(--neon-amber);"></span>
+          <span>45 - 64.9 // DEFCON 3 - Yükseltilmiş Gerilim</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: var(--neon-cyan); box-shadow: 0 0 8px var(--neon-cyan);"></span>
+          <span>25 - 44.9 // DEFCON 4 - Orta Düzey Sürtüşme</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: var(--neon-green); box-shadow: 0 0 8px var(--neon-green);"></span>
+          <span>0 - 24.9 // DEFCON 5 - Düşük / İstikrarlı</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL: Deep Intelligence Dossier & Analytics -->
+    <aside class="intelligence-sidebar">
+      <div class="sidebar-header">
+        <h2><i class="fa-solid fa-shield-halved" style="color: var(--neon-red); margin-right: 6px;"></i>İstihbarat Dosyası</h2>
+        <div class="sidebar-tab-pills">
+          <button class="sidebar-tab-btn active" id="tabPairBtn">Kriz Çifti</button>
+          <button class="sidebar-tab-btn" id="tabCountryBtn">Ülke Profili</button>
+        </div>
+      </div>
+
+      <div class="sidebar-content" id="sidebarDetailContent">
+        <!-- Javascript dinamik olarak dolduracak -->
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- External JavaScript Libraries -->
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Chart.js 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+  <!-- Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
