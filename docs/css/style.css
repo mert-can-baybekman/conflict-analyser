@@ -245,7 +245,9 @@ body::before {
 .war-room-container {
   display: grid;
   grid-template-columns: 360px 1fr 420px;
+  grid-template-rows: 100%;
   height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
   position: relative;
   overflow: hidden;
 }
@@ -256,11 +258,16 @@ body::before {
   border-right: 1px solid var(--border-dim);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+  overflow: hidden;
   z-index: 1005;
   backdrop-filter: blur(16px);
 }
 
 .panel-header {
+  flex-shrink: 0;
   padding: 1rem;
   border-bottom: 1px solid var(--border-dim);
   background: rgba(14, 18, 27, 0.7);
@@ -362,12 +369,19 @@ body::before {
 
 /* Pairs List Scrollable Container */
 .pairs-list-container {
-  flex: 1;
+  flex: 1 1 0;
+  min-height: 0;
+  height: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.4) rgba(10, 13, 20, 0.8);
 }
 
 .pair-card {
@@ -636,12 +650,16 @@ body::before {
   border-left: 1px solid var(--border-dim);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+  overflow: hidden;
   z-index: 1005;
-  overflow-y: auto;
   backdrop-filter: blur(16px);
 }
 
 .sidebar-header {
+  flex-shrink: 0;
   padding: 1.25rem 1rem 1rem 1rem;
   border-bottom: 1px solid var(--border-dim);
   background: rgba(14, 18, 27, 0.7);
@@ -682,10 +700,19 @@ body::before {
 }
 
 .sidebar-content {
+  flex: 1 1 0;
+  min-height: 0;
+  height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.4) rgba(10, 13, 20, 0.8);
 }
 
 /* Hero Risk Score Box */
@@ -961,21 +988,24 @@ body::before {
 
 /* Custom Scrollbars */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(10, 13, 20, 0.6);
+  background: rgba(10, 13, 20, 0.85);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 3px;
+  background: rgba(0, 229, 255, 0.35);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 229, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
 }
 
 /* Responsive adjustments */
