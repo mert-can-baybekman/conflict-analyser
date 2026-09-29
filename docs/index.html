@@ -66,14 +66,19 @@
   </header>
 
   <!-- MAIN WAR ROOM GRID -->
-  <main class="war-room-container">
+  <main class="war-room-container" id="warRoomContainer">
     
     <!-- LEFT PANEL: Conflict Hotspots Matrix -->
-    <aside class="hotspot-panel">
+    <aside class="hotspot-panel" id="hotspotPanel">
       <div class="panel-header">
         <div class="panel-header-title">
           <h2><i class="fa-solid fa-crosshairs" style="color: var(--neon-cyan); margin-right: 6px;"></i>Kriz Matrisi</h2>
-          <span class="panel-count" id="activePairsCount">0 Aktif</span>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="panel-count" id="activePairsCount">0 Aktif</span>
+            <button class="panel-collapse-trigger" id="btnCollapseLeft" title="Kriz Matrisini Gizle">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
         </div>
 
         <!-- Search & Filter Controls -->
@@ -102,7 +107,19 @@
     </aside>
 
     <!-- CENTER PANEL: Interactive World Tactical Map -->
-    <section class="map-panel">
+    <section class="map-panel" id="mapPanel">
+      
+      <!-- Floating Panel Toggle Triggers (Yüzen Kontrol Düğmeleri) -->
+      <button class="floating-panel-toggle left" id="floatingToggleLeft" title="Kriz Matrisi Panelini Göster/Gizle">
+        <i class="fa-solid fa-table-list"></i>
+        <span>KRİZ MATRİSİ</span>
+      </button>
+
+      <button class="floating-panel-toggle right" id="floatingToggleRight" title="İstihbarat Dosyası Panelini Göster/Gizle">
+        <i class="fa-solid fa-chart-column"></i>
+        <span>İSTİHBARAT DOSYASI</span>
+      </button>
+
       <div class="map-floating-overlay">
         <h3><i class="fa-solid fa-satellite-dish" style="margin-right: 5px;"></i>KİNETİK ÇATIŞMA VE VEKTÖR RADARI</h3>
         <p>Ülke merkezlerine ve kriz bağlantı vektörlerine tıklayarak istihbarat detaylarını görüntüleyin</p>
@@ -138,12 +155,17 @@
     </section>
 
     <!-- RIGHT PANEL: Deep Intelligence Dossier & Analytics -->
-    <aside class="intelligence-sidebar">
+    <aside class="intelligence-sidebar" id="intelligenceSidebar">
       <div class="sidebar-header">
-        <h2><i class="fa-solid fa-shield-halved" style="color: var(--neon-red); margin-right: 6px;"></i>İstihbarat Dosyası</h2>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="panel-collapse-trigger" id="btnCollapseRight" title="İstihbarat Dosyasını Gizle">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <h2><i class="fa-solid fa-shield-halved" style="color: var(--neon-red); margin-right: 6px;"></i>İstihbarat</h2>
+        </div>
         <div class="sidebar-tab-pills">
           <button class="sidebar-tab-btn active" id="tabPairBtn">Kriz Çifti</button>
-          <button class="sidebar-tab-btn" id="tabCountryBtn">Ülke Profili</button>
+          <button class="sidebar-tab-btn" id="tabCountryBtn">Ülke</button>
         </div>
       </div>
 

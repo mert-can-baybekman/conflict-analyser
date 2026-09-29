@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   initFilterControls();
   initTabs();
+  initPanelToggles();
   loadData();
 });
 
@@ -54,6 +55,93 @@ function initClock() {
   }
   update();
   setInterval(update, 1000);
+}
+
+// ==========================================================================
+// COLLAPSIBLE PANELS LOGIC (SOL VE SAĞ PANEL AÇMA/KAPAMA)
+// ==========================================================================
+function initPanelToggles() {
+  const btnCollapseLeft = document.getElementById('btnCollapseLeft');
+  const floatingToggleLeft = document.getElementById('floatingToggleLeft');
+  const btnCollapseRight = document.getElementById('btnCollapseRight');
+  const floatingToggleRight = document.getElementById('floatingToggleRight');
+
+  if (btnCollapseLeft) {
+    btnCollapseLeft.addEventListener('click', () => toggleLeftPanel());
+  }
+  if (floatingToggleLeft) {
+    floatingToggleLeft.addEventListener('click', () => toggleLeftPanel());
+  }
+
+  if (btnCollapseRight) {
+    btnCollapseRight.addEventListener('click', () => toggleRightPanel());
+  }
+  if (floatingToggleRight) {
+    floatingToggleRight.addEventListener('click', () => toggleRightPanel());
+  }
+}
+
+function toggleLeftPanel(forceOpen = null) {
+  const panel = document.getElementById('hotspotPanel');
+  const floatBtn = document.getElementById('floatingToggleLeft');
+  if (!panel) return;
+
+  const willOpen = forceOpen !== null ? forceOpen : panel.classList.contains('collapsed');
+
+  if (willOpen) {
+    panel.classList.remove('collapsed');
+    if (floatBtn) {
+      floatBtn.classList.remove('panel-closed');
+      floatBtn.innerHTML = '<i class="fa-solid fa-table-list"></i><span>KRİZ MATRİSİ</span>';
+      floatBtn.title = "Kriz Matrisini Gizle";
+    }
+  } else {
+    panel.classList.add('collapsed');
+    if (floatBtn) {
+      floatBtn.classList.add('panel-closed');
+      floatBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i><span>MATRİSİ AÇ</span>';
+      floatBtn.title = "Kriz Matrisini Aç";
+    }
+  }
+
+  triggerMapResize();
+}
+
+function toggleRightPanel(forceOpen = null) {
+  const panel = document.getElementById('intelligenceSidebar');
+  const floatBtn = document.getElementById('floatingToggleRight');
+  if (!panel) return;
+
+  const willOpen = forceOpen !== null ? forceOpen : panel.classList.contains('collapsed');
+
+  if (willOpen) {
+    panel.classList.remove('collapsed');
+    if (floatBtn) {
+      floatBtn.classList.remove('panel-closed');
+      floatBtn.innerHTML = '<i class="fa-solid fa-chart-column"></i><span>İSTİHBARAT DOSYASI</span>';
+      floatBtn.title = "İstihbarat Dosyasını Gizle";
+    }
+  } else {
+    panel.classList.add('collapsed');
+    if (floatBtn) {
+      floatBtn.classList.add('panel-closed');
+      floatBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i><span>İSTİHBARATI AÇ</span>';
+      floatBtn.title = "İstihbarat Dosyasını Aç";
+    }
+  }
+
+  triggerMapResize();
+}
+
+function triggerMapResize() {
+  if (!State.map) return;
+  // Panel animasyonu esnasında ve bittiğinde Leaflet viewport'unu yenile
+  setTimeout(() => {
+    State.map.invalidateSize({ pan: false });
+  }, 60);
+  setTimeout(() => {
+    State.map.invalidateSize({ pan: false });
+  }, 380);
 }
 
 // ==========================================================================
@@ -363,6 +451,12 @@ function selectPair(pairId) {
     }
   });
 
+  // Sağ panel kapalıysa otomatik aç
+  const rightPanel = document.getElementById('intelligenceSidebar');
+  if (rightPanel && rightPanel.classList.contains('collapsed')) {
+    toggleRightPanel(true);
+  }
+
   // İstihbarat Dosyasını Doldur
   renderPairDossier(pair);
 }
@@ -374,6 +468,12 @@ function selectCountry(countryCode) {
 
   State.activeCountry = country;
   State.activeTab = 'country';
+
+  // Sağ panel kapalıysa otomatik aç
+  const rightPanel = document.getElementById('intelligenceSidebar');
+  if (rightPanel && rightPanel.classList.contains('collapsed')) {
+    toggleRightPanel(true);
+  }
 
   updateTabUI();
   State.map.flyTo([country.lat, country.lon], 5, { duration: 1.2 });
