@@ -15,6 +15,7 @@ const State = {
   map: null,
   markers: {},
   polylines: {},
+  cyprusOverlayGroup: null,
   charts: {
     tone: null,
     military: null,
@@ -373,6 +374,12 @@ function renderMapElements() {
 function renderCyprusTacticalOverlay() {
   if (!State.map) return;
 
+  if (!State.cyprusOverlayGroup) {
+    State.cyprusOverlayGroup = L.layerGroup();
+  } else {
+    State.cyprusOverlayGroup.clearLayers();
+  }
+
   // BM Yeşil Hat & KKTC Fiili Sınırı (126 Noktalı Gerçek Jeodezik Sınır Hattı)
   const realGreenLineCoords = [
     [35.1816, 32.7114], [35.1753, 32.7106], [35.1634, 32.7127], [35.1534, 32.7206],
@@ -418,17 +425,17 @@ function renderCyprusTacticalOverlay() {
     color: '#00e5ff',
     weight: 2,
     dashArray: '4, 4',
-    opacity: 0.9,
+    opacity: 0.85,
     lineCap: 'round',
     lineJoin: 'round'
-  }).addTo(State.map);
+  });
 
-  L.polyline(kokkinaCoords, {
+  const kokkinaLine = L.polyline(kokkinaCoords, {
     color: '#00e5ff',
     weight: 2,
     dashArray: '4, 4',
     opacity: 0.85
-  }).addTo(State.map);
+  });
 
   greenLine.bindTooltip(`
     <div style="font-family: var(--font-mono); font-size: 0.75rem;">
@@ -437,32 +444,59 @@ function renderCyprusTacticalOverlay() {
     </div>
   `, { sticky: true });
 
-  // Harita üzerinde Diğer Ülkelerle Birebir Aynı Tonda ve Boyutta Ülke İsimleri
-  const trncLabel = L.marker([35.25, 33.62], {
+  // Ülke İsimleri: Harita üzerindeki diğer ülke isimleriyle (CartoDB Dark Matter) birebir aynı ton, boyut ve font
+  const trncLabel = L.marker([35.26, 33.50], {
     icon: L.divIcon({
       className: 'map-country-label',
-      html: '<div class="map-country-label-text">KUZEY KIBRIS TÜRK CUMHURİYETİ</div>',
-      iconSize: [260, 20],
-      iconAnchor: [130, 10]
+      html: '<div id="trncMapLabelText" class="map-country-label-text">KKTC</div>',
+      iconSize: [140, 18],
+      iconAnchor: [70, 9]
     })
-  }).addTo(State.map);
-
-  trncLabel.on('click', () => {
-    selectCountry('TRNC');
   });
+  trncLabel.on('click', () => selectCountry('TRNC'));
 
-  const cyLabel = L.marker([34.90, 33.15], {
+  const cyLabel = L.marker([34.88, 33.15], {
     icon: L.divIcon({
       className: 'map-country-label',
-      html: '<div class="map-country-label-text">GÜNEY KIBRIS</div>',
-      iconSize: [160, 20],
-      iconAnchor: [80, 10]
+      html: '<div id="cyMapLabelText" class="map-country-label-text">GÜNEY KIBRIS</div>',
+      iconSize: [140, 18],
+      iconAnchor: [70, 9]
     })
-  }).addTo(State.map);
-
-  cyLabel.on('click', () => {
-    selectCountry('CY');
   });
+  cyLabel.on('click', () => selectCountry('CY'));
+
+  State.cyprusOverlayGroup.addLayer(greenLine);
+  State.cyprusOverlayGroup.addLayer(kokkinaLine);
+  State.cyprusOverlayGroup.addLayer(trncLabel);
+  State.cyprusOverlayGroup.addLayer(cyLabel);
+
+  // Zoom seviyesi kontrolü:
+  // Diğer ülkeler gibi harita uzakken (yalnızca kıtalar veya büyük bölgeler görünürken - zoom < 7) GİZLE,
+  // Harita adaya/bölgeye yaklaştırıldığında (zoom >= 7) GÖSTER.
+  function updateCyprusVisibility() {
+    if (!State.map || !State.cyprusOverlayGroup) return;
+    const zoom = State.map.getZoom();
+
+    if (zoom < 7) {
+      if (State.map.hasLayer(State.cyprusOverlayGroup)) {
+        State.map.removeLayer(State.cyprusOverlayGroup);
+      }
+    } else {
+      if (!State.map.hasLayer(State.cyprusOverlayGroup)) {
+        State.map.addLayer(State.cyprusOverlayGroup);
+      }
+      const trncEl = document.getElementById('trncMapLabelText');
+      if (trncEl) {
+        trncEl.textContent = zoom >= 8 ? 'KUZEY KIBRIS (KKTC)' : 'KKTC';
+      }
+    }
+  }
+
+  State.map.off('zoomend', updateCyprusVisibility);
+  State.map.on('zoomend', updateCyprusVisibility);
+
+  // İlk durumu zoom seviyesine göre uygula
+  updateCyprusVisibility();
 }
 
 // ==========================================================================

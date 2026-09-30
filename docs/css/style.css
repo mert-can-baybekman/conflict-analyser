@@ -740,23 +740,21 @@ body::before {
 }
 
 .map-country-label-text {
-  font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.76rem;
-  font-weight: 700;
-  color: #9cb3c9;
-  letter-spacing: 2.2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4e5a68; /* Birebir CartoDB Dark Matter harita yazı tonu */
+  letter-spacing: 2px;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.9);
-  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
+  text-shadow: none !important; /* Parlama ve gölge yok, haritayla birebir bütünleşik */
+  transition: color 0.2s ease;
   user-select: none;
 }
 
 .map-country-label-text:hover {
-  color: #ffffff;
-  text-shadow: 0 0 12px rgba(0, 229, 255, 0.8), 0 1px 4px rgba(0, 0, 0, 1);
-  transform: scale(1.04);
+  color: #8da1b5;
 }
 
 /* Leaflet Custom UI overrides */
