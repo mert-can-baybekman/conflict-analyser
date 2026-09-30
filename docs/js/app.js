@@ -373,67 +373,94 @@ function renderMapElements() {
 function renderCyprusTacticalOverlay() {
   if (!State.map) return;
 
-  // BM Yeşil Hat (Green Line Buffer Zone) Ateşkes Hattı
-  const greenLineCoords = [
-    [35.155, 32.75],
-    [35.148, 33.05],
-    [35.174, 33.36],
-    [35.085, 33.72],
-    [35.025, 33.98]
+  // BM Yeşil Hat & KKTC Fiili Sınırı (126 Noktalı Gerçek Jeodezik Sınır Hattı)
+  const realGreenLineCoords = [
+    [35.1816, 32.7114], [35.1753, 32.7106], [35.1634, 32.7127], [35.1534, 32.7206],
+    [35.1432, 32.7315], [35.1378, 32.744],  [35.1338, 32.7596], [35.1268, 32.7948],
+    [35.1166, 32.8143], [35.1002, 32.8299], [35.0799, 32.8392], [35.0792, 32.8549],
+    [35.0878, 32.861],  [35.098, 32.8704],  [35.1002, 32.8767], [35.1026, 32.8884],
+    [35.1002, 32.9118], [35.0987, 32.9227], [35.1002, 32.9344], [35.1026, 32.9469],
+    [35.1128, 32.9695], [35.1314, 32.9891], [35.1416, 33.014],  [35.1494, 33.0311],
+    [35.1557, 33.0561], [35.1651, 33.0787], [35.1697, 33.0958], [35.1588, 33.1091],
+    [35.1603, 33.1201], [35.1806, 33.1419], [35.1853, 33.1575], [35.1899, 33.1903],
+    [35.1791, 33.224],  [35.1713, 33.2402], [35.169, 33.2708],  [35.1627, 33.2996],
+    [35.1619, 33.3153], [35.1666, 33.3262], [35.1666, 33.3448], [35.1743, 33.3745],
+    [35.1783, 33.3808], [35.1884, 33.3885], [35.1977, 33.4003], [35.1994, 33.4135],
+    [35.1939, 33.4214], [35.1822, 33.4245], [35.1681, 33.4277], [35.1487, 33.44],
+    [35.1322, 33.451],  [35.1042, 33.4698], [35.0948, 33.4768], [35.0768, 33.4768],
+    [35.0574, 33.4768], [35.0385, 33.4713], [35.0144, 33.4658], [35.0051, 33.4666],
+    [35.0027, 33.4768], [35.009, 33.4768],  [35.0191, 33.4783], [35.0316, 33.4814],
+    [35.0385, 33.4862], [35.0566, 33.4939], [35.0613, 33.5002], [35.0613, 33.5072],
+    [35.0597, 33.5164], [35.0558, 33.529],  [35.0566, 33.5352], [35.0667, 33.5368],
+    [35.0731, 33.5407], [35.0731, 33.5469], [35.0667, 33.5555], [35.0582, 33.5618],
+    [35.0433, 33.5664], [35.0355, 33.579],  [35.0339, 33.5915], [35.0417, 33.6023],
+    [35.0464, 33.6141], [35.0308, 33.6375], [35.0308, 33.6522], [35.0324, 33.6561],
+    [35.0308, 33.671],  [35.0339, 33.6794], [35.037, 33.6756],  [35.0464, 33.6741],
+    [35.0558, 33.6789], [35.0582, 33.6945], [35.0667, 33.7053], [35.0667, 33.7147],
+    [35.0628, 33.7194], [35.041, 33.7115],  [35.0293, 33.7076], [35.0324, 33.7185],
+    [35.0472, 33.7397], [35.0316, 33.7661], [35.0402, 33.7755], [35.0385, 33.7865],
+    [35.0402, 33.7944], [35.0526, 33.7983], [35.0667, 33.824],  [35.0636, 33.8349],
+    [35.0566, 33.8427], [35.0582, 33.8536], [35.0667, 33.8669], [35.0731, 33.8716],
+    [35.0768, 33.8769], [35.0855, 33.8716], [35.1002, 33.8716], [35.119, 33.8762],
+    [35.119, 33.8894],  [35.1105, 33.8918], [35.1088, 33.8988], [35.0995, 33.9036],
+    [35.0964, 33.9059], [35.0909, 33.9059], [35.0909, 33.9136], [35.0807, 33.9215],
+    [35.0731, 33.9144], [35.0707, 33.9082], [35.0691, 33.9065], [35.0659, 33.9129],
+    [35.0628, 33.9254], [35.0597, 33.9411], [35.0683, 33.9629], [35.0597, 34.0089],
+    [35.0638, 34.0123]
   ];
 
-  const greenLine = L.polyline(greenLineCoords, {
+  // Erenköy (Kokkina) Askeri Eksklav Sınırı
+  const kokkinaCoords = [
+    [35.1871, 32.6407], [35.1786, 32.6019], [35.1634, 32.6152]
+  ];
+
+  const greenLine = L.polyline(realGreenLineCoords, {
     color: '#00e5ff',
-    weight: 2.5,
-    dashArray: '4, 5',
-    opacity: 0.9
+    weight: 2,
+    dashArray: '4, 4',
+    opacity: 0.9,
+    lineCap: 'round',
+    lineJoin: 'round'
+  }).addTo(State.map);
+
+  L.polyline(kokkinaCoords, {
+    color: '#00e5ff',
+    weight: 2,
+    dashArray: '4, 4',
+    opacity: 0.85
   }).addTo(State.map);
 
   greenLine.bindTooltip(`
     <div style="font-family: var(--font-mono); font-size: 0.75rem;">
-      <strong style="color: var(--neon-cyan);">BM Yeşil Hat (UN Buffer Zone)</strong><br>
+      <strong style="color: var(--neon-cyan);">BM Yeşil Hat / KKTC Fiili Sınırı</strong><br>
       <span style="color: #bbb;">1974 Ateşkes Hattı & BM Barış Gücü Tampon Bölgesi</span>
     </div>
   `, { sticky: true });
 
-  // Harita üzerinde Kuzey Kıbrıs Türk Cumhuriyeti ve Güney Kıbrıs Taktik Rozetleri
-  const trncBadge = L.marker([35.26, 33.55], {
+  // Harita üzerinde Diğer Ülkelerle Birebir Aynı Tonda ve Boyutta Ülke İsimleri
+  const trncLabel = L.marker([35.25, 33.62], {
     icon: L.divIcon({
-      className: 'tactical-zone-badge',
-      html: '<div class="tactical-badge-inner trnc-badge"><i class="fa-solid fa-shield-halved"></i> KKTC</div>',
-      iconSize: [85, 24],
-      iconAnchor: [42, 12]
+      className: 'map-country-label',
+      html: '<div class="map-country-label-text">KUZEY KIBRIS TÜRK CUMHURİYETİ</div>',
+      iconSize: [260, 20],
+      iconAnchor: [130, 10]
     })
   }).addTo(State.map);
 
-  trncBadge.bindTooltip(`
-    <div style="font-family: var(--font-mono); font-size: 0.75rem;">
-      <strong style="color: #ff4d6d;">Kuzey Kıbrıs Türk Cumhuriyeti (KKTC)</strong><br>
-      <span style="color: #fff;">Başkent: Lefkoşa</span>
-    </div>
-  `);
-
-  trncBadge.on('click', () => {
+  trncLabel.on('click', () => {
     selectCountry('TRNC');
   });
 
-  const cyBadge = L.marker([34.92, 33.15], {
+  const cyLabel = L.marker([34.90, 33.15], {
     icon: L.divIcon({
-      className: 'tactical-zone-badge',
-      html: '<div class="tactical-badge-inner cy-badge"><i class="fa-solid fa-flag"></i> GÜNEY KIBRIS</div>',
-      iconSize: [120, 24],
-      iconAnchor: [60, 12]
+      className: 'map-country-label',
+      html: '<div class="map-country-label-text">GÜNEY KIBRIS</div>',
+      iconSize: [160, 20],
+      iconAnchor: [80, 10]
     })
   }).addTo(State.map);
 
-  cyBadge.bindTooltip(`
-    <div style="font-family: var(--font-mono); font-size: 0.75rem;">
-      <strong style="color: #00d4ff;">Güney Kıbrıs</strong><br>
-      <span style="color: #fff;">Başkent: Güney Lefkoşa</span>
-    </div>
-  `);
-
-  cyBadge.on('click', () => {
+  cyLabel.on('click', () => {
     selectCountry('CY');
   });
 }

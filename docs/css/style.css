@@ -730,44 +730,33 @@ body::before {
   border-radius: 50%;
 }
 
-/* Tactical Territory Badges (Cyprus Demarcation) */
-.tactical-zone-badge {
+/* Cartographic Country Labels (Matches Map's Native Typography) */
+.map-country-label {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
   pointer-events: auto;
   cursor: pointer;
 }
 
-.tactical-badge-inner {
-  font-family: var(--font-hud);
-  font-size: 0.65rem;
-  letter-spacing: 0.8px;
+.map-country-label-text {
+  font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.76rem;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
+  color: #9cb3c9;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.9);
+  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
+  user-select: none;
 }
 
-.tactical-badge-inner:hover {
-  transform: scale(1.08);
-}
-
-.trnc-badge {
-  background: rgba(220, 20, 50, 0.88);
-  border: 1px solid #ff4d6d;
+.map-country-label-text:hover {
   color: #ffffff;
-  text-shadow: 0 0 6px rgba(255, 77, 109, 0.8);
-}
-
-.cy-badge {
-  background: rgba(0, 130, 210, 0.88);
-  border: 1px solid #00d4ff;
-  color: #ffffff;
-  text-shadow: 0 0 6px rgba(0, 212, 255, 0.8);
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.8), 0 1px 4px rgba(0, 0, 0, 1);
+  transform: scale(1.04);
 }
 
 /* Leaflet Custom UI overrides */
