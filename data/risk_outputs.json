@@ -2,11 +2,11 @@
   "metadata": {
     "title": "Global Cyber-Geopolitical Conflict Risk Matrix",
     "version": "2.0.0",
-    "generated_at": "2026-09-29T19:31:14.169547+00:00",
+    "generated_at": "2026-09-30T08:54:06.087672+00:00",
     "pipeline_status": "OPERATIONAL",
-    "global_cri_average": 76.9,
+    "global_cri_average": 76.8,
     "critical_count": 9,
-    "high_count": 7,
+    "high_count": 8,
     "monitored_pairs": 19,
     "monitored_countries": 34
   },
@@ -19,17 +19,17 @@
       "country_b_name": "Rusya",
       "region": "Doğu Avrupa",
       "historical_dispute": "Aktif Topyekûn Savaş & Toprak Egemenliği",
-      "cri_score": 93.8,
+      "cri_score": 93.9,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 92.42,
+          "score": 92.55,
           "weight_pct": 40,
-          "avg_tone": -8.25,
-          "volume_index": 195
+          "avg_tone": -8.28,
+          "volume_index": 208
         },
         "economic_vulnerability": {
           "score": 96.0,
@@ -54,31 +54,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -8.87
+          "tone": -9.04
         },
         {
           "day_offset": 6,
-          "tone": -7.55
+          "tone": -8.23
         },
         {
           "day_offset": 5,
-          "tone": -7.96
+          "tone": -8.54
         },
         {
           "day_offset": 4,
-          "tone": -8.34
+          "tone": -7.57
         },
         {
           "day_offset": 3,
-          "tone": -7.96
+          "tone": -8.46
         },
         {
           "day_offset": 2,
-          "tone": -7.89
+          "tone": -8.17
         },
         {
           "day_offset": 1,
-          "tone": -8.59
+          "tone": -8.37
         }
       ],
       "coordinates": {
@@ -93,87 +93,6 @@
       }
     },
     {
-      "id": "ET-ER",
-      "country_a": "ET",
-      "country_b": "ER",
-      "country_a_name": "Etiyopya",
-      "country_b_name": "Eritre",
-      "region": "Afrika Boynuzu",
-      "historical_dispute": "Tigray Sonrası Sınır Gerilimi & Asseb Limanı Askeri Hareketliliği",
-      "cri_score": 91.5,
-      "threat_level": "CRITICAL",
-      "defcon": 1,
-      "color": "#ff1a1a",
-      "status_tr": "Kritik Savaş Tehdidi",
-      "components": {
-        "media_tension": {
-          "score": 88.13,
-          "weight_pct": 40,
-          "avg_tone": -7.26,
-          "volume_index": 207
-        },
-        "economic_vulnerability": {
-          "score": 96.0,
-          "weight_pct": 30,
-          "trade_dependency": 4
-        },
-        "military_readiness": {
-          "score": 100.0,
-          "weight_pct": 20,
-          "country_a_mil_pct": 0.65,
-          "country_b_mil_pct": 20.87,
-          "world_avg": 2.3
-        },
-        "cyber_and_alliances": {
-          "score": 74.5,
-          "weight_pct": 10,
-          "bloc_a": "BRICS / IGAD",
-          "bloc_b": "Bağımsız / Rusya Dostu",
-          "cyber_baseline": 84
-        }
-      },
-      "tone_history": [
-        {
-          "day_offset": 7,
-          "tone": -6.6
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.15
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.83
-        },
-        {
-          "day_offset": 4,
-          "tone": -7.39
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.37
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.99
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.28
-        }
-      ],
-      "coordinates": {
-        "a": [
-          9.032,
-          38.7469
-        ],
-        "b": [
-          15.3229,
-          38.9251
-        ]
-      }
-    },
-    {
       "id": "KP-KR",
       "country_a": "KP",
       "country_b": "KR",
@@ -181,17 +100,17 @@
       "country_b_name": "Güney Kore",
       "region": "Kore Yarımadası",
       "historical_dispute": "Askerden Arındırılmış Bölge (DMZ), Nükleer Testler & Balistik Füzeler",
-      "cri_score": 91.0,
+      "cri_score": 93.0,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 85.74,
+          "score": 90.55,
           "weight_pct": 40,
-          "avg_tone": -6.71,
-          "volume_index": 208
+          "avg_tone": -7.82,
+          "volume_index": 198
         },
         "economic_vulnerability": {
           "score": 97.0,
@@ -216,31 +135,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -6.39
+          "tone": -8.46
         },
         {
           "day_offset": 6,
-          "tone": -6.92
+          "tone": -7.81
         },
         {
           "day_offset": 5,
-          "tone": -6.19
+          "tone": -8.42
         },
         {
           "day_offset": 4,
-          "tone": -6.37
+          "tone": -7.43
         },
         {
           "day_offset": 3,
-          "tone": -6.51
+          "tone": -7.96
         },
         {
           "day_offset": 2,
-          "tone": -6.55
+          "tone": -7.05
         },
         {
           "day_offset": 1,
-          "tone": -6.26
+          "tone": -7.45
         }
       ],
       "coordinates": {
@@ -255,6 +174,87 @@
       }
     },
     {
+      "id": "ET-ER",
+      "country_a": "ET",
+      "country_b": "ER",
+      "country_a_name": "Etiyopya",
+      "country_b_name": "Eritre",
+      "region": "Afrika Boynuzu",
+      "historical_dispute": "Tigray Sonrası Sınır Gerilimi & Asseb Limanı Askeri Hareketliliği",
+      "cri_score": 90.8,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 86.44,
+          "weight_pct": 40,
+          "avg_tone": -6.87,
+          "volume_index": 205
+        },
+        "economic_vulnerability": {
+          "score": 96.0,
+          "weight_pct": 30,
+          "trade_dependency": 4
+        },
+        "military_readiness": {
+          "score": 100.0,
+          "weight_pct": 20,
+          "country_a_mil_pct": 0.65,
+          "country_b_mil_pct": 20.87,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 74.5,
+          "weight_pct": 10,
+          "bloc_a": "BRICS / IGAD",
+          "bloc_b": "Bağımsız / Rusya Dostu",
+          "cyber_baseline": 84
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -6.35
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.88
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.19
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.5
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.14
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.74
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.12
+        }
+      ],
+      "coordinates": {
+        "a": [
+          9.032,
+          38.7469
+        ],
+        "b": [
+          15.3229,
+          38.9251
+        ]
+      }
+    },
+    {
       "id": "IL-IR",
       "country_a": "IL",
       "country_b": "IR",
@@ -262,17 +262,17 @@
       "country_b_name": "İran",
       "region": "Orta Doğu",
       "historical_dispute": "Bölgesel Hegemonya, Nükleer Caydırıcılık & Vekalet Savaşı",
-      "cri_score": 89.6,
+      "cri_score": 89.8,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 89.08,
+          "score": 89.56,
           "weight_pct": 40,
-          "avg_tone": -7.48,
-          "volume_index": 216
+          "avg_tone": -7.59,
+          "volume_index": 229
         },
         "economic_vulnerability": {
           "score": 99.0,
@@ -297,31 +297,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -7.3
+          "tone": -7.68
         },
         {
           "day_offset": 6,
-          "tone": -7.21
+          "tone": -8.27
         },
         {
           "day_offset": 5,
-          "tone": -8.23
+          "tone": -7.27
         },
         {
           "day_offset": 4,
-          "tone": -6.86
+          "tone": -7.35
         },
         {
           "day_offset": 3,
-          "tone": -6.76
+          "tone": -7.77
         },
         {
           "day_offset": 2,
-          "tone": -7.94
+          "tone": -7.69
         },
         {
           "day_offset": 1,
-          "tone": -7.44
+          "tone": -8.21
         }
       ],
       "coordinates": {
@@ -336,87 +336,6 @@
       }
     },
     {
-      "id": "IL-LB",
-      "country_a": "IL",
-      "country_b": "LB",
-      "country_a_name": "İsrail",
-      "country_b_name": "Lübnan",
-      "region": "Orta Doğu",
-      "historical_dispute": "Güney Sınırı & Hizbullah Kinetik Çatışmaları",
-      "cri_score": 88.7,
-      "threat_level": "CRITICAL",
-      "defcon": 1,
-      "color": "#ff1a1a",
-      "status_tr": "Kritik Savaş Tehdidi",
-      "components": {
-        "media_tension": {
-          "score": 88.21,
-          "weight_pct": 40,
-          "avg_tone": -7.28,
-          "volume_index": 201
-        },
-        "economic_vulnerability": {
-          "score": 98.0,
-          "weight_pct": 30,
-          "trade_dependency": 2
-        },
-        "military_readiness": {
-          "score": 82.5,
-          "weight_pct": 20,
-          "country_a_mil_pct": 8.78,
-          "country_b_mil_pct": 2.59,
-          "world_avg": 2.3
-        },
-        "cyber_and_alliances": {
-          "score": 75.0,
-          "weight_pct": 10,
-          "bloc_a": "Başlıca NATO Dışı Müttefik",
-          "bloc_b": "Direniş Ekseni / Hizbullah",
-          "cyber_baseline": 85
-        }
-      },
-      "tone_history": [
-        {
-          "day_offset": 7,
-          "tone": -7.81
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.28
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.48
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.75
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.3
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.77
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.92
-        }
-      ],
-      "coordinates": {
-        "a": [
-          32.0853,
-          34.7818
-        ],
-        "b": [
-          33.8938,
-          35.5018
-        ]
-      }
-    },
-    {
       "id": "MA-DZ",
       "country_a": "MA",
       "country_b": "DZ",
@@ -424,17 +343,17 @@
       "country_b_name": "Cezayir",
       "region": "Kuzey Afrika / Mağrip",
       "historical_dispute": "Batı Sahra (Polisario), Kapalı Sınırlar & Silahlanma Yarışı",
-      "cri_score": 88.4,
+      "cri_score": 88.9,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 86.78,
+          "score": 88.04,
           "weight_pct": 40,
-          "avg_tone": -6.95,
-          "volume_index": 203
+          "avg_tone": -7.24,
+          "volume_index": 184
         },
         "economic_vulnerability": {
           "score": 98.0,
@@ -459,31 +378,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -6.53
+          "tone": -6.58
         },
         {
           "day_offset": 6,
-          "tone": -6.98
+          "tone": -6.5
         },
         {
           "day_offset": 5,
-          "tone": -7.03
+          "tone": -7.14
         },
         {
           "day_offset": 4,
-          "tone": -6.75
+          "tone": -7.64
         },
         {
           "day_offset": 3,
-          "tone": -7.53
+          "tone": -7.76
         },
         {
           "day_offset": 2,
-          "tone": -7.12
+          "tone": -7.01
         },
         {
           "day_offset": 1,
-          "tone": -6.38
+          "tone": -7.88
         }
       ],
       "coordinates": {
@@ -498,6 +417,87 @@
       }
     },
     {
+      "id": "IL-LB",
+      "country_a": "IL",
+      "country_b": "LB",
+      "country_a_name": "İsrail",
+      "country_b_name": "Lübnan",
+      "region": "Orta Doğu",
+      "historical_dispute": "Güney Sınırı & Hizbullah Kinetik Çatışmaları",
+      "cri_score": 88.3,
+      "threat_level": "CRITICAL",
+      "defcon": 1,
+      "color": "#ff1a1a",
+      "status_tr": "Kritik Savaş Tehdidi",
+      "components": {
+        "media_tension": {
+          "score": 87.26,
+          "weight_pct": 40,
+          "avg_tone": -7.06,
+          "volume_index": 192
+        },
+        "economic_vulnerability": {
+          "score": 98.0,
+          "weight_pct": 30,
+          "trade_dependency": 2
+        },
+        "military_readiness": {
+          "score": 82.5,
+          "weight_pct": 20,
+          "country_a_mil_pct": 8.78,
+          "country_b_mil_pct": 2.59,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 75.0,
+          "weight_pct": 10,
+          "bloc_a": "Başlıca NATO Dışı Müttefik",
+          "bloc_b": "Direniş Ekseni / Hizbullah",
+          "cyber_baseline": 85
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.17
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.6
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.51
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.79
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.55
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.22
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.65
+        }
+      ],
+      "coordinates": {
+        "a": [
+          32.0853,
+          34.7818
+        ],
+        "b": [
+          33.8938,
+          35.5018
+        ]
+      }
+    },
+    {
       "id": "US-RU",
       "country_a": "US",
       "country_b": "RU",
@@ -505,17 +505,17 @@
       "country_b_name": "Rusya",
       "region": "Küresel / Avrupa-Atlantik",
       "historical_dispute": "Stratejik Nükleer Denge, NATO Genişlemesi & Yaptırımlar",
-      "cri_score": 83.6,
+      "cri_score": 83.9,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 87.78,
+          "score": 88.52,
           "weight_pct": 40,
-          "avg_tone": -7.18,
-          "volume_index": 219
+          "avg_tone": -7.35,
+          "volume_index": 185
         },
         "economic_vulnerability": {
           "score": 91.0,
@@ -540,31 +540,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -7.69
+          "tone": -7.31
         },
         {
           "day_offset": 6,
-          "tone": -7.62
+          "tone": -7.67
         },
         {
           "day_offset": 5,
-          "tone": -7.96
+          "tone": -7.53
         },
         {
           "day_offset": 4,
-          "tone": -6.66
+          "tone": -8.07
         },
         {
           "day_offset": 3,
-          "tone": -6.95
+          "tone": -7.1
         },
         {
           "day_offset": 2,
-          "tone": -7.94
+          "tone": -6.69
         },
         {
           "day_offset": 1,
-          "tone": -6.43
+          "tone": -7.04
         }
       ],
       "coordinates": {
@@ -586,17 +586,17 @@
       "country_b_name": "Suudi Arabistan",
       "region": "Orta Doğu / Kızıldeniz",
       "historical_dispute": "Kızıldeniz Ticaret Yolları & Sınır Ötesi İHA/Füze Saldırıları",
-      "cri_score": 83.0,
+      "cri_score": 83.6,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 83.97,
+          "score": 85.61,
           "weight_pct": 40,
-          "avg_tone": -6.3,
-          "volume_index": 163
+          "avg_tone": -6.68,
+          "volume_index": 192
         },
         "economic_vulnerability": {
           "score": 94.0,
@@ -621,31 +621,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -5.59
+          "tone": -6.76
         },
         {
           "day_offset": 6,
-          "tone": -5.55
+          "tone": -6.58
         },
         {
           "day_offset": 5,
-          "tone": -6.66
+          "tone": -6.3
         },
         {
           "day_offset": 4,
-          "tone": -6.71
+          "tone": -7.23
         },
         {
           "day_offset": 3,
-          "tone": -5.86
+          "tone": -6.53
         },
         {
           "day_offset": 2,
-          "tone": -6.96
+          "tone": -6.42
         },
         {
           "day_offset": 1,
-          "tone": -5.65
+          "tone": -6.8
         }
       ],
       "coordinates": {
@@ -667,17 +667,17 @@
       "country_b_name": "Azerbaycan",
       "region": "Güney Kafkasya",
       "historical_dispute": "Karabağ & Zengezur Koridoru Sınır Gerilimleri",
-      "cri_score": 80.9,
+      "cri_score": 80.5,
       "threat_level": "CRITICAL",
       "defcon": 1,
       "color": "#ff1a1a",
       "status_tr": "Kritik Savaş Tehdidi",
       "components": {
         "media_tension": {
-          "score": 87.56,
+          "score": 86.65,
           "weight_pct": 40,
-          "avg_tone": -7.13,
-          "volume_index": 175
+          "avg_tone": -6.92,
+          "volume_index": 204
         },
         "economic_vulnerability": {
           "score": 92.0,
@@ -702,31 +702,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -6.56
+          "tone": -7.3
         },
         {
           "day_offset": 6,
-          "tone": -6.53
+          "tone": -7.63
         },
         {
           "day_offset": 5,
-          "tone": -7.02
+          "tone": -6.94
         },
         {
           "day_offset": 4,
-          "tone": -7.61
+          "tone": -6.57
         },
         {
           "day_offset": 3,
-          "tone": -7.27
+          "tone": -6.95
         },
         {
           "day_offset": 2,
-          "tone": -6.59
+          "tone": -6.33
         },
         {
           "day_offset": 1,
-          "tone": -7.33
+          "tone": -7.64
         }
       ],
       "coordinates": {
@@ -748,17 +748,17 @@
       "country_b_name": "Pakistan",
       "region": "Güney Asya",
       "historical_dispute": "Keşmir Kontrol Hattı & Nükleer Caydırıcılık Rekabeti",
-      "cri_score": 72.7,
+      "cri_score": 71.4,
       "threat_level": "HIGH",
       "defcon": 2,
       "color": "#ff5500",
       "status_tr": "Yüksek Çatışma Riski",
       "components": {
         "media_tension": {
-          "score": 87.61,
+          "score": 84.36,
           "weight_pct": 40,
-          "avg_tone": -7.14,
-          "volume_index": 191
+          "avg_tone": -6.39,
+          "volume_index": 198
         },
         "economic_vulnerability": {
           "score": 88.0,
@@ -783,31 +783,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -6.95
+          "tone": -7.09
         },
         {
           "day_offset": 6,
-          "tone": -7.44
+          "tone": -6.15
         },
         {
           "day_offset": 5,
-          "tone": -7.29
+          "tone": -5.81
         },
         {
           "day_offset": 4,
-          "tone": -7.46
+          "tone": -6.73
         },
         {
           "day_offset": 3,
-          "tone": -7.12
+          "tone": -5.75
         },
         {
           "day_offset": 2,
-          "tone": -7.68
+          "tone": -6.14
         },
         {
           "day_offset": 1,
-          "tone": -6.66
+          "tone": -5.93
         }
       ],
       "coordinates": {
@@ -822,168 +822,6 @@
       }
     },
     {
-      "id": "SD-SS",
-      "country_a": "SD",
-      "country_b": "SS",
-      "country_a_name": "Sudan",
-      "country_b_name": "Güney Sudan",
-      "region": "Doğu Afrika",
-      "historical_dispute": "Petrol Boru Hatları, Abyei Sınır İhtilafı & Mülteci Krizi",
-      "cri_score": 71.1,
-      "threat_level": "HIGH",
-      "defcon": 2,
-      "color": "#ff5500",
-      "status_tr": "Yüksek Çatışma Riski",
-      "components": {
-        "media_tension": {
-          "score": 86.22,
-          "weight_pct": 40,
-          "avg_tone": -6.82,
-          "volume_index": 182
-        },
-        "economic_vulnerability": {
-          "score": 92.0,
-          "weight_pct": 30,
-          "trade_dependency": 8
-        },
-        "military_readiness": {
-          "score": 10.47,
-          "weight_pct": 20,
-          "country_a_mil_pct": 0.93,
-          "country_b_mil_pct": 1.96,
-          "world_avg": 2.3
-        },
-        "cyber_and_alliances": {
-          "score": 69.5,
-          "weight_pct": 10,
-          "bloc_a": "Arap Birliği / Direniş",
-          "bloc_b": "Doğu Afrika Topluluğu",
-          "cyber_baseline": 74
-        }
-      },
-      "tone_history": [
-        {
-          "day_offset": 7,
-          "tone": -6.27
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.1
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.09
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.34
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.71
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.85
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.37
-        }
-      ],
-      "coordinates": {
-        "a": [
-          15.5007,
-          32.5599
-        ],
-        "b": [
-          4.8594,
-          31.5713
-        ]
-      }
-    },
-    {
-      "id": "CD-RW",
-      "country_a": "CD",
-      "country_b": "RW",
-      "country_a_name": "Demokratik Kongo Cumhuriyeti",
-      "country_b_name": "Ruanda",
-      "region": "Orta Afrika / Büyük Göller",
-      "historical_dispute": "M23 İsyancıları, Doğu Kongo Maden Bölgeleri & Sınır Çatışmaları",
-      "cri_score": 70.3,
-      "threat_level": "HIGH",
-      "defcon": 2,
-      "color": "#ff5500",
-      "status_tr": "Yüksek Çatışma Riski",
-      "components": {
-        "media_tension": {
-          "score": 87.17,
-          "weight_pct": 40,
-          "avg_tone": -7.04,
-          "volume_index": 194
-        },
-        "economic_vulnerability": {
-          "score": 88.0,
-          "weight_pct": 30,
-          "trade_dependency": 12
-        },
-        "military_readiness": {
-          "score": 9.54,
-          "weight_pct": 20,
-          "country_a_mil_pct": 1.8,
-          "country_b_mil_pct": 1.25,
-          "world_avg": 2.3
-        },
-        "cyber_and_alliances": {
-          "score": 71.5,
-          "weight_pct": 10,
-          "bloc_a": "Bağlantısız / SADC",
-          "bloc_b": "Doğu Afrika Topluluğu",
-          "cyber_baseline": 78
-        }
-      },
-      "tone_history": [
-        {
-          "day_offset": 7,
-          "tone": -7.68
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.28
-        },
-        {
-          "day_offset": 5,
-          "tone": -7.73
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.5
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.54
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.53
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.29
-        }
-      ],
-      "coordinates": {
-        "a": [
-          -4.4419,
-          15.2663
-        ],
-        "b": [
-          -1.9441,
-          30.0619
-        ]
-      }
-    },
-    {
       "id": "ET-SO",
       "country_a": "ET",
       "country_b": "SO",
@@ -991,17 +829,17 @@
       "country_b_name": "Somali",
       "region": "Afrika Boynuzu",
       "historical_dispute": "Somaliland Liman Anlaşması, Kızıldeniz Egemenliği & Ayrılıkçı Gerilim",
-      "cri_score": 70.1,
+      "cri_score": 70.5,
       "threat_level": "HIGH",
       "defcon": 2,
       "color": "#ff5500",
       "status_tr": "Yüksek Çatışma Riski",
       "components": {
         "media_tension": {
-          "score": 86.18,
+          "score": 87.3,
           "weight_pct": 40,
-          "avg_tone": -6.81,
-          "volume_index": 182
+          "avg_tone": -7.07,
+          "volume_index": 191
         },
         "economic_vulnerability": {
           "score": 90.0,
@@ -1026,31 +864,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -7.29
+          "tone": -7.03
         },
         {
           "day_offset": 6,
-          "tone": -7.1
+          "tone": -7.11
         },
         {
           "day_offset": 5,
-          "tone": -6.47
+          "tone": -6.88
         },
         {
           "day_offset": 4,
-          "tone": -6.93
+          "tone": -7.14
         },
         {
           "day_offset": 3,
-          "tone": -7.33
+          "tone": -6.97
         },
         {
           "day_offset": 2,
-          "tone": -6.14
+          "tone": -6.96
         },
         {
           "day_offset": 1,
-          "tone": -6.74
+          "tone": -7.72
         }
       ],
       "coordinates": {
@@ -1065,6 +903,168 @@
       }
     },
     {
+      "id": "SD-SS",
+      "country_a": "SD",
+      "country_b": "SS",
+      "country_a_name": "Sudan",
+      "country_b_name": "Güney Sudan",
+      "region": "Doğu Afrika",
+      "historical_dispute": "Petrol Boru Hatları, Abyei Sınır İhtilafı & Mülteci Krizi",
+      "cri_score": 69.3,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 81.58,
+          "weight_pct": 40,
+          "avg_tone": -5.75,
+          "volume_index": 191
+        },
+        "economic_vulnerability": {
+          "score": 92.0,
+          "weight_pct": 30,
+          "trade_dependency": 8
+        },
+        "military_readiness": {
+          "score": 10.47,
+          "weight_pct": 20,
+          "country_a_mil_pct": 0.93,
+          "country_b_mil_pct": 1.96,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 69.5,
+          "weight_pct": 10,
+          "bloc_a": "Arap Birliği / Direniş",
+          "bloc_b": "Doğu Afrika Topluluğu",
+          "cyber_baseline": 74
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -5.74
+        },
+        {
+          "day_offset": 6,
+          "tone": -5.48
+        },
+        {
+          "day_offset": 5,
+          "tone": -5.0
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.49
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.96
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.65
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.42
+        }
+      ],
+      "coordinates": {
+        "a": [
+          15.5007,
+          32.5599
+        ],
+        "b": [
+          4.8594,
+          31.5713
+        ]
+      }
+    },
+    {
+      "id": "CD-RW",
+      "country_a": "CD",
+      "country_b": "RW",
+      "country_a_name": "Demokratik Kongo Cumhuriyeti",
+      "country_b_name": "Ruanda",
+      "region": "Orta Afrika / Büyük Göller",
+      "historical_dispute": "M23 İsyancıları, Doğu Kongo Maden Bölgeleri & Sınır Çatışmaları",
+      "cri_score": 69.2,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 87.22,
+          "weight_pct": 40,
+          "avg_tone": -7.05,
+          "volume_index": 189
+        },
+        "economic_vulnerability": {
+          "score": 88.0,
+          "weight_pct": 30,
+          "trade_dependency": 12
+        },
+        "military_readiness": {
+          "score": 3.97,
+          "weight_pct": 20,
+          "country_a_mil_pct": 1.23,
+          "country_b_mil_pct": 1.25,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 71.5,
+          "weight_pct": 10,
+          "bloc_a": "Bağlantısız / SADC",
+          "bloc_b": "Doğu Afrika Topluluğu",
+          "cyber_baseline": 78
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -7.22
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.18
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.62
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.67
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.41
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.65
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.23
+        }
+      ],
+      "coordinates": {
+        "a": [
+          -4.4419,
+          15.2663
+        ],
+        "b": [
+          -1.9441,
+          30.0619
+        ]
+      }
+    },
+    {
       "id": "NE-NG",
       "country_a": "NE",
       "country_b": "NG",
@@ -1072,17 +1072,17 @@
       "country_b_name": "Nijerya",
       "region": "Batı Afrika / Sahel",
       "historical_dispute": "Sahel İttifakı (AES) Darbe Sonrası ECOWAS Askeri Müdahale Tehdidi",
-      "cri_score": 68.8,
+      "cri_score": 68.7,
       "threat_level": "HIGH",
       "defcon": 2,
       "color": "#ff5500",
       "status_tr": "Yüksek Çatışma Riski",
       "components": {
         "media_tension": {
-          "score": 81.63,
+          "score": 81.32,
           "weight_pct": 40,
-          "avg_tone": -5.76,
-          "volume_index": 179
+          "avg_tone": -5.69,
+          "volume_index": 158
         },
         "economic_vulnerability": {
           "score": 85.0,
@@ -1107,31 +1107,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -5.58
+          "tone": -6.23
         },
         {
           "day_offset": 6,
-          "tone": -5.02
+          "tone": -6.18
         },
         {
           "day_offset": 5,
-          "tone": -5.7
+          "tone": -5.45
         },
         {
           "day_offset": 4,
-          "tone": -6.19
+          "tone": -5.76
         },
         {
           "day_offset": 3,
-          "tone": -5.3
+          "tone": -5.13
         },
         {
           "day_offset": 2,
-          "tone": -6.36
+          "tone": -6.34
         },
         {
           "day_offset": 1,
-          "tone": -5.76
+          "tone": -5.83
         }
       ],
       "coordinates": {
@@ -1153,17 +1153,17 @@
       "country_b_name": "Kosova",
       "region": "Balkanlar",
       "historical_dispute": "Kuzey Kosova Egemenliği & Azınlık Hakları İhtilafı",
-      "cri_score": 67.9,
+      "cri_score": 66.3,
       "threat_level": "HIGH",
       "defcon": 2,
       "color": "#ff5500",
       "status_tr": "Yüksek Çatışma Riski",
       "components": {
         "media_tension": {
-          "score": 85.22,
+          "score": 81.45,
           "weight_pct": 40,
-          "avg_tone": -6.59,
-          "volume_index": 163
+          "avg_tone": -5.72,
+          "volume_index": 155
         },
         "economic_vulnerability": {
           "score": 78.0,
@@ -1188,31 +1188,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -6.15
+          "tone": -5.93
         },
         {
           "day_offset": 6,
-          "tone": -6.24
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.22
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.98
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.24
-        },
-        {
-          "day_offset": 2,
           "tone": -6.26
         },
         {
+          "day_offset": 5,
+          "tone": -5.44
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.2
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.95
+        },
+        {
+          "day_offset": 2,
+          "tone": -4.93
+        },
+        {
           "day_offset": 1,
-          "tone": -6.66
+          "tone": -5.89
         }
       ],
       "coordinates": {
@@ -1234,17 +1234,17 @@
       "country_b_name": "Tayvan",
       "region": "Doğu Asya",
       "historical_dispute": "Tayvan Boğazı Egemenliği & Deniz Hakimiyeti",
-      "cri_score": 65.9,
+      "cri_score": 65.4,
       "threat_level": "HIGH",
       "defcon": 2,
       "color": "#ff5500",
       "status_tr": "Yüksek Çatışma Riski",
       "components": {
         "media_tension": {
-          "score": 87.82,
+          "score": 86.61,
           "weight_pct": 40,
-          "avg_tone": -7.19,
-          "volume_index": 202
+          "avg_tone": -6.91,
+          "volume_index": 212
         },
         "economic_vulnerability": {
           "score": 65.0,
@@ -1269,31 +1269,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -6.84
+          "tone": -6.15
         },
         {
           "day_offset": 6,
-          "tone": -6.91
+          "tone": -6.66
         },
         {
           "day_offset": 5,
-          "tone": -6.72
+          "tone": -7.07
         },
         {
           "day_offset": 4,
-          "tone": -7.12
+          "tone": -7.5
         },
         {
           "day_offset": 3,
-          "tone": -6.57
+          "tone": -6.79
         },
         {
           "day_offset": 2,
-          "tone": -7.38
+          "tone": -6.18
         },
         {
           "day_offset": 1,
-          "tone": -6.63
+          "tone": -7.63
         }
       ],
       "coordinates": {
@@ -1308,87 +1308,6 @@
       }
     },
     {
-      "id": "US-CN",
-      "country_a": "US",
-      "country_b": "CN",
-      "country_a_name": "Amerika Birleşik Devletleri",
-      "country_b_name": "Çin",
-      "region": "Küresel / Hint-Pasifik",
-      "historical_dispute": "Mikroçip Rekabeti, Tayvan Güvencesi & Hint-Pasifik Seyrüsefer Serbestisi",
-      "cri_score": 63.9,
-      "threat_level": "ELEVATED",
-      "defcon": 3,
-      "color": "#ffaa00",
-      "status_tr": "Yükseltilmiş Gerilim",
-      "components": {
-        "media_tension": {
-          "score": 86.44,
-          "weight_pct": 40,
-          "avg_tone": -6.87,
-          "volume_index": 179
-        },
-        "economic_vulnerability": {
-          "score": 55.0,
-          "weight_pct": 30,
-          "trade_dependency": 45
-        },
-        "military_readiness": {
-          "score": 26.79,
-          "weight_pct": 20,
-          "country_a_mil_pct": 3.42,
-          "country_b_mil_pct": 1.71,
-          "world_avg": 2.3
-        },
-        "cyber_and_alliances": {
-          "score": 74.5,
-          "weight_pct": 10,
-          "bloc_a": "NATO",
-          "bloc_b": "Şanghay İşbirliği Örgütü",
-          "cyber_baseline": 84
-        }
-      },
-      "tone_history": [
-        {
-          "day_offset": 7,
-          "tone": -7.49
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.8
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.74
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.17
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.16
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.31
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.09
-        }
-      ],
-      "coordinates": {
-        "a": [
-          38.9072,
-          -77.0369
-        ],
-        "b": [
-          39.9042,
-          116.4074
-        ]
-      }
-    },
-    {
       "id": "VE-GY",
       "country_a": "VE",
       "country_b": "GY",
@@ -1396,17 +1315,17 @@
       "country_b_name": "Guyana",
       "region": "Latin Amerika",
       "historical_dispute": "Essequibo Petrol Bölgesi Sınır İhtilafı",
-      "cri_score": 63.9,
-      "threat_level": "ELEVATED",
-      "defcon": 3,
-      "color": "#ffaa00",
-      "status_tr": "Yükseltilmiş Gerilim",
+      "cri_score": 65.3,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
       "components": {
         "media_tension": {
-          "score": 76.21,
+          "score": 79.59,
           "weight_pct": 40,
-          "avg_tone": -5.21,
-          "volume_index": 137
+          "avg_tone": -5.29,
+          "volume_index": 158
         },
         "economic_vulnerability": {
           "score": 90.0,
@@ -1431,31 +1350,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -5.08
+          "tone": -5.81
         },
         {
           "day_offset": 6,
-          "tone": -4.43
+          "tone": -5.33
         },
         {
           "day_offset": 5,
-          "tone": -5.79
+          "tone": -5.85
         },
         {
           "day_offset": 4,
-          "tone": -5.74
+          "tone": -4.89
         },
         {
           "day_offset": 3,
-          "tone": -5.75
+          "tone": -5.36
         },
         {
           "day_offset": 2,
-          "tone": -5.88
+          "tone": -5.78
         },
         {
           "day_offset": 1,
-          "tone": -5.02
+          "tone": -4.87
         }
       ],
       "coordinates": {
@@ -1470,6 +1389,87 @@
       }
     },
     {
+      "id": "US-CN",
+      "country_a": "US",
+      "country_b": "CN",
+      "country_a_name": "Amerika Birleşik Devletleri",
+      "country_b_name": "Çin",
+      "region": "Küresel / Hint-Pasifik",
+      "historical_dispute": "Mikroçip Rekabeti, Tayvan Güvencesi & Hint-Pasifik Seyrüsefer Serbestisi",
+      "cri_score": 63.1,
+      "threat_level": "ELEVATED",
+      "defcon": 3,
+      "color": "#ffaa00",
+      "status_tr": "Yükseltilmiş Gerilim",
+      "components": {
+        "media_tension": {
+          "score": 84.44,
+          "weight_pct": 40,
+          "avg_tone": -6.41,
+          "volume_index": 197
+        },
+        "economic_vulnerability": {
+          "score": 55.0,
+          "weight_pct": 30,
+          "trade_dependency": 45
+        },
+        "military_readiness": {
+          "score": 26.79,
+          "weight_pct": 20,
+          "country_a_mil_pct": 3.42,
+          "country_b_mil_pct": 1.71,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 74.5,
+          "weight_pct": 10,
+          "bloc_a": "NATO",
+          "bloc_b": "Şanghay İşbirliği Örgütü",
+          "cyber_baseline": 84
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -5.75
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.75
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.49
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.66
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.24
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.47
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.08
+        }
+      ],
+      "coordinates": {
+        "a": [
+          38.9072,
+          -77.0369
+        ],
+        "b": [
+          39.9042,
+          116.4074
+        ]
+      }
+    },
+    {
       "id": "GR-TR",
       "country_a": "GR",
       "country_b": "TR",
@@ -1477,17 +1477,17 @@
       "country_b_name": "Türkiye",
       "region": "Doğu Akdeniz",
       "historical_dispute": "Ege Hava Sahası, MEB Deniz Sınırları & Kıta Sahanlığı",
-      "cri_score": 55.8,
+      "cri_score": 57.6,
       "threat_level": "ELEVATED",
       "defcon": 3,
       "color": "#ffaa00",
       "status_tr": "Yükseltilmiş Gerilim",
       "components": {
         "media_tension": {
-          "score": 70.94,
+          "score": 75.32,
           "weight_pct": 40,
-          "avg_tone": -4.64,
-          "volume_index": 125
+          "avg_tone": -4.79,
+          "volume_index": 141
         },
         "economic_vulnerability": {
           "score": 62.0,
@@ -1512,31 +1512,31 @@
       "tone_history": [
         {
           "day_offset": 7,
-          "tone": -5.22
+          "tone": -4.21
         },
         {
           "day_offset": 6,
-          "tone": -4.17
+          "tone": -5.46
         },
         {
           "day_offset": 5,
-          "tone": -5.18
+          "tone": -5.43
         },
         {
           "day_offset": 4,
-          "tone": -3.87
+          "tone": -5.25
         },
         {
           "day_offset": 3,
-          "tone": -4.87
+          "tone": -5.39
         },
         {
           "day_offset": 2,
-          "tone": -4.82
+          "tone": -4.99
         },
         {
           "day_offset": 1,
-          "tone": -4.26
+          "tone": -5.22
         }
       ],
       "coordinates": {
@@ -1584,8 +1584,8 @@
         }
       ],
       "gdp_usd": 214233312784.4,
-      "max_risk_score": 93.8,
-      "avg_risk_score": 93.8,
+      "max_risk_score": 93.9,
+      "avg_risk_score": 93.9,
       "primary_adversary_code": "RU",
       "primary_adversary_name": "Rusya",
       "threat_level": "CRITICAL",
@@ -1628,8 +1628,8 @@
         }
       ],
       "gdp_usd": 2561310169358.74,
-      "max_risk_score": 93.8,
-      "avg_risk_score": 88.7,
+      "max_risk_score": 93.9,
+      "avg_risk_score": 88.9,
       "primary_adversary_code": "UA",
       "primary_adversary_name": "Ukrayna",
       "threat_level": "CRITICAL",
@@ -1673,8 +1673,8 @@
         }
       ],
       "gdp_usd": 610777842873.59,
-      "max_risk_score": 89.6,
-      "avg_risk_score": 89.2,
+      "max_risk_score": 89.8,
+      "avg_risk_score": 89.0,
       "primary_adversary_code": "IR",
       "primary_adversary_name": "İran",
       "threat_level": "CRITICAL",
@@ -1718,8 +1718,8 @@
         }
       ],
       "gdp_usd": 362682115433.36,
-      "max_risk_score": 89.6,
-      "avg_risk_score": 89.6,
+      "max_risk_score": 89.8,
+      "avg_risk_score": 89.8,
       "primary_adversary_code": "IL",
       "primary_adversary_name": "İsrail",
       "threat_level": "CRITICAL",
@@ -1762,8 +1762,8 @@
         }
       ],
       "gdp_usd": 19498039388042.6,
-      "max_risk_score": 65.9,
-      "avg_risk_score": 64.9,
+      "max_risk_score": 65.4,
+      "avg_risk_score": 64.2,
       "primary_adversary_code": "TW",
       "primary_adversary_name": "Tayvan",
       "threat_level": "HIGH",
@@ -1791,8 +1791,8 @@
         }
       ],
       "gdp_usd": 756000000000,
-      "max_risk_score": 65.9,
-      "avg_risk_score": 65.9,
+      "max_risk_score": 65.4,
+      "avg_risk_score": 65.4,
       "primary_adversary_code": "CN",
       "primary_adversary_name": "Çin",
       "threat_level": "HIGH",
@@ -1835,8 +1835,8 @@
         }
       ],
       "gdp_usd": 30769700000000.0,
-      "max_risk_score": 83.6,
-      "avg_risk_score": 73.8,
+      "max_risk_score": 83.9,
+      "avg_risk_score": 73.5,
       "primary_adversary_code": "RU",
       "primary_adversary_name": "Rusya",
       "threat_level": "CRITICAL",
@@ -1864,8 +1864,8 @@
         }
       ],
       "gdp_usd": 28000000000,
-      "max_risk_score": 91.0,
-      "avg_risk_score": 91.0,
+      "max_risk_score": 93.0,
+      "avg_risk_score": 93.0,
       "primary_adversary_code": "KR",
       "primary_adversary_name": "Güney Kore",
       "threat_level": "CRITICAL",
@@ -1908,8 +1908,8 @@
         }
       ],
       "gdp_usd": 1872374961553.15,
-      "max_risk_score": 91.0,
-      "avg_risk_score": 91.0,
+      "max_risk_score": 93.0,
+      "avg_risk_score": 93.0,
       "primary_adversary_code": "KP",
       "primary_adversary_name": "Kuzey Kore",
       "threat_level": "CRITICAL",
@@ -1952,8 +1952,8 @@
         }
       ],
       "gdp_usd": 3956067115771.63,
-      "max_risk_score": 72.7,
-      "avg_risk_score": 72.7,
+      "max_risk_score": 71.4,
+      "avg_risk_score": 71.4,
       "primary_adversary_code": "PK",
       "primary_adversary_name": "Pakistan",
       "threat_level": "HIGH",
@@ -1996,8 +1996,8 @@
         }
       ],
       "gdp_usd": 407307214476.22,
-      "max_risk_score": 72.7,
-      "avg_risk_score": 72.7,
+      "max_risk_score": 71.4,
+      "avg_risk_score": 71.4,
       "primary_adversary_code": "IN",
       "primary_adversary_name": "Hindistan",
       "threat_level": "HIGH",
@@ -2040,8 +2040,8 @@
         }
       ],
       "gdp_usd": 29243452882.35,
-      "max_risk_score": 80.9,
-      "avg_risk_score": 80.9,
+      "max_risk_score": 80.5,
+      "avg_risk_score": 80.5,
       "primary_adversary_code": "AZ",
       "primary_adversary_name": "Azerbaycan",
       "threat_level": "CRITICAL",
@@ -2083,9 +2083,9 @@
           "value": 5.24152602506817
         }
       ],
-      "gdp_usd": 75937647058.82,
-      "max_risk_score": 80.9,
-      "avg_risk_score": 80.9,
+      "gdp_usd": 72356000000,
+      "max_risk_score": 80.5,
+      "avg_risk_score": 80.5,
       "primary_adversary_code": "AM",
       "primary_adversary_name": "Ermenistan",
       "threat_level": "CRITICAL",
@@ -2128,8 +2128,8 @@
         }
       ],
       "gdp_usd": 1597293229287.0,
-      "max_risk_score": 55.8,
-      "avg_risk_score": 55.8,
+      "max_risk_score": 57.6,
+      "avg_risk_score": 57.6,
       "primary_adversary_code": "GR",
       "primary_adversary_name": "Yunanistan",
       "threat_level": "ELEVATED",
@@ -2172,8 +2172,8 @@
         }
       ],
       "gdp_usd": 280635521324.44,
-      "max_risk_score": 55.8,
-      "avg_risk_score": 55.8,
+      "max_risk_score": 57.6,
+      "avg_risk_score": 57.6,
       "primary_adversary_code": "TR",
       "primary_adversary_name": "Türkiye",
       "threat_level": "ELEVATED",
@@ -2216,8 +2216,8 @@
         }
       ],
       "gdp_usd": 25971643441.34,
-      "max_risk_score": 88.7,
-      "avg_risk_score": 88.7,
+      "max_risk_score": 88.3,
+      "avg_risk_score": 88.3,
       "primary_adversary_code": "IL",
       "primary_adversary_name": "İsrail",
       "threat_level": "CRITICAL",
@@ -2302,8 +2302,8 @@
         }
       ],
       "gdp_usd": 1276942933333.33,
-      "max_risk_score": 83.0,
-      "avg_risk_score": 83.0,
+      "max_risk_score": 83.6,
+      "avg_risk_score": 83.6,
       "primary_adversary_code": "YE",
       "primary_adversary_name": "Yemen",
       "threat_level": "CRITICAL",
@@ -2346,8 +2346,8 @@
         }
       ],
       "gdp_usd": 21606160663.03,
-      "max_risk_score": 83.0,
-      "avg_risk_score": 83.0,
+      "max_risk_score": 83.6,
+      "avg_risk_score": 83.6,
       "primary_adversary_code": "SA",
       "primary_adversary_name": "Suudi Arabistan",
       "threat_level": "CRITICAL",
@@ -2390,8 +2390,8 @@
         }
       ],
       "gdp_usd": 99953324472.9,
-      "max_risk_score": 67.9,
-      "avg_risk_score": 67.9,
+      "max_risk_score": 66.3,
+      "avg_risk_score": 66.3,
       "primary_adversary_code": "XK",
       "primary_adversary_name": "Kosova",
       "threat_level": "HIGH",
@@ -2434,8 +2434,8 @@
         }
       ],
       "gdp_usd": 12456403306.82,
-      "max_risk_score": 67.9,
-      "avg_risk_score": 67.9,
+      "max_risk_score": 66.3,
+      "avg_risk_score": 66.3,
       "primary_adversary_code": "RS",
       "primary_adversary_name": "Sırbistan",
       "threat_level": "HIGH",
@@ -2478,14 +2478,14 @@
         }
       ],
       "gdp_usd": 99661244155.63,
-      "max_risk_score": 63.9,
-      "avg_risk_score": 63.9,
+      "max_risk_score": 65.3,
+      "avg_risk_score": 65.3,
       "primary_adversary_code": "GY",
       "primary_adversary_name": "Guyana",
-      "threat_level": "ELEVATED",
-      "defcon": 3,
-      "color": "#ffaa00",
-      "status_tr": "Yükseltilmiş Gerilim",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
       "involved_pair_ids": [
         "VE-GY"
       ]
@@ -2522,14 +2522,14 @@
         }
       ],
       "gdp_usd": 27097477218.23,
-      "max_risk_score": 63.9,
-      "avg_risk_score": 63.9,
+      "max_risk_score": 65.3,
+      "avg_risk_score": 65.3,
       "primary_adversary_code": "VE",
       "primary_adversary_name": "Venezuela",
-      "threat_level": "ELEVATED",
-      "defcon": 3,
-      "color": "#ffaa00",
-      "status_tr": "Yükseltilmiş Gerilim",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
       "involved_pair_ids": [
         "VE-GY"
       ]
@@ -2542,16 +2542,32 @@
       "lon": 15.2663,
       "military_bloc": "Bağlantısız / SADC",
       "cyber_baseline": 68,
-      "military_gdp_pct": 1.8,
+      "military_gdp_pct": 1.23,
       "military_history": [
         {
           "year": "2024",
-          "value": 1.8
+          "value": 1.22855267131451
+        },
+        {
+          "year": "2023",
+          "value": 1.11885996027452
+        },
+        {
+          "year": "2022",
+          "value": 0.567707215239695
+        },
+        {
+          "year": "2021",
+          "value": 0.533178814847647
+        },
+        {
+          "year": "2020",
+          "value": 0.729735329108429
         }
       ],
       "gdp_usd": 91030531316.99,
-      "max_risk_score": 70.3,
-      "avg_risk_score": 70.3,
+      "max_risk_score": 69.2,
+      "avg_risk_score": 69.2,
       "primary_adversary_code": "RW",
       "primary_adversary_name": "Ruanda",
       "threat_level": "HIGH",
@@ -2594,8 +2610,8 @@
         }
       ],
       "gdp_usd": 16372132990.23,
-      "max_risk_score": 70.3,
-      "avg_risk_score": 70.3,
+      "max_risk_score": 69.2,
+      "avg_risk_score": 69.2,
       "primary_adversary_code": "CD",
       "primary_adversary_name": "Demokratik Kongo Cumhuriyeti",
       "threat_level": "HIGH",
@@ -2638,8 +2654,8 @@
         }
       ],
       "gdp_usd": 60162634574.47,
-      "max_risk_score": 71.1,
-      "avg_risk_score": 71.1,
+      "max_risk_score": 69.3,
+      "avg_risk_score": 69.3,
       "primary_adversary_code": "SS",
       "primary_adversary_name": "Güney Sudan",
       "threat_level": "HIGH",
@@ -2682,8 +2698,8 @@
         }
       ],
       "gdp_usd": 11997800760.22,
-      "max_risk_score": 71.1,
-      "avg_risk_score": 71.1,
+      "max_risk_score": 69.3,
+      "avg_risk_score": 69.3,
       "primary_adversary_code": "SD",
       "primary_adversary_name": "Sudan",
       "threat_level": "HIGH",
@@ -2726,8 +2742,8 @@
         }
       ],
       "gdp_usd": 126358758448.36,
-      "max_risk_score": 91.5,
-      "avg_risk_score": 80.8,
+      "max_risk_score": 90.8,
+      "avg_risk_score": 80.7,
       "primary_adversary_code": "ER",
       "primary_adversary_name": "Eritre",
       "threat_level": "CRITICAL",
@@ -2771,8 +2787,8 @@
         }
       ],
       "gdp_usd": 12995200000.27,
-      "max_risk_score": 70.1,
-      "avg_risk_score": 70.1,
+      "max_risk_score": 70.5,
+      "avg_risk_score": 70.5,
       "primary_adversary_code": "ET",
       "primary_adversary_name": "Etiyopya",
       "threat_level": "HIGH",
@@ -2815,8 +2831,8 @@
         }
       ],
       "gdp_usd": 2065001626.02,
-      "max_risk_score": 91.5,
-      "avg_risk_score": 91.5,
+      "max_risk_score": 90.8,
+      "avg_risk_score": 90.8,
       "primary_adversary_code": "ET",
       "primary_adversary_name": "Etiyopya",
       "threat_level": "CRITICAL",
@@ -2859,8 +2875,8 @@
         }
       ],
       "gdp_usd": 182374250612.28,
-      "max_risk_score": 88.4,
-      "avg_risk_score": 88.4,
+      "max_risk_score": 88.9,
+      "avg_risk_score": 88.9,
       "primary_adversary_code": "DZ",
       "primary_adversary_name": "Cezayir",
       "threat_level": "CRITICAL",
@@ -2903,8 +2919,8 @@
         }
       ],
       "gdp_usd": 287031225987.74,
-      "max_risk_score": 88.4,
-      "avg_risk_score": 88.4,
+      "max_risk_score": 88.9,
+      "avg_risk_score": 88.9,
       "primary_adversary_code": "MA",
       "primary_adversary_name": "Fas",
       "threat_level": "CRITICAL",
@@ -2947,8 +2963,8 @@
         }
       ],
       "gdp_usd": 21646191388.25,
-      "max_risk_score": 68.8,
-      "avg_risk_score": 68.8,
+      "max_risk_score": 68.7,
+      "avg_risk_score": 68.7,
       "primary_adversary_code": "NG",
       "primary_adversary_name": "Nijerya",
       "threat_level": "HIGH",
@@ -2991,8 +3007,8 @@
         }
       ],
       "gdp_usd": 290794361542.11,
-      "max_risk_score": 68.8,
-      "avg_risk_score": 68.8,
+      "max_risk_score": 68.7,
+      "avg_risk_score": 68.7,
       "primary_adversary_code": "NE",
       "primary_adversary_name": "Nijer",
       "threat_level": "HIGH",
