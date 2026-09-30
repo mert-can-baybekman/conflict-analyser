@@ -409,6 +409,30 @@
       "baseline_cyber_threat": 66,
       "default_mil_gdp_pct": 0.9,
       "default_gdp_usd": 362836000000
+    },
+    {
+      "code": "TRNC",
+      "iso3": "TRN",
+      "name": "Kuzey Kıbrıs Türk Cumhuriyeti",
+      "capital": "Lefkoşa",
+      "lat": 35.2056,
+      "lon": 33.3610,
+      "military_bloc": "Türk Devletleri Teşkilatı (Gözlemci) / TSK Garantörlüğü",
+      "baseline_cyber_threat": 65,
+      "default_mil_gdp_pct": 3.8,
+      "default_gdp_usd": 4850000000
+    },
+    {
+      "code": "CY",
+      "iso3": "CYP",
+      "name": "Güney Kıbrıs",
+      "capital": "Güney Lefkoşa",
+      "lat": 35.1350,
+      "lon": 33.3400,
+      "military_bloc": "Avrupa Birliği / Batı Yanlısı",
+      "baseline_cyber_threat": 68,
+      "default_mil_gdp_pct": 1.9,
+      "default_gdp_usd": 32230000000
     }
   ],
   "conflict_pairs": [
@@ -582,6 +606,15 @@
       "historical_dispute": "Sahel İttifakı (AES) Darbe Sonrası ECOWAS Askeri Müdahale Tehdidi",
       "trade_dependency_baseline": 15,
       "cyber_hostility_baseline": 68
+    },
+    {
+      "id": "TRNC-CY",
+      "country_a": "TRNC",
+      "country_b": "CY",
+      "region": "Doğu Akdeniz / Kıbrıs",
+      "historical_dispute": "Yeşil Hat (BM Tampon Bölgesi), Maraş Statüsü & Doğu Akdeniz MEB Doğalgaz Arama Gerilimi",
+      "trade_dependency_baseline": 5,
+      "cyber_hostility_baseline": 82
     }
   ]
 }

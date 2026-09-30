@@ -365,6 +365,77 @@ function renderMapElements() {
 
     State.polylines[pair.id] = polyline;
   });
+
+  // 3. Kıbrıs Adası Taktik Ayrım & Yeşil Hat (BM Tampon Bölgesi) Katmanı
+  renderCyprusTacticalOverlay();
+}
+
+function renderCyprusTacticalOverlay() {
+  if (!State.map) return;
+
+  // BM Yeşil Hat (Green Line Buffer Zone) Ateşkes Hattı
+  const greenLineCoords = [
+    [35.155, 32.75],
+    [35.148, 33.05],
+    [35.174, 33.36],
+    [35.085, 33.72],
+    [35.025, 33.98]
+  ];
+
+  const greenLine = L.polyline(greenLineCoords, {
+    color: '#00e5ff',
+    weight: 2.5,
+    dashArray: '4, 5',
+    opacity: 0.9
+  }).addTo(State.map);
+
+  greenLine.bindTooltip(`
+    <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+      <strong style="color: var(--neon-cyan);">BM Yeşil Hat (UN Buffer Zone)</strong><br>
+      <span style="color: #bbb;">1974 Ateşkes Hattı & BM Barış Gücü Tampon Bölgesi</span>
+    </div>
+  `, { sticky: true });
+
+  // Harita üzerinde Kuzey Kıbrıs Türk Cumhuriyeti ve Güney Kıbrıs Taktik Rozetleri
+  const trncBadge = L.marker([35.26, 33.55], {
+    icon: L.divIcon({
+      className: 'tactical-zone-badge',
+      html: '<div class="tactical-badge-inner trnc-badge"><i class="fa-solid fa-shield-halved"></i> KKTC</div>',
+      iconSize: [85, 24],
+      iconAnchor: [42, 12]
+    })
+  }).addTo(State.map);
+
+  trncBadge.bindTooltip(`
+    <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+      <strong style="color: #ff4d6d;">Kuzey Kıbrıs Türk Cumhuriyeti (KKTC)</strong><br>
+      <span style="color: #fff;">Başkent: Lefkoşa</span>
+    </div>
+  `);
+
+  trncBadge.on('click', () => {
+    selectCountry('TRNC');
+  });
+
+  const cyBadge = L.marker([34.92, 33.15], {
+    icon: L.divIcon({
+      className: 'tactical-zone-badge',
+      html: '<div class="tactical-badge-inner cy-badge"><i class="fa-solid fa-flag"></i> GÜNEY KIBRIS</div>',
+      iconSize: [120, 24],
+      iconAnchor: [60, 12]
+    })
+  }).addTo(State.map);
+
+  cyBadge.bindTooltip(`
+    <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+      <strong style="color: #00d4ff;">Güney Kıbrıs</strong><br>
+      <span style="color: #fff;">Başkent: Güney Lefkoşa</span>
+    </div>
+  `);
+
+  cyBadge.on('click', () => {
+    selectCountry('CY');
+  });
 }
 
 // ==========================================================================

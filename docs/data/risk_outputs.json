@@ -2,13 +2,13 @@
   "metadata": {
     "title": "Global Cyber-Geopolitical Conflict Risk Matrix",
     "version": "2.0.0",
-    "generated_at": "2026-09-30T08:54:06.087672+00:00",
+    "generated_at": "2026-09-30T09:08:41.224511+00:00",
     "pipeline_status": "OPERATIONAL",
     "global_cri_average": 76.8,
     "critical_count": 9,
-    "high_count": 8,
-    "monitored_pairs": 19,
-    "monitored_countries": 34
+    "high_count": 9,
+    "monitored_pairs": 20,
+    "monitored_countries": 36
   },
   "pairs": [
     {
@@ -737,6 +737,87 @@
         "b": [
           40.4093,
           49.8671
+        ]
+      }
+    },
+    {
+      "id": "TRNC-CY",
+      "country_a": "TRNC",
+      "country_b": "CY",
+      "country_a_name": "Kuzey Kıbrıs Türk Cumhuriyeti",
+      "country_b_name": "Güney Kıbrıs",
+      "region": "Doğu Akdeniz / Kıbrıs",
+      "historical_dispute": "Yeşil Hat (BM Tampon Bölgesi), Maraş Statüsü & Doğu Akdeniz MEB Doğalgaz Arama Gerilimi",
+      "cri_score": 77.3,
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "components": {
+        "media_tension": {
+          "score": 84.49,
+          "weight_pct": 40,
+          "avg_tone": -6.42,
+          "volume_index": 156
+        },
+        "economic_vulnerability": {
+          "score": 95.0,
+          "weight_pct": 30,
+          "trade_dependency": 5
+        },
+        "military_readiness": {
+          "score": 31.01,
+          "weight_pct": 20,
+          "country_a_mil_pct": 3.8,
+          "country_b_mil_pct": 1.9,
+          "world_avg": 2.3
+        },
+        "cyber_and_alliances": {
+          "score": 88.5,
+          "weight_pct": 10,
+          "bloc_a": "Türk Devletleri Teşkilatı (Gözlemci) / TSK Garantörlüğü",
+          "bloc_b": "Avrupa Birliği / Batı Yanlısı",
+          "cyber_baseline": 82
+        }
+      },
+      "tone_history": [
+        {
+          "day_offset": 7,
+          "tone": -5.98
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.1
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.22
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.34
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.46
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.58
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.7
+        }
+      ],
+      "coordinates": {
+        "a": [
+          35.2056,
+          33.361
+        ],
+        "b": [
+          35.135,
+          33.34
         ]
       }
     },
@@ -3017,6 +3098,52 @@
       "status_tr": "Yüksek Çatışma Riski",
       "involved_pair_ids": [
         "NE-NG"
+      ]
+    },
+    "TRNC": {
+      "code": "TRNC",
+      "iso3": "TRN",
+      "name": "Kuzey Kıbrıs Türk Cumhuriyeti",
+      "lat": 35.2056,
+      "lon": 33.361,
+      "military_bloc": "Türk Devletleri Teşkilatı (Gözlemci) / TSK Garantörlüğü",
+      "cyber_baseline": 65,
+      "military_gdp_pct": 3.8,
+      "military_history": [],
+      "gdp_usd": 4850000000,
+      "max_risk_score": 77.3,
+      "avg_risk_score": 77.3,
+      "primary_adversary_code": "CY",
+      "primary_adversary_name": "Güney Kıbrıs",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "TRNC-CY"
+      ]
+    },
+    "CY": {
+      "code": "CY",
+      "iso3": "CYP",
+      "name": "Güney Kıbrıs",
+      "lat": 35.135,
+      "lon": 33.34,
+      "military_bloc": "Avrupa Birliği / Batı Yanlısı",
+      "cyber_baseline": 68,
+      "military_gdp_pct": 1.9,
+      "military_history": [],
+      "gdp_usd": 32230000000,
+      "max_risk_score": 77.3,
+      "avg_risk_score": 77.3,
+      "primary_adversary_code": "TRNC",
+      "primary_adversary_name": "Kuzey Kıbrıs Türk Cumhuriyeti",
+      "threat_level": "HIGH",
+      "defcon": 2,
+      "color": "#ff5500",
+      "status_tr": "Yüksek Çatışma Riski",
+      "involved_pair_ids": [
+        "TRNC-CY"
       ]
     }
   }

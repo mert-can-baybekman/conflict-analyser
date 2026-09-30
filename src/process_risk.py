@@ -66,7 +66,8 @@ def evaluate_alliance_friction(bloc_a, bloc_b):
         {"Western-Aligned", "SCO / Resistance Axis"},
         {"Western-Aligned", "Independent / Sino-Russian Ally"},
         {"Başlıca NATO Dışı Müttefik", "Bağlantısız / Rusya Stratejik Ortağı"},
-        {"Sahel Devletleri İttifakı (AES)", "ECOWAS Lideri"}
+        {"Sahel Devletleri İttifakı (AES)", "ECOWAS Lideri"},
+        {"Türk Devletleri Teşkilatı (Gözlemci) / TSK Garantörlüğü", "Avrupa Birliği / Batı Yanlısı"}
     ]
     current = {bloc_a, bloc_b}
     for hp in hostile_pairs:
