@@ -1,71 +1,151 @@
 {
-  "timestamp": "2026-10-13T06:07:33.018648+00:00",
+  "timestamp": "2026-10-14T04:07:03.485449+00:00",
   "world_military_gdp_avg": 2.3,
   "world_bank": {
     "UA": {
       "name": "Ukrayna",
       "iso3": "UKR",
-      "military_gdp_pct": 34.5,
+      "military_gdp_pct": 39.56,
       "military_history": [
         {
+          "year": "2025",
+          "value": 39.561018358
+        },
+        {
           "year": "2024",
-          "value": 34.5
+          "value": 33.9560445975
+        },
+        {
+          "year": "2023",
+          "value": 36.0314128923
+        },
+        {
+          "year": "2022",
+          "value": 25.6424104715
+        },
+        {
+          "year": "2021",
+          "value": 3.4254919956
         }
       ],
-      "gdp_usd": 178757000000,
-      "status": "cached_fallback"
+      "gdp_usd": 214233312784.4,
+      "status": "live"
     },
     "RU": {
       "name": "Rusya",
       "iso3": "RUS",
-      "military_gdp_pct": 5.9,
+      "military_gdp_pct": 7.5,
       "military_history": [
         {
+          "year": "2025",
+          "value": 7.5014846549
+        },
+        {
           "year": "2024",
-          "value": 5.9
+          "value": 6.8741527114
+        },
+        {
+          "year": "2023",
+          "value": 5.2717027939
+        },
+        {
+          "year": "2022",
+          "value": 4.5558544287
+        },
+        {
+          "year": "2021",
+          "value": 3.6036875729
         }
       ],
-      "gdp_usd": 2021421000000,
-      "status": "cached_fallback"
+      "gdp_usd": 2561310169358.74,
+      "status": "live"
     },
     "IL": {
       "name": "İsrail",
       "iso3": "ISR",
-      "military_gdp_pct": 8.78,
+      "military_gdp_pct": 7.81,
       "military_history": [
         {
+          "year": "2025",
+          "value": 7.809064088
+        },
+        {
           "year": "2024",
-          "value": 8.78
+          "value": 8.4681340534
+        },
+        {
+          "year": "2023",
+          "value": 5.279164114
+        },
+        {
+          "year": "2022",
+          "value": 4.3363233595
+        },
+        {
+          "year": "2021",
+          "value": 4.8119930521
         }
       ],
-      "gdp_usd": 509901000000,
-      "status": "cached_fallback"
+      "gdp_usd": 610777842873.59,
+      "status": "live"
     },
     "IR": {
       "name": "İran",
       "iso3": "IRN",
-      "military_gdp_pct": 3.8,
+      "military_gdp_pct": 2.09,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.0915792291
+        },
+        {
           "year": "2024",
-          "value": 3.8
+          "value": 2.2187801253
+        },
+        {
+          "year": "2023",
+          "value": 2.4938109404
+        },
+        {
+          "year": "2022",
+          "value": 2.2380736046
+        },
+        {
+          "year": "2021",
+          "value": 2.3176206525
         }
       ],
-      "gdp_usd": 413493000000,
-      "status": "cached_fallback"
+      "gdp_usd": 362682115433.36,
+      "status": "live"
     },
     "CN": {
       "name": "Çin",
       "iso3": "CHN",
-      "military_gdp_pct": 1.7,
+      "military_gdp_pct": 1.72,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.7247233166
+        },
+        {
           "year": "2024",
-          "value": 1.7
+          "value": 1.6640184493
+        },
+        {
+          "year": "2023",
+          "value": 1.6215129762
+        },
+        {
+          "year": "2022",
+          "value": 1.591812538
+        },
+        {
+          "year": "2021",
+          "value": 1.5716370377
         }
       ],
-      "gdp_usd": 17794782000000,
-      "status": "cached_fallback"
+      "gdp_usd": 19498039388042.6,
+      "status": "live"
     },
     "TW": {
       "name": "Tayvan",
@@ -83,15 +163,31 @@
     "US": {
       "name": "Amerika Birleşik Devletleri",
       "iso3": "USA",
-      "military_gdp_pct": 3.4,
+      "military_gdp_pct": 3.12,
       "military_history": [
         {
+          "year": "2025",
+          "value": 3.1173079811
+        },
+        {
           "year": "2024",
-          "value": 3.4
+          "value": 3.4299288722
+        },
+        {
+          "year": "2023",
+          "value": 3.2936524103
+        },
+        {
+          "year": "2022",
+          "value": 3.3034156257
+        },
+        {
+          "year": "2021",
+          "value": 3.3981381033
         }
       ],
-      "gdp_usd": 27360935000000,
-      "status": "cached_fallback"
+      "gdp_usd": 30769700000000.0,
+      "status": "live"
     },
     "KP": {
       "name": "Kuzey Kore",
@@ -109,106 +205,234 @@
     "KR": {
       "name": "Güney Kore",
       "iso3": "KOR",
-      "military_gdp_pct": 2.7,
+      "military_gdp_pct": 2.6,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.6014689513
+        },
+        {
           "year": "2024",
-          "value": 2.7
+          "value": 2.5383855979
+        },
+        {
+          "year": "2023",
+          "value": 2.5992577105
+        },
+        {
+          "year": "2022",
+          "value": 2.576425604
+        },
+        {
+          "year": "2021",
+          "value": 2.6190494124
         }
       ],
-      "gdp_usd": 1712793000000,
-      "status": "cached_fallback"
+      "gdp_usd": 1872374961553.15,
+      "status": "live"
     },
     "IN": {
       "name": "Hindistan",
       "iso3": "IND",
-      "military_gdp_pct": 2.4,
+      "military_gdp_pct": 2.3,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.2951791794
+        },
+        {
           "year": "2024",
-          "value": 2.4
+          "value": 2.2233765419
+        },
+        {
+          "year": "2023",
+          "value": 2.3567942668
+        },
+        {
+          "year": "2022",
+          "value": 2.3830980984
+        },
+        {
+          "year": "2021",
+          "value": 2.4687415303
         }
       ],
-      "gdp_usd": 3549919000000,
-      "status": "cached_fallback"
+      "gdp_usd": 3956067115771.63,
+      "status": "live"
     },
     "PK": {
       "name": "Pakistan",
       "iso3": "PAK",
-      "military_gdp_pct": 2.8,
+      "military_gdp_pct": 2.91,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.9136125149
+        },
+        {
           "year": "2024",
-          "value": 2.8
+          "value": 2.7299557348
+        },
+        {
+          "year": "2023",
+          "value": 2.8910603378
+        },
+        {
+          "year": "2022",
+          "value": 3.1768320235
+        },
+        {
+          "year": "2021",
+          "value": 3.3892387961
         }
       ],
-      "gdp_usd": 338388000000,
-      "status": "cached_fallback"
+      "gdp_usd": 407307214476.22,
+      "status": "live"
     },
     "AM": {
       "name": "Ermenistan",
       "iso3": "ARM",
-      "military_gdp_pct": 5.48,
+      "military_gdp_pct": 6.09,
       "military_history": [
         {
+          "year": "2025",
+          "value": 6.0935459852
+        },
+        {
           "year": "2024",
-          "value": 5.48
+          "value": 5.4642627972
+        },
+        {
+          "year": "2023",
+          "value": 5.5062981485
+        },
+        {
+          "year": "2022",
+          "value": 4.0817459593
+        },
+        {
+          "year": "2021",
+          "value": 4.465144759
         }
       ],
-      "gdp_usd": 24212000000,
-      "status": "cached_fallback"
+      "gdp_usd": 29243452882.35,
+      "status": "live"
     },
     "AZ": {
       "name": "Azerbaycan",
       "iso3": "AZE",
-      "military_gdp_pct": 4.99,
+      "military_gdp_pct": 6.47,
       "military_history": [
         {
+          "year": "2025",
+          "value": 6.4655059563
+        },
+        {
           "year": "2024",
-          "value": 4.99
+          "value": 5.0824778173
+        },
+        {
+          "year": "2023",
+          "value": 4.9175007553
+        },
+        {
+          "year": "2022",
+          "value": 3.7953702508
+        },
+        {
+          "year": "2021",
+          "value": 4.9305174071
         }
       ],
-      "gdp_usd": 72356000000,
-      "status": "cached_fallback"
+      "gdp_usd": 75937647058.82,
+      "status": "live"
     },
     "TR": {
       "name": "Türkiye",
       "iso3": "TUR",
-      "military_gdp_pct": 1.92,
+      "military_gdp_pct": 1.91,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.9082522771
+        },
+        {
           "year": "2024",
-          "value": 1.92
+          "value": 1.8403146028
+        },
+        {
+          "year": "2023",
+          "value": 1.6852715823
+        },
+        {
+          "year": "2022",
+          "value": 1.624804171
+        },
+        {
+          "year": "2021",
+          "value": 1.8144583802
         }
       ],
-      "gdp_usd": 1108022000000,
-      "status": "cached_fallback"
+      "gdp_usd": 1597293229287.0,
+      "status": "live"
     },
     "GR": {
       "name": "Yunanistan",
       "iso3": "GRC",
-      "military_gdp_pct": 3.13,
+      "military_gdp_pct": 2.99,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.9888142526
+        },
+        {
           "year": "2024",
-          "value": 3.13
+          "value": 2.8846484556
+        },
+        {
+          "year": "2023",
+          "value": 2.8898075203
+        },
+        {
+          "year": "2022",
+          "value": 4.0166918293
+        },
+        {
+          "year": "2021",
+          "value": 3.8024736784
         }
       ],
-      "gdp_usd": 238206000000,
-      "status": "cached_fallback"
+      "gdp_usd": 280635521324.44,
+      "status": "live"
     },
     "LB": {
       "name": "Lübnan",
       "iso3": "LBN",
-      "military_gdp_pct": 2.59,
+      "military_gdp_pct": 2.51,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.5096134166
+        },
+        {
           "year": "2024",
-          "value": 2.59
+          "value": 2.2508122652
+        },
+        {
+          "year": "2023",
+          "value": 1.202135401
+        },
+        {
+          "year": "2022",
+          "value": 1.012027798
+        },
+        {
+          "year": "2021",
+          "value": 1.1752556414
         }
       ],
-      "gdp_usd": 21780000000,
-      "status": "cached_fallback"
+      "gdp_usd": 25971643441.34,
+      "status": "live"
     },
     "SY": {
       "name": "Suriye",
@@ -216,25 +440,57 @@
       "military_gdp_pct": 4.06,
       "military_history": [
         {
-          "year": "2024",
-          "value": 4.06
+          "year": "2010",
+          "value": 4.0561417361
+        },
+        {
+          "year": "2009",
+          "value": 4.0277077586
+        },
+        {
+          "year": "2008",
+          "value": 3.5523398057
+        },
+        {
+          "year": "2007",
+          "value": 4.1005436533
+        },
+        {
+          "year": "2006",
+          "value": 4.3944468231
         }
       ],
-      "gdp_usd": 15000000000,
-      "status": "cached_fallback"
+      "gdp_usd": 23737634644.4,
+      "status": "live"
     },
     "SA": {
       "name": "Suudi Arabistan",
       "iso3": "SAU",
-      "military_gdp_pct": 7.3,
+      "military_gdp_pct": 6.48,
       "military_history": [
         {
+          "year": "2025",
+          "value": 6.4823199494
+        },
+        {
           "year": "2024",
-          "value": 7.3
+          "value": 6.4052350953
+        },
+        {
+          "year": "2023",
+          "value": 6.3816103182
+        },
+        {
+          "year": "2022",
+          "value": 5.7236235541
+        },
+        {
+          "year": "2021",
+          "value": 6.4309728766
         }
       ],
-      "gdp_usd": 1067583000000,
-      "status": "cached_fallback"
+      "gdp_usd": 1276942933333.33,
+      "status": "live"
     },
     "YE": {
       "name": "Yemen",
@@ -242,207 +498,463 @@
       "military_gdp_pct": 3.97,
       "military_history": [
         {
-          "year": "2024",
-          "value": 3.97
+          "year": "2014",
+          "value": 3.9668908328
+        },
+        {
+          "year": "2013",
+          "value": 4.0795271755
+        },
+        {
+          "year": "2012",
+          "value": 4.5738840448
+        },
+        {
+          "year": "2011",
+          "value": 4.9264618028
+        },
+        {
+          "year": "2010",
+          "value": 4.6855571238
         }
       ],
-      "gdp_usd": 16940000000,
-      "status": "cached_fallback"
+      "gdp_usd": 21606160663.03,
+      "status": "live"
     },
     "RS": {
       "name": "Sırbistan",
       "iso3": "SRB",
-      "military_gdp_pct": 2.6,
+      "military_gdp_pct": 2.76,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.7553912789
+        },
+        {
           "year": "2024",
-          "value": 2.6
+          "value": 2.6679990823
+        },
+        {
+          "year": "2023",
+          "value": 2.2080368555
+        },
+        {
+          "year": "2022",
+          "value": 2.1722730678
+        },
+        {
+          "year": "2021",
+          "value": 2.7290408994
         }
       ],
-      "gdp_usd": 75187000000,
-      "status": "cached_fallback"
+      "gdp_usd": 99953324472.9,
+      "status": "live"
     },
     "XK": {
       "name": "Kosova",
       "iso3": "XKX",
-      "military_gdp_pct": 1.48,
+      "military_gdp_pct": 1.85,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.8528172652
+        },
+        {
           "year": "2024",
-          "value": 1.48
+          "value": 1.4786814384
+        },
+        {
+          "year": "2023",
+          "value": 1.273513518
+        },
+        {
+          "year": "2022",
+          "value": 1.1500461457
+        },
+        {
+          "year": "2021",
+          "value": 0.8459298782
         }
       ],
-      "gdp_usd": 10438000000,
-      "status": "cached_fallback"
+      "gdp_usd": 12456403306.82,
+      "status": "live"
     },
     "VE": {
       "name": "Venezuela",
       "iso3": "VEN",
-      "military_gdp_pct": 0.5,
+      "military_gdp_pct": 2.23,
       "military_history": [
         {
-          "year": "2024",
-          "value": 0.5
+          "year": "2017",
+          "value": 2.2333321992
+        },
+        {
+          "year": "2016",
+          "value": 0.4540460143
+        },
+        {
+          "year": "2015",
+          "value": 0.9413759689
+        },
+        {
+          "year": "2014",
+          "value": 1.16181681
+        },
+        {
+          "year": "2013",
+          "value": 1.6695517828
         }
       ],
-      "gdp_usd": 92000000000,
-      "status": "cached_fallback"
+      "gdp_usd": 99661244155.63,
+      "status": "live"
     },
     "GY": {
       "name": "Guyana",
       "iso3": "GUY",
-      "military_gdp_pct": 0.87,
+      "military_gdp_pct": 0.99,
       "military_history": [
         {
+          "year": "2025",
+          "value": 0.991392453
+        },
+        {
           "year": "2024",
-          "value": 0.87
+          "value": 0.8377856841
+        },
+        {
+          "year": "2023",
+          "value": 0.6537136131
+        },
+        {
+          "year": "2022",
+          "value": 0.601394233
+        },
+        {
+          "year": "2021",
+          "value": 0.9549308611
         }
       ],
-      "gdp_usd": 16786000000,
-      "status": "cached_fallback"
+      "gdp_usd": 27097477218.23,
+      "status": "live"
     },
     "CD": {
       "name": "Demokratik Kongo Cumhuriyeti",
       "iso3": "COD",
-      "military_gdp_pct": 1.8,
+      "military_gdp_pct": 1.38,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.3751452231
+        },
+        {
           "year": "2024",
-          "value": 1.8
+          "value": 1.2157467047
+        },
+        {
+          "year": "2023",
+          "value": 1.1188599603
+        },
+        {
+          "year": "2022",
+          "value": 0.5677072152
+        },
+        {
+          "year": "2021",
+          "value": 0.5331788148
         }
       ],
-      "gdp_usd": 67512000000,
-      "status": "cached_fallback"
+      "gdp_usd": 91030531316.99,
+      "status": "live"
     },
     "RW": {
       "name": "Ruanda",
       "iso3": "RWA",
-      "military_gdp_pct": 2.1,
+      "military_gdp_pct": 1.29,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.2862046758
+        },
+        {
           "year": "2024",
-          "value": 2.1
+          "value": 1.2302106955
+        },
+        {
+          "year": "2023",
+          "value": 1.2523162074
+        },
+        {
+          "year": "2022",
+          "value": 1.3334657434
+        },
+        {
+          "year": "2021",
+          "value": 1.512176734
         }
       ],
-      "gdp_usd": 14098000000,
-      "status": "cached_fallback"
+      "gdp_usd": 16372132990.23,
+      "status": "live"
     },
     "SD": {
       "name": "Sudan",
       "iso3": "SDN",
-      "military_gdp_pct": 3.2,
+      "military_gdp_pct": 0.93,
       "military_history": [
         {
-          "year": "2024",
-          "value": 3.2
+          "year": "2021",
+          "value": 0.925377248
+        },
+        {
+          "year": "2020",
+          "value": 0.975842223
+        },
+        {
+          "year": "2019",
+          "value": 1.6290679927
+        },
+        {
+          "year": "2018",
+          "value": 1.7789240269
+        },
+        {
+          "year": "2017",
+          "value": 3.285803901
         }
       ],
-      "gdp_usd": 26800000000,
-      "status": "cached_fallback"
+      "gdp_usd": 60162634574.47,
+      "status": "live"
     },
     "SS": {
       "name": "Güney Sudan",
       "iso3": "SSD",
-      "military_gdp_pct": 4.5,
+      "military_gdp_pct": 3.42,
       "military_history": [
         {
+          "year": "2025",
+          "value": 3.424746569
+        },
+        {
           "year": "2024",
-          "value": 4.5
+          "value": 6.5487310281
+        },
+        {
+          "year": "2023",
+          "value": 2.3787157668
+        },
+        {
+          "year": "2022",
+          "value": 1.5746737975
+        },
+        {
+          "year": "2021",
+          "value": 1.5112945932
         }
       ],
-      "gdp_usd": 11998000000,
-      "status": "cached_fallback"
+      "gdp_usd": 11997800760.22,
+      "status": "live"
     },
     "ET": {
       "name": "Etiyopya",
       "iso3": "ETH",
-      "military_gdp_pct": 2.3,
+      "military_gdp_pct": 0.49,
       "military_history": [
         {
+          "year": "2025",
+          "value": 0.4937391634
+        },
+        {
           "year": "2024",
-          "value": 2.3
+          "value": 0.4922965134
+        },
+        {
+          "year": "2023",
+          "value": 0.768145312
+        },
+        {
+          "year": "2022",
+          "value": 0.8608067057
+        },
+        {
+          "year": "2021",
+          "value": 0.4434437361
         }
       ],
-      "gdp_usd": 163698000000,
-      "status": "cached_fallback"
+      "gdp_usd": 126358758448.36,
+      "status": "live"
     },
     "SO": {
       "name": "Somali",
       "iso3": "SOM",
-      "military_gdp_pct": 1.9,
+      "military_gdp_pct": 1.54,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.5410074166
+        },
+        {
           "year": "2024",
-          "value": 1.9
+          "value": 1.6598470521
+        },
+        {
+          "year": "2023",
+          "value": 1.2662594585
+        },
+        {
+          "year": "2022",
+          "value": 1.1630010781
+        },
+        {
+          "year": "2021",
+          "value": 1.1706980177
         }
       ],
-      "gdp_usd": 11680000000,
-      "status": "cached_fallback"
+      "gdp_usd": 12995200000.27,
+      "status": "live"
     },
     "ER": {
       "name": "Eritre",
       "iso3": "ERI",
-      "military_gdp_pct": 5.8,
+      "military_gdp_pct": 20.87,
       "military_history": [
         {
-          "year": "2024",
-          "value": 5.8
+          "year": "2003",
+          "value": 20.8657453094
+        },
+        {
+          "year": "2002",
+          "value": 20.6718783563
+        },
+        {
+          "year": "2001",
+          "value": 22.1367915582
+        },
+        {
+          "year": "2000",
+          "value": 32.6556711938
+        },
+        {
+          "year": "1999",
+          "value": 34.3777684539
         }
       ],
-      "gdp_usd": 2500000000,
-      "status": "cached_fallback"
+      "gdp_usd": 2065001626.02,
+      "status": "live"
     },
     "MA": {
       "name": "Fas",
       "iso3": "MAR",
-      "military_gdp_pct": 5.2,
+      "military_gdp_pct": 3.54,
       "military_history": [
         {
+          "year": "2025",
+          "value": 3.5431055026
+        },
+        {
           "year": "2024",
-          "value": 5.2
+          "value": 3.4351036041
+        },
+        {
+          "year": "2023",
+          "value": 3.5528054155
+        },
+        {
+          "year": "2022",
+          "value": 3.804888346
+        },
+        {
+          "year": "2021",
+          "value": 3.7497561812
         }
       ],
-      "gdp_usd": 141109000000,
-      "status": "cached_fallback"
+      "gdp_usd": 182374250612.28,
+      "status": "live"
     },
     "DZ": {
       "name": "Cezayir",
       "iso3": "DZA",
-      "military_gdp_pct": 6.5,
+      "military_gdp_pct": 8.83,
       "military_history": [
         {
+          "year": "2025",
+          "value": 8.8306255952
+        },
+        {
           "year": "2024",
-          "value": 6.5
+          "value": 7.9714572355
+        },
+        {
+          "year": "2023",
+          "value": 7.3903932736
+        },
+        {
+          "year": "2022",
+          "value": 4.0574881146
+        },
+        {
+          "year": "2021",
+          "value": 4.890032706
         }
       ],
-      "gdp_usd": 239899000000,
-      "status": "cached_fallback"
+      "gdp_usd": 287031225987.74,
+      "status": "live"
     },
     "NE": {
       "name": "Nijer",
       "iso3": "NER",
-      "military_gdp_pct": 2.8,
+      "military_gdp_pct": 2.14,
       "military_history": [
         {
+          "year": "2025",
+          "value": 2.1357835045
+        },
+        {
           "year": "2024",
-          "value": 2.8
+          "value": 2.1962316177
+        },
+        {
+          "year": "2023",
+          "value": 1.9761600098
+        },
+        {
+          "year": "2022",
+          "value": 1.5729764924
+        },
+        {
+          "year": "2021",
+          "value": 1.3573009312
         }
       ],
-      "gdp_usd": 16819000000,
-      "status": "cached_fallback"
+      "gdp_usd": 21646191388.25,
+      "status": "live"
     },
     "NG": {
       "name": "Nijerya",
       "iso3": "NGA",
-      "military_gdp_pct": 0.9,
+      "military_gdp_pct": 0.91,
       "military_history": [
         {
+          "year": "2025",
+          "value": 0.9094449271
+        },
+        {
           "year": "2024",
-          "value": 0.9
+          "value": 0.5554293672
+        },
+        {
+          "year": "2023",
+          "value": 0.8426542774
+        },
+        {
+          "year": "2022",
+          "value": 0.6501666918
+        },
+        {
+          "year": "2021",
+          "value": 1.0127019268
         }
       ],
-      "gdp_usd": 362836000000,
-      "status": "cached_fallback"
+      "gdp_usd": 290794361542.11,
+      "status": "live"
     },
     "TRNC": {
       "name": "Kuzey Kıbrıs Türk Cumhuriyeti",
@@ -460,349 +972,190 @@
     "CY": {
       "name": "Güney Kıbrıs",
       "iso3": "CYP",
-      "military_gdp_pct": 1.9,
+      "military_gdp_pct": 1.61,
       "military_history": [
         {
+          "year": "2025",
+          "value": 1.6053109616
+        },
+        {
           "year": "2024",
-          "value": 1.9
+          "value": 1.5846917511
+        },
+        {
+          "year": "2023",
+          "value": 1.5946777898
+        },
+        {
+          "year": "2022",
+          "value": 1.7078535526
+        },
+        {
+          "year": "2021",
+          "value": 1.7840810592
         }
       ],
-      "gdp_usd": 32230000000,
-      "status": "cached_fallback"
+      "gdp_usd": 41225787247.33,
+      "status": "live"
     }
   },
   "gdelt_signals": {
     "UA-RU": {
       "status": "fallback_augmented",
-      "avg_tone": -8.0,
-      "volume_score": 216,
+      "avg_tone": -7.66,
+      "volume_score": 206,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -7.32
+          "tone": -7.81
         },
         {
           "day_offset": 6,
-          "tone": -7.48
+          "tone": -6.95
         },
         {
           "day_offset": 5,
-          "tone": -7.92
+          "tone": -7.17
         },
         {
           "day_offset": 4,
-          "tone": -8.18
+          "tone": -8.28
         },
         {
           "day_offset": 3,
-          "tone": -8.04
+          "tone": -8.43
         },
         {
           "day_offset": 2,
-          "tone": -8.46
+          "tone": -8.32
         },
         {
           "day_offset": 1,
-          "tone": -7.84
+          "tone": -7.43
         }
       ]
     },
     "KP-KR": {
       "status": "fallback_augmented",
-      "avg_tone": -6.65,
-      "volume_score": 203,
+      "avg_tone": -7.24,
+      "volume_score": 179,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.96
+          "tone": -7.78
         },
         {
           "day_offset": 6,
-          "tone": -6.24
+          "tone": -6.55
         },
         {
           "day_offset": 5,
-          "tone": -6.74
+          "tone": -7.81
         },
         {
           "day_offset": 4,
-          "tone": -6.38
+          "tone": -7.65
         },
         {
           "day_offset": 3,
-          "tone": -6.49
+          "tone": -6.69
         },
         {
           "day_offset": 2,
-          "tone": -6.81
+          "tone": -7.7
         },
         {
           "day_offset": 1,
-          "tone": -6.42
+          "tone": -7.03
         }
       ]
     },
     "IL-IR": {
       "status": "fallback_augmented",
-      "avg_tone": -7.68,
-      "volume_score": 206,
+      "avg_tone": -7.45,
+      "volume_score": 197,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -8.31
+          "tone": -7.25
         },
         {
           "day_offset": 6,
-          "tone": -7.78
+          "tone": -6.79
         },
         {
           "day_offset": 5,
-          "tone": -7.36
+          "tone": -6.96
         },
         {
           "day_offset": 4,
-          "tone": -8.4
+          "tone": -7.55
         },
         {
           "day_offset": 3,
-          "tone": -8.05
+          "tone": -7.12
         },
         {
           "day_offset": 2,
-          "tone": -7.99
+          "tone": -7.83
         },
         {
           "day_offset": 1,
-          "tone": -7.65
+          "tone": -7.2
         }
       ]
     },
     "IL-LB": {
       "status": "fallback_augmented",
-      "avg_tone": -6.45,
-      "volume_score": 205,
+      "avg_tone": -7.44,
+      "volume_score": 188,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.88
+          "tone": -7.81
         },
         {
           "day_offset": 6,
-          "tone": -6.92
+          "tone": -8.05
         },
         {
           "day_offset": 5,
-          "tone": -6.75
+          "tone": -7.78
         },
         {
           "day_offset": 4,
-          "tone": -6.28
-        },
-        {
-          "day_offset": 3,
           "tone": -7.12
         },
         {
+          "day_offset": 3,
+          "tone": -6.98
+        },
+        {
           "day_offset": 2,
-          "tone": -5.99
+          "tone": -7.98
         },
         {
           "day_offset": 1,
-          "tone": -7.19
+          "tone": -7.79
         }
       ]
     },
     "US-RU": {
       "status": "fallback_augmented",
-      "avg_tone": -7.69,
-      "volume_score": 186,
+      "avg_tone": -7.86,
+      "volume_score": 198,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -8.26
+          "tone": -8.05
         },
         {
           "day_offset": 6,
-          "tone": -7.42
+          "tone": -8.64
         },
         {
           "day_offset": 5,
-          "tone": -7.99
-        },
-        {
-          "day_offset": 4,
-          "tone": -7.2
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.9
-        },
-        {
-          "day_offset": 2,
-          "tone": -8.09
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.84
-        }
-      ]
-    },
-    "YE-SA": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.04,
-      "volume_score": 173,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.26
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.56
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.8
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.57
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.87
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.0
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.49
-        }
-      ]
-    },
-    "AM-AZ": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.49,
-      "volume_score": 184,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.45
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.23
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.27
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.79
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.24
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.28
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.86
-        }
-      ]
-    },
-    "IN-PK": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.19,
-      "volume_score": 168,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.42
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.36
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.67
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.59
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.56
-        },
-        {
-          "day_offset": 2,
-          "tone": -5.76
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.46
-        }
-      ]
-    },
-    "RS-XK": {
-      "status": "fallback_augmented",
-      "avg_tone": -5.76,
-      "volume_score": 186,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -5.87
-        },
-        {
-          "day_offset": 6,
-          "tone": -5.0
-        },
-        {
-          "day_offset": 5,
-          "tone": -5.65
-        },
-        {
-          "day_offset": 4,
-          "tone": -5.3
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.15
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.53
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.24
-        }
-      ]
-    },
-    "CN-TW": {
-      "status": "fallback_augmented",
-      "avg_tone": -7.28,
-      "volume_score": 213,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.92
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.26
-        },
-        {
-          "day_offset": 5,
-          "tone": -7.12
+          "tone": -8.43
         },
         {
           "day_offset": 4,
@@ -810,127 +1163,92 @@
         },
         {
           "day_offset": 3,
-          "tone": -6.75
+          "tone": -7.89
         },
         {
           "day_offset": 2,
-          "tone": -6.97
+          "tone": -7.9
         },
         {
           "day_offset": 1,
-          "tone": -7.72
+          "tone": -8.35
         }
       ]
     },
-    "US-CN": {
+    "YE-SA": {
       "status": "fallback_augmented",
-      "avg_tone": -7.21,
-      "volume_score": 183,
+      "avg_tone": -6.3,
+      "volume_score": 196,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -7.33
+          "tone": -6.42
         },
         {
           "day_offset": 6,
-          "tone": -6.68
+          "tone": -5.87
         },
         {
           "day_offset": 5,
-          "tone": -7.35
+          "tone": -6.53
         },
         {
           "day_offset": 4,
-          "tone": -7.66
+          "tone": -7.01
         },
         {
           "day_offset": 3,
-          "tone": -7.55
+          "tone": -5.75
         },
         {
           "day_offset": 2,
-          "tone": -7.41
+          "tone": -6.36
         },
         {
           "day_offset": 1,
-          "tone": -7.75
+          "tone": -6.85
         }
       ]
     },
-    "VE-GY": {
+    "AM-AZ": {
       "status": "fallback_augmented",
-      "avg_tone": -5.22,
-      "volume_score": 145,
+      "avg_tone": -6.42,
+      "volume_score": 187,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -5.7
+          "tone": -6.0
         },
         {
           "day_offset": 6,
-          "tone": -4.51
+          "tone": -6.03
         },
         {
           "day_offset": 5,
-          "tone": -5.83
+          "tone": -6.22
         },
         {
           "day_offset": 4,
-          "tone": -4.67
+          "tone": -7.05
         },
         {
           "day_offset": 3,
-          "tone": -5.98
+          "tone": -6.27
         },
         {
           "day_offset": 2,
-          "tone": -5.73
+          "tone": -6.88
         },
         {
           "day_offset": 1,
-          "tone": -5.38
+          "tone": -5.66
         }
       ]
     },
-    "GR-TR": {
+    "IN-PK": {
       "status": "fallback_augmented",
-      "avg_tone": -4.5,
-      "volume_score": 138,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -3.72
-        },
-        {
-          "day_offset": 6,
-          "tone": -4.11
-        },
-        {
-          "day_offset": 5,
-          "tone": -3.9
-        },
-        {
-          "day_offset": 4,
-          "tone": -5.24
-        },
-        {
-          "day_offset": 3,
-          "tone": -4.04
-        },
-        {
-          "day_offset": 2,
-          "tone": -4.01
-        },
-        {
-          "day_offset": 1,
-          "tone": -4.43
-        }
-      ]
-    },
-    "CD-RW": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.43,
-      "volume_score": 193,
+      "avg_tone": -7.04,
+      "volume_score": 171,
       "tone_series": [
         {
           "day_offset": 7,
@@ -938,89 +1256,19 @@
         },
         {
           "day_offset": 6,
-          "tone": -7.11
+          "tone": -6.76
         },
         {
           "day_offset": 5,
-          "tone": -6.94
+          "tone": -6.32
         },
         {
           "day_offset": 4,
-          "tone": -6.5
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.74
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.05
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.46
-        }
-      ]
-    },
-    "SD-SS": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.87,
-      "volume_score": 193,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.64
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.17
-        },
-        {
-          "day_offset": 5,
-          "tone": -7.44
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.69
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.31
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.45
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.55
-        }
-      ]
-    },
-    "ET-SO": {
-      "status": "fallback_augmented",
-      "avg_tone": -7.05,
-      "volume_score": 204,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -7.73
-        },
-        {
-          "day_offset": 6,
           "tone": -7.51
         },
         {
-          "day_offset": 5,
-          "tone": -7.45
-        },
-        {
-          "day_offset": 4,
-          "tone": -7.77
-        },
-        {
           "day_offset": 3,
-          "tone": -6.82
+          "tone": -7.79
         },
         {
           "day_offset": 2,
@@ -1028,139 +1276,69 @@
         },
         {
           "day_offset": 1,
-          "tone": -7.17
+          "tone": -6.31
         }
       ]
     },
-    "ET-ER": {
+    "RS-XK": {
       "status": "fallback_augmented",
-      "avg_tone": -7.25,
+      "avg_tone": -5.77,
+      "volume_score": 157,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.25
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.07
+        },
+        {
+          "day_offset": 5,
+          "tone": -5.92
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.93
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.52
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.95
+        },
+        {
+          "day_offset": 1,
+          "tone": -4.97
+        }
+      ]
+    },
+    "CN-TW": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.16,
       "volume_score": 197,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.95
+          "tone": -6.96
         },
         {
           "day_offset": 6,
-          "tone": -6.5
+          "tone": -7.62
         },
         {
           "day_offset": 5,
-          "tone": -7.46
-        },
-        {
-          "day_offset": 4,
-          "tone": -7.5
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.94
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.27
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.91
-        }
-      ]
-    },
-    "MA-DZ": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.54,
-      "volume_score": 207,
-      "tone_series": [
-        {
-          "day_offset": 7,
           "tone": -7.06
         },
         {
-          "day_offset": 6,
-          "tone": -5.76
-        },
-        {
-          "day_offset": 5,
-          "tone": -7.16
-        },
-        {
           "day_offset": 4,
-          "tone": -5.97
+          "tone": -6.92
         },
         {
           "day_offset": 3,
-          "tone": -6.89
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.14
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.86
-        }
-      ]
-    },
-    "NE-NG": {
-      "status": "fallback_augmented",
-      "avg_tone": -5.99,
-      "volume_score": 180,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.75
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.68
-        },
-        {
-          "day_offset": 5,
-          "tone": -5.84
-        },
-        {
-          "day_offset": 4,
-          "tone": -5.37
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.52
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.57
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.1
-        }
-      ]
-    },
-    "TRNC-CY": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.44,
-      "volume_score": 189,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.44
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.15
-        },
-        {
-          "day_offset": 5,
-          "tone": -5.89
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.4
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.56
+          "tone": -7.31
         },
         {
           "day_offset": 2,
@@ -1168,7 +1346,357 @@
         },
         {
           "day_offset": 1,
-          "tone": -5.86
+          "tone": -7.7
+        }
+      ]
+    },
+    "US-CN": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.31,
+      "volume_score": 190,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.99
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.22
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.57
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.74
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.76
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.77
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.94
+        }
+      ]
+    },
+    "VE-GY": {
+      "status": "fallback_augmented",
+      "avg_tone": -5.18,
+      "volume_score": 162,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -5.5
+        },
+        {
+          "day_offset": 6,
+          "tone": -5.24
+        },
+        {
+          "day_offset": 5,
+          "tone": -4.48
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.07
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.32
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.3
+        },
+        {
+          "day_offset": 1,
+          "tone": -4.72
+        }
+      ]
+    },
+    "GR-TR": {
+      "status": "fallback_augmented",
+      "avg_tone": -5.47,
+      "volume_score": 152,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -5.46
+        },
+        {
+          "day_offset": 6,
+          "tone": -5.62
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.0
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.29
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.97
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.69
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.4
+        }
+      ]
+    },
+    "CD-RW": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.55,
+      "volume_score": 164,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -5.79
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.62
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.1
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.13
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.14
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.02
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.07
+        }
+      ]
+    },
+    "SD-SS": {
+      "status": "fallback_augmented",
+      "avg_tone": -5.87,
+      "volume_score": 166,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.1
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.53
+        },
+        {
+          "day_offset": 5,
+          "tone": -5.23
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.63
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.78
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.28
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.58
+        }
+      ]
+    },
+    "ET-SO": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.07,
+      "volume_score": 184,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.48
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.57
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.75
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.39
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.62
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.75
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.79
+        }
+      ]
+    },
+    "ET-ER": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.79,
+      "volume_score": 192,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.42
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.3
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.07
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.4
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.49
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.88
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.51
+        }
+      ]
+    },
+    "MA-DZ": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.68,
+      "volume_score": 214,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -8.23
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.94
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.45
+        },
+        {
+          "day_offset": 4,
+          "tone": -8.0
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.23
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.59
+        },
+        {
+          "day_offset": 1,
+          "tone": -8.0
+        }
+      ]
+    },
+    "NE-NG": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.1,
+      "volume_score": 157,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.48
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.12
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.31
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.15
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.7
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.9
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.69
+        }
+      ]
+    },
+    "TRNC-CY": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.97,
+      "volume_score": 171,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -7.33
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.46
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.19
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.47
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.57
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.77
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.19
         }
       ]
     }
