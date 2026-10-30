@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29T04:57:22.040076+00:00",
+  "timestamp": "2026-10-30T04:56:51.724815+00:00",
   "world_military_gdp_avg": 2.3,
   "world_bank": {
     "UA": {
@@ -1002,117 +1002,47 @@
   "gdelt_signals": {
     "UA-RU": {
       "status": "fallback_augmented",
-      "avg_tone": -7.88,
-      "volume_score": 231,
+      "avg_tone": -8.12,
+      "volume_score": 199,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -7.39
+          "tone": -8.42
         },
         {
           "day_offset": 6,
-          "tone": -8.21
+          "tone": -7.36
         },
         {
           "day_offset": 5,
-          "tone": -8.07
-        },
-        {
-          "day_offset": 4,
           "tone": -7.39
         },
         {
+          "day_offset": 4,
+          "tone": -8.13
+        },
+        {
           "day_offset": 3,
-          "tone": -8.65
+          "tone": -8.25
         },
         {
           "day_offset": 2,
-          "tone": -7.68
+          "tone": -7.56
         },
         {
           "day_offset": 1,
-          "tone": -7.51
+          "tone": -8.83
         }
       ]
     },
     "KP-KR": {
       "status": "fallback_augmented",
-      "avg_tone": -6.68,
-      "volume_score": 188,
+      "avg_tone": -7.23,
+      "volume_score": 181,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.65
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.51
-        },
-        {
-          "day_offset": 5,
-          "tone": -5.89
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.35
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.38
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.79
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.64
-        }
-      ]
-    },
-    "IL-IR": {
-      "status": "fallback_augmented",
-      "avg_tone": -8.2,
-      "volume_score": 213,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -8.84
-        },
-        {
-          "day_offset": 6,
-          "tone": -8.0
-        },
-        {
-          "day_offset": 5,
-          "tone": -8.38
-        },
-        {
-          "day_offset": 4,
-          "tone": -8.32
-        },
-        {
-          "day_offset": 3,
-          "tone": -8.21
-        },
-        {
-          "day_offset": 2,
-          "tone": -8.33
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.7
-        }
-      ]
-    },
-    "IL-LB": {
-      "status": "fallback_augmented",
-      "avg_tone": -7.28,
-      "volume_score": 206,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -8.07
+          "tone": -7.99
         },
         {
           "day_offset": 6,
@@ -1120,489 +1050,314 @@
         },
         {
           "day_offset": 5,
-          "tone": -7.62
+          "tone": -6.83
         },
         {
           "day_offset": 4,
-          "tone": -7.58
+          "tone": -8.01
         },
         {
           "day_offset": 3,
-          "tone": -7.66
+          "tone": -7.4
         },
         {
           "day_offset": 2,
-          "tone": -6.57
+          "tone": -6.44
         },
         {
           "day_offset": 1,
-          "tone": -8.07
+          "tone": -6.81
+        }
+      ]
+    },
+    "IL-IR": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.73,
+      "volume_score": 201,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -8.1
+        },
+        {
+          "day_offset": 6,
+          "tone": -8.45
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.37
+        },
+        {
+          "day_offset": 4,
+          "tone": -7.08
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.97
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.67
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.41
+        }
+      ]
+    },
+    "IL-LB": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.17,
+      "volume_score": 207,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -7.91
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.49
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.6
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.91
+        },
+        {
+          "day_offset": 3,
+          "tone": -7.34
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.15
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.22
         }
       ]
     },
     "US-RU": {
       "status": "fallback_augmented",
-      "avg_tone": -7.8,
-      "volume_score": 217,
+      "avg_tone": -7.76,
+      "volume_score": 222,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -8.06
+          "tone": -8.29
         },
         {
           "day_offset": 6,
-          "tone": -8.08
+          "tone": -8.0
         },
         {
           "day_offset": 5,
-          "tone": -8.16
+          "tone": -7.87
         },
         {
           "day_offset": 4,
-          "tone": -7.16
+          "tone": -8.17
         },
         {
           "day_offset": 3,
-          "tone": -7.37
+          "tone": -7.25
         },
         {
           "day_offset": 2,
-          "tone": -8.06
+          "tone": -7.55
         },
         {
           "day_offset": 1,
-          "tone": -8.25
+          "tone": -7.0
         }
       ]
     },
     "YE-SA": {
       "status": "fallback_augmented",
-      "avg_tone": -6.85,
-      "volume_score": 163,
+      "avg_tone": -6.77,
+      "volume_score": 171,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.92
+          "tone": -6.3
         },
         {
           "day_offset": 6,
-          "tone": -6.53
+          "tone": -6.37
         },
         {
           "day_offset": 5,
-          "tone": -6.19
+          "tone": -7.26
         },
         {
           "day_offset": 4,
-          "tone": -6.29
+          "tone": -6.07
         },
         {
           "day_offset": 3,
-          "tone": -6.45
+          "tone": -6.12
         },
         {
           "day_offset": 2,
-          "tone": -7.12
+          "tone": -6.2
         },
         {
           "day_offset": 1,
-          "tone": -7.11
+          "tone": -6.21
         }
       ]
     },
     "AM-AZ": {
       "status": "fallback_augmented",
-      "avg_tone": -6.35,
-      "volume_score": 205,
+      "avg_tone": -6.83,
+      "volume_score": 183,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -5.55
+          "tone": -6.98
         },
         {
           "day_offset": 6,
-          "tone": -7.01
+          "tone": -6.41
         },
         {
           "day_offset": 5,
-          "tone": -6.48
+          "tone": -6.26
         },
         {
           "day_offset": 4,
-          "tone": -6.53
+          "tone": -7.17
         },
         {
           "day_offset": 3,
-          "tone": -6.05
+          "tone": -7.09
         },
         {
           "day_offset": 2,
-          "tone": -6.77
+          "tone": -6.67
         },
         {
           "day_offset": 1,
-          "tone": -5.88
+          "tone": -7.46
         }
       ]
     },
     "IN-PK": {
       "status": "fallback_augmented",
-      "avg_tone": -7.02,
-      "volume_score": 190,
+      "avg_tone": -6.74,
+      "volume_score": 161,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.28
+          "tone": -6.72
         },
         {
           "day_offset": 6,
-          "tone": -7.42
+          "tone": -6.63
         },
         {
           "day_offset": 5,
-          "tone": -6.95
+          "tone": -6.62
         },
         {
           "day_offset": 4,
-          "tone": -7.05
+          "tone": -7.27
         },
         {
           "day_offset": 3,
-          "tone": -7.7
+          "tone": -6.68
         },
         {
           "day_offset": 2,
-          "tone": -7.09
+          "tone": -7.44
         },
         {
           "day_offset": 1,
-          "tone": -6.78
+          "tone": -6.35
         }
       ]
     },
     "RS-XK": {
       "status": "fallback_augmented",
-      "avg_tone": -6.31,
-      "volume_score": 177,
+      "avg_tone": -5.97,
+      "volume_score": 158,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.27
+          "tone": -6.39
         },
         {
           "day_offset": 6,
-          "tone": -6.56
+          "tone": -5.84
         },
         {
           "day_offset": 5,
-          "tone": -6.77
+          "tone": -5.38
         },
         {
           "day_offset": 4,
-          "tone": -6.85
+          "tone": -6.09
         },
         {
           "day_offset": 3,
-          "tone": -6.59
+          "tone": -6.66
         },
         {
           "day_offset": 2,
-          "tone": -6.87
+          "tone": -6.76
         },
         {
           "day_offset": 1,
-          "tone": -6.76
+          "tone": -6.06
         }
       ]
     },
     "CN-TW": {
       "status": "fallback_augmented",
-      "avg_tone": -7.04,
-      "volume_score": 186,
+      "avg_tone": -7.55,
+      "volume_score": 200,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -7.8
+          "tone": -7.83
         },
         {
           "day_offset": 6,
-          "tone": -6.88
+          "tone": -8.21
         },
         {
           "day_offset": 5,
-          "tone": -7.79
+          "tone": -7.23
         },
         {
           "day_offset": 4,
-          "tone": -7.6
+          "tone": -7.46
         },
         {
           "day_offset": 3,
-          "tone": -6.58
+          "tone": -7.05
         },
         {
           "day_offset": 2,
-          "tone": -7.48
+          "tone": -7.7
         },
         {
           "day_offset": 1,
-          "tone": -7.73
+          "tone": -6.93
         }
       ]
     },
     "US-CN": {
       "status": "fallback_augmented",
-      "avg_tone": -6.37,
-      "volume_score": 174,
+      "avg_tone": -6.72,
+      "volume_score": 185,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -7.08
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.86
-        },
-        {
-          "day_offset": 5,
           "tone": -6.43
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.79
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.79
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.46
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.73
-        }
-      ]
-    },
-    "VE-GY": {
-      "status": "fallback_augmented",
-      "avg_tone": -5.4,
-      "volume_score": 154,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -5.74
-        },
-        {
-          "day_offset": 6,
-          "tone": -5.78
-        },
-        {
-          "day_offset": 5,
-          "tone": -4.69
-        },
-        {
-          "day_offset": 4,
-          "tone": -4.66
-        },
-        {
-          "day_offset": 3,
-          "tone": -6.17
-        },
-        {
-          "day_offset": 2,
-          "tone": -4.77
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.8
-        }
-      ]
-    },
-    "GR-TR": {
-      "status": "fallback_augmented",
-      "avg_tone": -5.39,
-      "volume_score": 129,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -5.51
-        },
-        {
-          "day_offset": 6,
-          "tone": -4.69
-        },
-        {
-          "day_offset": 5,
-          "tone": -4.95
-        },
-        {
-          "day_offset": 4,
-          "tone": -4.92
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.29
-        },
-        {
-          "day_offset": 2,
-          "tone": -5.5
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.73
-        }
-      ]
-    },
-    "CD-RW": {
-      "status": "fallback_augmented",
-      "avg_tone": -7.06,
-      "volume_score": 183,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -7.53
-        },
-        {
-          "day_offset": 6,
-          "tone": -7.4
-        },
-        {
-          "day_offset": 5,
-          "tone": -7.01
-        },
-        {
-          "day_offset": 4,
-          "tone": -7.79
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.43
-        },
-        {
-          "day_offset": 2,
-          "tone": -7.1
-        },
-        {
-          "day_offset": 1,
-          "tone": -7.23
-        }
-      ]
-    },
-    "SD-SS": {
-      "status": "fallback_augmented",
-      "avg_tone": -5.74,
-      "volume_score": 175,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -5.97
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.38
-        },
-        {
-          "day_offset": 5,
-          "tone": -5.73
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.39
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.11
-        },
-        {
-          "day_offset": 2,
-          "tone": -5.25
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.08
-        }
-      ]
-    },
-    "ET-SO": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.44,
-      "volume_score": 170,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -5.98
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.45
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.99
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.48
-        },
-        {
-          "day_offset": 3,
-          "tone": -5.78
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.29
-        },
-        {
-          "day_offset": 1,
-          "tone": -6.84
-        }
-      ]
-    },
-    "ET-ER": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.59,
-      "volume_score": 183,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.86
-        },
-        {
-          "day_offset": 6,
-          "tone": -6.18
-        },
-        {
-          "day_offset": 5,
-          "tone": -6.05
-        },
-        {
-          "day_offset": 4,
-          "tone": -6.6
-        },
-        {
-          "day_offset": 3,
-          "tone": -7.12
-        },
-        {
-          "day_offset": 2,
-          "tone": -6.17
-        },
-        {
-          "day_offset": 1,
-          "tone": -5.93
-        }
-      ]
-    },
-    "MA-DZ": {
-      "status": "fallback_augmented",
-      "avg_tone": -6.82,
-      "volume_score": 212,
-      "tone_series": [
-        {
-          "day_offset": 7,
-          "tone": -6.89
         },
         {
           "day_offset": 6,
@@ -1614,11 +1369,221 @@
         },
         {
           "day_offset": 4,
-          "tone": -6.47
+          "tone": -6.23
         },
         {
           "day_offset": 3,
-          "tone": -7.55
+          "tone": -6.74
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.74
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.77
+        }
+      ]
+    },
+    "VE-GY": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.22,
+      "volume_score": 147,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -5.64
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.65
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.81
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.66
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.7
+        },
+        {
+          "day_offset": 2,
+          "tone": -5.98
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.68
+        }
+      ]
+    },
+    "GR-TR": {
+      "status": "fallback_augmented",
+      "avg_tone": -4.74,
+      "volume_score": 121,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -4.07
+        },
+        {
+          "day_offset": 6,
+          "tone": -4.92
+        },
+        {
+          "day_offset": 5,
+          "tone": -4.36
+        },
+        {
+          "day_offset": 4,
+          "tone": -5.12
+        },
+        {
+          "day_offset": 3,
+          "tone": -4.97
+        },
+        {
+          "day_offset": 2,
+          "tone": -4.09
+        },
+        {
+          "day_offset": 1,
+          "tone": -5.31
+        }
+      ]
+    },
+    "CD-RW": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.83,
+      "volume_score": 168,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.27
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.36
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.51
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.42
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.89
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.93
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.01
+        }
+      ]
+    },
+    "SD-SS": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.27,
+      "volume_score": 186,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -6.48
+        },
+        {
+          "day_offset": 6,
+          "tone": -5.79
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.99
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.34
+        },
+        {
+          "day_offset": 3,
+          "tone": -5.55
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.04
+        },
+        {
+          "day_offset": 1,
+          "tone": -6.98
+        }
+      ]
+    },
+    "ET-SO": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.24,
+      "volume_score": 202,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -7.66
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.79
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.37
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.54
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.62
+        },
+        {
+          "day_offset": 2,
+          "tone": -6.91
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.88
+        }
+      ]
+    },
+    "ET-ER": {
+      "status": "fallback_augmented",
+      "avg_tone": -6.88,
+      "volume_score": 182,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -7.66
+        },
+        {
+          "day_offset": 6,
+          "tone": -6.23
+        },
+        {
+          "day_offset": 5,
+          "tone": -7.13
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.97
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.79
         },
         {
           "day_offset": 2,
@@ -1626,77 +1591,112 @@
         },
         {
           "day_offset": 1,
-          "tone": -6.74
+          "tone": -6.53
+        }
+      ]
+    },
+    "MA-DZ": {
+      "status": "fallback_augmented",
+      "avg_tone": -7.1,
+      "volume_score": 209,
+      "tone_series": [
+        {
+          "day_offset": 7,
+          "tone": -7.08
+        },
+        {
+          "day_offset": 6,
+          "tone": -7.6
+        },
+        {
+          "day_offset": 5,
+          "tone": -6.91
+        },
+        {
+          "day_offset": 4,
+          "tone": -6.35
+        },
+        {
+          "day_offset": 3,
+          "tone": -6.97
+        },
+        {
+          "day_offset": 2,
+          "tone": -7.06
+        },
+        {
+          "day_offset": 1,
+          "tone": -7.26
         }
       ]
     },
     "NE-NG": {
       "status": "fallback_augmented",
-      "avg_tone": -6.0,
-      "volume_score": 151,
+      "avg_tone": -6.46,
+      "volume_score": 152,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -5.4
+          "tone": -7.1
         },
         {
           "day_offset": 6,
-          "tone": -5.68
+          "tone": -6.16
         },
         {
           "day_offset": 5,
-          "tone": -6.63
+          "tone": -6.82
         },
         {
           "day_offset": 4,
-          "tone": -5.92
+          "tone": -6.7
         },
         {
           "day_offset": 3,
-          "tone": -6.14
+          "tone": -5.95
         },
         {
           "day_offset": 2,
-          "tone": -6.75
+          "tone": -6.66
         },
         {
           "day_offset": 1,
-          "tone": -6.73
+          "tone": -6.51
         }
       ]
     },
     "TRNC-CY": {
       "status": "fallback_augmented",
-      "avg_tone": -6.65,
-      "volume_score": 176,
+      "avg_tone": -7.27,
+      "volume_score": 173,
       "tone_series": [
         {
           "day_offset": 7,
-          "tone": -6.7
+          "tone": -7.72
         },
         {
           "day_offset": 6,
-          "tone": -6.9
+          "tone": -7.01
         },
         {
           "day_offset": 5,
-          "tone": -7.4
+          "tone": -7.12
         },
         {
           "day_offset": 4,
-          "tone": -6.88
+          "tone": -8.02
         },
         {
           "day_offset": 3,
-          "tone": -6.13
+          "tone": -6.86
         },
         {
           "day_offset": 2,
-          "tone": -6.64
+          "tone": -7.91
         },
         {
           "day_offset": 1,
-          "tone": -7.34
+          "tone": -6.77
         }
       ]
     }
